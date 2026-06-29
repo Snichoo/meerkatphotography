@@ -18,6 +18,7 @@ function ServiceDetailSideNav({ activeId }: { activeId: string }) {
               <li key={service.id}>
                 <Link
                   href={service.href}
+                  prefetch={false}
                   className={cn(
                     "relative block pl-10 transition-colors hover:text-gold",
                     active && "text-gold"
@@ -46,10 +47,10 @@ export function ServiceDetailPage({ service }: { service: ServicesPageItem }) {
         <article className="min-w-0 pb-20">
           <header className="px-5 pb-10 pt-8 lg:px-12 lg:pb-12 lg:pt-12">
             <div className="mx-auto grid max-w-[1120px] gap-8 lg:grid-cols-[minmax(0,0.95fr)_minmax(360px,0.75fr)] lg:items-end">
-              <h1 className="text-left text-[clamp(2.25rem,5.25vw,5.2rem)] font-semibold uppercase leading-[0.98] text-navy">
+              <h1 className="kp-reveal text-left text-[clamp(2.25rem,5.25vw,5.2rem)] font-semibold uppercase leading-[0.98] text-navy" data-reveal="left">
                 {service.title}
               </h1>
-              <div className="border-t border-navy/25 pt-6 text-[15px] font-light leading-[1.65] text-navy/85 lg:border-l lg:border-t-0 lg:pl-8 lg:pt-0 lg:text-[17px]">
+              <div className="kp-reveal border-t border-navy/25 pt-6 text-[15px] font-light leading-[1.65] text-navy/85 lg:border-l lg:border-t-0 lg:pl-8 lg:pt-0 lg:text-[17px]" data-reveal="right" data-reveal-delay="1">
                 {service.paragraphs.map((paragraph) => (
                   <p key={paragraph} className="mb-5 last:mb-0">
                     {paragraph}

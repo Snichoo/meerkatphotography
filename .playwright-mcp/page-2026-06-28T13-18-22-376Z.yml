@@ -430,7 +430,7 @@
             - paragraph [ref=e384]: What type of service do you require?
             - paragraph [ref=e386]:
               - combobox [ref=e388]:
-                - option "—Please choose an option—" [selected]
+                - option "Please choose an option" [selected]
                 - option "Headshot/Portrait"
                 - option "Corporate"
                 - option "Commercial"
@@ -447,7 +447,7 @@
             - paragraph [ref=e394]: How did you find us?
             - paragraph [ref=e396]:
               - combobox [ref=e398]:
-                - option "—Please choose an option—" [selected]
+                - option "Please choose an option" [selected]
                 - option "Google Search"
                 - option "Google Maps"
                 - option "Recommendation"

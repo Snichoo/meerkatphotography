@@ -70,7 +70,9 @@ export function ServiceGalleryGrid({ title, images }: ServiceGalleryGridProps) {
           return (
             <figure
               key={image.src}
-              className="relative m-0 overflow-hidden rounded-[6px] bg-muted"
+              className="kp-reveal relative m-0 overflow-hidden rounded-[6px] bg-muted"
+              data-reveal="zoom"
+              data-reveal-delay={index % 6}
               style={{
                 gridColumn: `span ${span}`,
                 gridRow: colWidth > 0 ? `span ${rowSpan}` : undefined,
@@ -79,20 +81,21 @@ export function ServiceGalleryGrid({ title, images }: ServiceGalleryGridProps) {
               <button
                 type="button"
                 onClick={() => setActiveIndex(index)}
-                className="group block h-full w-full text-left"
+                className="group relative block h-full w-full text-left"
                 aria-label={`Open ${title} photo ${index + 1}`}
               >
                 <Image
                   src={image.src}
                   alt={`${title} gallery photo ${index + 1}`}
                   fill
+                  loading="lazy"
+                  quality={70}
                   sizes={
                     span === 2
-                      ? "(min-width: 1280px) 48vw, (min-width: 768px) 64vw, 96vw"
-                      : "(min-width: 1280px) 24vw, (min-width: 768px) 32vw, 48vw"
+                      ? "(min-width: 1280px) 46vw, (min-width: 768px) 62vw, 96vw"
+                      : "(min-width: 1280px) 23vw, (min-width: 768px) 31vw, 48vw"
                   }
                   className="object-cover transition duration-500 group-hover:scale-[1.04]"
-                  priority={index < 6}
                 />
               </button>
             </figure>

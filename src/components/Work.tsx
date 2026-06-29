@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { work } from "@/lib/content";
@@ -10,16 +10,56 @@ import { QuoteTrigger } from "@/components/QuoteModal";
 
 export function Work() {
   const [index, setIndex] = useState(0);
+  const [renderedSlides, setRenderedSlides] = useState<Set<number>>(() => new Set([0]));
   const count = work.length;
-  const go = (dir: number) => setIndex((i) => (i + dir + count) % count);
+
+  const rememberSlide = useCallback((slideIndex: number) => {
+    setRenderedSlides((current) => {
+      if (current.has(slideIndex)) {
+        return current;
+      }
+
+      const next = new Set(current);
+      next.add(slideIndex);
+      return next;
+    });
+  }, []);
+
+  const showSlide = (nextIndex: number) => {
+    rememberSlide(nextIndex);
+    setIndex(nextIndex);
+  };
+
+  const go = (dir: number) => {
+    setIndex((i) => {
+      const next = (i + dir + count) % count;
+      rememberSlide(next);
+      return next;
+    });
+  };
 
   useEffect(() => {
     const timer = window.setInterval(() => {
-      setIndex((i) => (i + 1) % count);
+      setIndex((i) => {
+        const next = (i + 1) % count;
+        rememberSlide(next);
+        return next;
+      });
     }, 3000);
 
     return () => window.clearInterval(timer);
-  }, [count]);
+  }, [count, rememberSlide]);
+
+  useEffect(() => {
+    const nextIndex = (index + 1) % count;
+    const preloadTimer = window.setTimeout(() => {
+      rememberSlide(nextIndex);
+    }, 600);
+
+    return () => window.clearTimeout(preloadTimer);
+  }, [count, index, rememberSlide]);
+
+  const renderedSlideIndexes = Array.from(renderedSlides).sort((a, b) => a - b);
 
   return (
     <section id="work" className="bg-cream">
@@ -27,33 +67,38 @@ export function Work() {
       <Curve top={NAVY} bottom={CREAM} shape="centerDip" height={90} />
 
       {/* Intro */}
-      <div className="kp-container mx-auto max-w-3xl text-center">
+      <div className="kp-container kp-reveal mx-auto max-w-3xl text-center" data-reveal="soft">
         <h2 className="kp-h2 text-[clamp(1.8rem,4vw,2.9rem)] text-navy">
           A look at recent work
         </h2>
         <h4 className="mx-auto mt-6 max-w-2xl text-[clamp(1rem,1.8vw,1.25rem)] font-light uppercase leading-relaxed text-navy/80">
-          Have a look below &mdash; and if it feels like your kind of shoot, I&rsquo;d love to hear
+          Have a look below and if it feels like your kind of shoot, I&rsquo;d love to hear
           from you.
         </h4>
       </div>
 
       {/* Full-width carousel */}
-      <div className="relative mt-8">
+      <div className="kp-reveal relative mt-8" data-reveal="zoom" data-reveal-delay="1">
         <div className="relative h-[74vw] max-h-[960px] min-h-[440px] w-full overflow-hidden">
-          {work.map((item, i) => (
-            <Image
-              key={item.src}
-              src={item.src}
-              alt={item.alt}
-              fill
-              priority={i === 0}
-              sizes="100vw"
-              className={cn(
-                "object-cover object-[center_32%] transition-opacity duration-700",
-                i === index ? "opacity-100" : "opacity-0"
-              )}
-            />
-          ))}
+          {renderedSlideIndexes.map((i) => {
+            const item = work[i];
+
+            return (
+              <Image
+                key={item.src}
+                src={item.src}
+                alt={item.alt}
+                fill
+                loading="lazy"
+                quality={70}
+                sizes="100vw"
+                className={cn(
+                  "object-cover object-[center_32%] transition-opacity duration-700",
+                  i === index ? "opacity-100" : "opacity-0"
+                )}
+              />
+            );
+          })}
 
           {/* Cream curve that rises to a peak then dips, cutting into the TOP of the images */}
           <svg
@@ -90,7 +135,7 @@ export function Work() {
                 type="button"
                 aria-label="Previous"
                 onClick={() => go(-1)}
-                className="flex shrink-0 cursor-pointer text-cream transition-opacity hover:opacity-75"
+                className="flex shrink-0 cursor-pointer text-cream transition-all hover:scale-105 hover:opacity-75 active:scale-95"
               >
                 <svg
                   className="h-auto w-10 sm:w-[58px]"
@@ -112,7 +157,7 @@ export function Work() {
                     key={item.src}
                     type="button"
                     aria-label={`Go to slide ${i + 1}`}
-                    onClick={() => setIndex(i)}
+                    onClick={() => showSlide(i)}
                     className={cn(
                       "h-full flex-1 bg-cream transition-opacity hover:opacity-80",
                       i === index ? "opacity-100" : "opacity-40"
@@ -125,7 +170,7 @@ export function Work() {
                 type="button"
                 aria-label="Next"
                 onClick={() => go(1)}
-                className="flex shrink-0 cursor-pointer text-cream transition-opacity hover:opacity-75"
+                className="flex shrink-0 cursor-pointer text-cream transition-all hover:scale-105 hover:opacity-75 active:scale-95"
               >
                 <svg
                   className="h-auto w-10 sm:w-[58px]"
@@ -147,8 +192,10 @@ export function Work() {
 
       {/* Buttons */}
       <div className="kp-container mt-14 flex flex-wrap justify-center gap-5 pb-24">
-        <QuoteTrigger className="kp-btn-heart">Get a quote</QuoteTrigger>
-        <Link href="/services" className="kp-btn-heart">
+        <QuoteTrigger className="kp-btn-heart kp-reveal" data-reveal="left">
+          Get a quote
+        </QuoteTrigger>
+        <Link href="/services" className="kp-btn-heart kp-reveal" data-reveal="right" data-reveal-delay="1">
           View gallery
         </Link>
       </div>

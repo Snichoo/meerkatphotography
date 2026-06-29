@@ -26,7 +26,7 @@ export function useQuoteModal() {
 }
 
 const inputClass =
-  "h-[46px] w-full rounded-[10px] border border-navy/15 bg-cream px-4 text-[15px] font-light text-navy placeholder:text-navy/45 outline-none transition focus:border-orange";
+  "h-[46px] w-full rounded-[10px] border border-navy/15 bg-cream px-4 text-[15px] font-light text-navy placeholder:text-navy/45 outline-none transition-all focus:-translate-y-0.5 focus:border-orange focus:shadow-[0_12px_24px_rgba(56,47,39,0.14)]";
 
 export function QuoteModalProvider({ children }: { children: React.ReactNode }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -72,10 +72,10 @@ export function QuoteModalProvider({ children }: { children: React.ReactNode }) 
             type="button"
             aria-label="Close"
             onClick={close}
-            className="absolute inset-0 cursor-default bg-navy/70 backdrop-blur-sm"
+            className="animate-fade-in absolute inset-0 cursor-default bg-navy/70 backdrop-blur-sm"
           />
 
-          <div className="relative z-[1] max-h-[90vh] w-full max-w-[560px] overflow-y-auto rounded-[20px] bg-cream p-7 shadow-[0_30px_80px_rgba(56,47,39,0.45)] sm:p-9">
+          <div className="animate-soft-pop relative z-[1] max-h-[90vh] w-full max-w-[560px] overflow-y-auto rounded-[20px] bg-cream p-7 shadow-[0_30px_80px_rgba(56,47,39,0.45)] sm:p-9">
             <button
               type="button"
               onClick={close}
@@ -91,7 +91,7 @@ export function QuoteModalProvider({ children }: { children: React.ReactNode }) 
                   Thanks!
                 </h2>
                 <p className="mt-3 font-light text-navy/75">
-                  Your enquiry is on its way &mdash; I&rsquo;ll be in touch shortly.
+                  Your enquiry is on its way I&rsquo;ll be in touch shortly.
                 </p>
                 <button
                   type="button"

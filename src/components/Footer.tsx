@@ -28,13 +28,16 @@ export function Footer() {
     <footer className="bg-navy px-0 py-[90px] text-[22px] text-cream max-md:py-[50px] max-md:text-lg">
       <div className="kp-container">
         <div className="grid gap-x-10 gap-y-12 md:grid-cols-[0.9fr_1.35fr_1fr_1fr]">
-          <div>
+          <div className="kp-reveal" data-reveal="up">
             <Link href="/" aria-label={site.name}>
               <Image
                 src="/images/meerkat-logo.png"
                 alt={site.name}
                 width={1254}
                 height={1254}
+                loading="lazy"
+                quality={80}
+                sizes="116px"
                 className="h-auto w-[116px]"
               />
             </Link>
@@ -44,7 +47,7 @@ export function Footer() {
                 aria-label="Facebook"
                 target="_blank"
                 rel="noreferrer"
-                className="flex h-11 w-11 items-center justify-center rounded-full border border-cream/25 text-cream transition-colors hover:border-gold hover:text-gold"
+                className="flex h-11 w-11 items-center justify-center rounded-full border border-cream/25 text-cream transition-all hover:-translate-y-1 hover:border-gold hover:text-gold"
               >
                 <FacebookIcon />
               </a>
@@ -53,14 +56,14 @@ export function Footer() {
                 aria-label="Instagram"
                 target="_blank"
                 rel="noreferrer"
-                className="flex h-11 w-11 items-center justify-center rounded-full border border-cream/25 text-cream transition-colors hover:border-gold hover:text-gold"
+                className="flex h-11 w-11 items-center justify-center rounded-full border border-cream/25 text-cream transition-all hover:-translate-y-1 hover:border-gold hover:text-gold"
               >
                 <InstagramIcon />
               </a>
             </div>
           </div>
 
-          <div className="inline-flex flex-col items-start leading-[2]">
+          <div className="kp-reveal inline-flex flex-col items-start leading-[2]" data-reveal="up" data-reveal-delay="1">
             <FooterHeading>Contact</FooterHeading>
             <address className="mt-3 not-italic">{site.location}</address>
             <div>
@@ -89,7 +92,7 @@ export function Footer() {
             </div>
           </div>
 
-          <nav className="inline-flex flex-col items-start leading-[2]">
+          <nav className="kp-reveal inline-flex flex-col items-start leading-[2]" data-reveal="up" data-reveal-delay="2">
             <FooterHeading>Services</FooterHeading>
             <ul className="mt-3">
               {services.map((service) => (
@@ -102,7 +105,7 @@ export function Footer() {
             </ul>
           </nav>
 
-          <nav className="inline-flex flex-col items-start leading-[2]">
+          <nav className="kp-reveal inline-flex flex-col items-start leading-[2]" data-reveal="up" data-reveal-delay="3">
             <FooterHeading>Useful Links</FooterHeading>
             <ul className="mt-3">
               {usefulLinks.map((link) => (
@@ -116,7 +119,7 @@ export function Footer() {
           </nav>
         </div>
 
-        <p className="pt-[100px] text-center text-base font-light text-cream max-md:pt-10 max-md:text-sm">
+        <p className="kp-reveal pt-[100px] text-center text-base font-light text-cream max-md:pt-10 max-md:text-sm" data-reveal="fade">
           {site.copyright}
         </p>
       </div>

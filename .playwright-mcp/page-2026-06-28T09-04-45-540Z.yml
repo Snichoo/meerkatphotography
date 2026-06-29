@@ -85,7 +85,7 @@
         - generic [ref=e100]:
           - paragraph [ref=e101]: What type of service do you require?
           - combobox [ref=e102]:
-            - option "—Please choose an option—" [disabled] [selected]
+            - option "Please choose an option" [disabled] [selected]
             - option "Headshot/Portrait"
             - option "Corporate"
             - option "Commercial"
@@ -97,7 +97,7 @@
         - generic [ref=e103]:
           - paragraph [ref=e104]: How did you find us?
           - combobox [ref=e105]:
-            - option "—Please choose an option—" [disabled] [selected]
+            - option "Please choose an option" [disabled] [selected]
             - option "Google Search"
             - option "Google Maps"
             - option "Recommendation"

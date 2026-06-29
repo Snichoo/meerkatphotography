@@ -52,6 +52,8 @@ export function Testimonials() {
         src="/images/testimonial-bg-wedding.jpg"
         alt=""
         fill
+        loading="lazy"
+        quality={70}
         sizes="100vw"
         className="object-cover object-[center_28%]"
       />
@@ -65,7 +67,7 @@ export function Testimonials() {
         </defs>
       </svg>
 
-      <div className="kp-container relative z-[1] py-[70px] sm:py-[100px]">
+      <div className="kp-container kp-reveal relative z-[1] py-[70px] sm:py-[100px]" data-reveal="zoom">
         <div className="overflow-hidden">
           <div
             className={cn(
@@ -87,7 +89,11 @@ export function Testimonials() {
                 <div className="grid">
                   <div className="w-[83.333%] max-w-[620px] sm:w-[75%] md:w-[66.667%] lg:w-1/2">
                     <blockquote
-                      className="relative aspect-square bg-orange"
+                      className={cn(
+                        "relative aspect-square bg-orange",
+                        testimonialIndex % testimonials.length === slideIndex % testimonials.length &&
+                          "kp-floating"
+                      )}
                       style={{ clipPath: "url(#kp-heart)" }}
                     >
                       <div className="absolute inset-0 flex flex-col items-center justify-start px-[18%] pb-[16%] pt-[22%] text-center">

@@ -22,7 +22,7 @@ function QuoteButton({ variant }: { variant: "desktop" | "mobile" }) {
       onClick={open}
       aria-label="Get a quote"
       className={cn(
-        "inline-flex shrink-0 items-center justify-center rounded-[12px] bg-orange text-center font-semibold uppercase leading-none tracking-[0.04em] text-cream shadow-[0_8px_20px_rgba(56,47,39,0.22)] transition-colors hover:bg-gold",
+        "inline-flex shrink-0 items-center justify-center rounded-[12px] bg-orange text-center font-semibold uppercase leading-none tracking-[0.04em] text-cream shadow-[0_8px_20px_rgba(56,47,39,0.22)] transition-all hover:-translate-y-0.5 hover:bg-gold hover:shadow-[0_12px_26px_rgba(56,47,39,0.26)] active:translate-y-0",
         variant === "desktop"
           ? "hidden h-[46px] px-6 text-[13px] lg:inline-flex xl:h-[50px] xl:px-7 xl:text-[14px]"
           : "h-[40px] px-4 text-[11px] lg:hidden"
@@ -65,7 +65,10 @@ export function Header({ variant = "transparent", activeLabel }: HeaderProps) {
       >
         <Link
           href="/"
-          className={cn("flex items-center gap-2", creamVariant ? "text-gold" : "text-cream")}
+          className={cn(
+            "flex items-center gap-2 transition-transform duration-300 hover:scale-[1.03]",
+            creamVariant ? "text-gold" : "text-cream"
+          )}
           aria-label={site.name}
         >
           <Image
@@ -73,8 +76,9 @@ export function Header({ variant = "transparent", activeLabel }: HeaderProps) {
             alt={site.name}
             width={1254}
             height={1254}
+            quality={80}
+            sizes="(max-width: 1024px) 48px, 62px"
             className={cn("h-auto", creamVariant ? "w-[48px] lg:w-[58px]" : "w-[48px] lg:w-[62px]")}
-            priority
           />
           <span className="hidden font-heading leading-none sm:flex sm:flex-col">
             <span className="text-[16px] font-semibold uppercase tracking-[0.16em] lg:text-[18px]">
@@ -112,7 +116,7 @@ export function Header({ variant = "transparent", activeLabel }: HeaderProps) {
             target="_blank"
             rel="noreferrer"
             className={cn(
-              "transition-colors hover:text-gold",
+              "transition-all hover:-translate-y-0.5 hover:text-gold",
               creamVariant ? "text-navy" : "text-cream/80"
             )}
           >
@@ -124,7 +128,7 @@ export function Header({ variant = "transparent", activeLabel }: HeaderProps) {
             target="_blank"
             rel="noreferrer"
             className={cn(
-              "transition-colors hover:text-gold",
+              "transition-all hover:-translate-y-0.5 hover:text-gold",
               creamVariant ? "text-navy" : "text-cream/80"
             )}
           >
@@ -140,25 +144,25 @@ export function Header({ variant = "transparent", activeLabel }: HeaderProps) {
             type="button"
             aria-label="Toggle menu"
             onClick={() => setOpen((v) => !v)}
-            className="flex h-10 w-10 flex-col items-center justify-center gap-1.5"
+            className="flex h-10 w-10 flex-col items-center justify-center gap-1.5 transition-transform active:scale-95"
           >
           <span
             className={cn(
-              "h-0.5 w-6 transition-transform",
+              "h-0.5 w-6 transition-transform duration-300",
               creamVariant ? "bg-navy" : "bg-cream",
               open && "translate-y-2 rotate-45"
             )}
           />
           <span
             className={cn(
-              "h-0.5 w-6 transition-opacity",
+              "h-0.5 w-6 transition-opacity duration-300",
               creamVariant ? "bg-navy" : "bg-cream",
               open && "opacity-0"
             )}
           />
           <span
             className={cn(
-              "h-0.5 w-6 transition-transform",
+              "h-0.5 w-6 transition-transform duration-300",
               creamVariant ? "bg-navy" : "bg-cream",
               open && "-translate-y-2 -rotate-45"
             )}
@@ -169,7 +173,7 @@ export function Header({ variant = "transparent", activeLabel }: HeaderProps) {
 
       {/* Mobile menu */}
       {open && (
-        <div className={cn("max-h-[calc(100vh-68px)] overflow-y-auto lg:hidden", creamVariant ? "bg-cream" : "bg-navy/98 backdrop-blur")}>
+        <div className={cn("animate-soft-pop max-h-[calc(100vh-68px)] origin-top overflow-y-auto lg:hidden", creamVariant ? "bg-cream" : "bg-navy/98 backdrop-blur")}>
           <nav
             className={cn(
               "kp-container flex flex-col pb-8 pt-2",
@@ -206,6 +210,7 @@ export function Header({ variant = "transparent", activeLabel }: HeaderProps) {
                   <li key={service.title}>
                     <Link
                       href={service.href}
+                      prefetch={false}
                       onClick={() => setOpen(false)}
                       className="block py-0.5 text-[14px] font-light leading-snug transition-colors hover:text-gold"
                     >
@@ -223,7 +228,7 @@ export function Header({ variant = "transparent", activeLabel }: HeaderProps) {
                 setOpen(false);
                 openQuote();
               }}
-              className="mt-5 rounded-[12px] bg-orange px-6 py-3 text-center text-[14px] font-semibold uppercase tracking-[0.04em] text-cream transition-colors hover:bg-gold"
+              className="mt-5 rounded-[12px] bg-orange px-6 py-3 text-center text-[14px] font-semibold uppercase tracking-[0.04em] text-cream transition-all hover:-translate-y-0.5 hover:bg-gold active:translate-y-0"
             >
               Get a Quote
             </button>

@@ -61,7 +61,7 @@
           - heading "Event Photography" [level=1] [ref=e51]
           - generic [ref=e52]:
             - paragraph [ref=e53]: Corporate functions, awards nights, conferences and milestone celebrations, photographed with a calm, documentary approach.
-            - paragraph [ref=e54]: I cover the headline moments — the speeches, the awards, the big reveal — alongside the candid energy in the room, so the event feels exactly like it did on the day.
+            - paragraph [ref=e54]: I cover the headline moments  the speeches, the awards, the big reveal  alongside the candid energy in the room, so the event feels exactly like it did on the day.
         - region "Event Photography gallery" [ref=e55]:
           - generic [ref=e56]:
             - figure "1KPJ 63" [ref=e57]:
@@ -300,7 +300,7 @@
     - generic [ref=e349]:
       - paragraph [ref=e350]: What are you looking to shoot?
       - combobox [ref=e351]:
-        - option "—Please choose an option—" [disabled] [selected]
+        - option "Please choose an option" [disabled] [selected]
         - option "Wedding / Engagement / Anniversary"
         - option "Birthday Party"
         - option "Family and Lifestyle"
@@ -312,7 +312,7 @@
     - generic [ref=e352]:
       - paragraph [ref=e353]: How did you hear about me?
       - combobox [ref=e354]:
-        - option "—Please choose an option—" [disabled] [selected]
+        - option "Please choose an option" [disabled] [selected]
         - option "Google Search"
         - option "Google Maps"
         - option "Recommendation"

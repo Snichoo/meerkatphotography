@@ -102,6 +102,7 @@ function ServiceDrawer({
         )}
         <Link
           href={service.href}
+          prefetch={false}
           className="mt-8 inline-flex min-h-[70px] items-center justify-center rounded-[20px] border-4 border-cream px-5 pb-0.5 pt-1 text-center text-[22px] font-light uppercase leading-[1.1] transition-colors hover:bg-cream hover:text-navy"
         >
           View Gallery
@@ -173,6 +174,7 @@ function DesktopServicePanel({ service }: { service: ServicesPageItem }) {
     >
       <Link
         href={service.href}
+        prefetch={false}
         aria-label={`View gallery for ${service.title}`}
         className="absolute inset-0 z-10 cursor-none"
       />
@@ -180,12 +182,15 @@ function DesktopServicePanel({ service }: { service: ServicesPageItem }) {
         src={service.image}
         alt={service.alt}
         fill
+        loading="lazy"
+        quality={70}
         sizes="calc(100vw - 274px)"
         className="object-cover"
       />
       <Link
         ref={followRef}
         href={service.href}
+        prefetch={false}
         aria-label={`View gallery for ${service.title}`}
         className={cn(
           "pointer-events-none absolute left-0 top-0 z-30 -ml-[21px] -mt-[21px] hidden h-[42px] w-[42px] items-center justify-center rounded-[41px] bg-navy text-center text-[7px] font-light uppercase leading-none text-white opacity-0 transition-all duration-[2000ms] ease-[cubic-bezier(0.2,1,0.1,1)] after:absolute after:h-[22px] after:w-[22px] after:rounded-full after:border after:border-transparent after:transition-all after:duration-1000 after:content-[''] hover:-ml-[41px] hover:-mt-[41px] hover:h-[82px] hover:w-[82px] hover:text-[14px] hover:after:h-[72px] hover:after:w-[72px] hover:after:border-gold lg:flex",
@@ -215,17 +220,19 @@ function MobileServicePanel({ service }: { service: ServicesPageItem }) {
       id={`mobile-${service.id}`}
       className="bg-navy text-cream"
     >
-      <div className="relative aspect-[4/3] w-full overflow-hidden bg-navy">
+      <div className="kp-reveal relative aspect-[4/3] w-full overflow-hidden bg-navy" data-reveal="zoom">
         <Image
           src={service.image}
           alt={service.alt}
           fill
+          loading="lazy"
+          quality={70}
           sizes="100vw"
-          className="object-cover"
+          className="object-cover transition-transform duration-700 hover:scale-105"
         />
         <div className="absolute inset-0 bg-linear-to-t from-navy/70 via-transparent to-transparent" />
       </div>
-      <div className="px-[30px] py-7 text-left">
+      <div className="kp-reveal px-[30px] py-7 text-left" data-reveal="up" data-reveal-delay="1">
         <h2 className="mb-4 text-[26px] font-semibold uppercase leading-[1.3]">
           {service.title}
         </h2>
@@ -240,6 +247,7 @@ function MobileServicePanel({ service }: { service: ServicesPageItem }) {
         )}
         <Link
           href={service.href}
+          prefetch={false}
           className="flex h-[46px] w-full items-center justify-center rounded-[15px] border-2 border-cream px-[15px] pb-0.5 pt-1 text-center text-[15px] font-light uppercase leading-[1.1] transition-colors hover:bg-cream hover:text-navy"
         >
           View Gallery
@@ -394,22 +402,23 @@ export function ServicesPage() {
               src="/images/nora-services-overview.jpg"
               alt=""
               fill
-              priority
+              preload
+              quality={70}
               sizes="100vw"
-              className="object-cover object-[center_65%]"
+              className="kp-hero-slide object-cover object-[center_65%]"
             />
             <div className="absolute inset-0 bg-navy/62" />
-            <div className="relative z-[1] max-w-[960px]">
+            <div className="kp-reveal relative z-[1] max-w-[960px]" data-reveal="soft">
               <h1 className="mb-[30px] text-[clamp(2rem,4vw,3.625rem)] font-semibold uppercase leading-[1.3]">
                 Services
               </h1>
               <h2 className="mx-auto mb-[30px] max-w-[960px] text-[clamp(1.3rem,2.65vw,2.375rem)] font-normal leading-[1.3]">
-                Whatever you&rsquo;re celebrating or building, the goal&rsquo;s the same &mdash;
+                Whatever you&rsquo;re celebrating or building, the goal&rsquo;s the same
                 photos that feel like you, and work hard wherever you use them.
               </h2>
               <p className="mx-auto max-w-[620px] text-[16px] font-light leading-[1.6] max-sm:text-[12px]">
                 From weddings, birthdays and family sessions to headshots, products and events,
-                here&rsquo;s everything I photograph across Perth &mdash; each one with relaxed
+                here&rsquo;s everything I photograph across Perth each one with relaxed
                 direction and a beautifully finished gallery.
               </p>
               <a

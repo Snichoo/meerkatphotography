@@ -49,10 +49,10 @@ export function AboutMePage() {
       <section className="relative overflow-visible bg-navy pt-[140px] text-cream lg:pt-[155px]">
         <div className="kp-container relative z-[2] grid items-end gap-10 pb-0 lg:min-h-[700px] lg:grid-cols-[minmax(0,0.98fr)_minmax(320px,0.72fr)]">
           <div className="pb-12 lg:pb-28">
-            <h1 className="max-w-4xl text-[clamp(2.6rem,6.2vw,5.8rem)] font-semibold uppercase leading-[1.02]">
+            <h1 className="kp-reveal max-w-4xl text-[clamp(2.6rem,6.2vw,5.8rem)] font-semibold uppercase leading-[1.02]" data-reveal="soft">
               Meet Nora Wan. Perth photography with heart.
             </h1>
-            <div className="mt-8 max-w-2xl space-y-5 text-[clamp(1rem,1.45vw,1.25rem)] font-light leading-relaxed text-cream/86">
+            <div className="kp-reveal mt-8 max-w-2xl space-y-5 text-[clamp(1rem,1.45vw,1.25rem)] font-light leading-relaxed text-cream/86" data-reveal="up" data-reveal-delay="1">
               <p>
                 I&rsquo;m Nora Wan, the photographer behind Meerkat Photography. I work directly
                 with every client, keeping the process calm, personal and easy from the first
@@ -64,7 +64,7 @@ export function AboutMePage() {
                 polished without losing their personality.
               </p>
             </div>
-            <div className="mt-10 flex flex-wrap gap-4">
+            <div className="kp-reveal mt-10 flex flex-wrap gap-4" data-reveal="zoom" data-reveal-delay="2">
               <QuoteTrigger className="kp-btn-heart">Book a shoot</QuoteTrigger>
               <Link href="/services" className="kp-btn-outline text-cream hover:bg-cream hover:text-navy">
                 View services
@@ -72,13 +72,14 @@ export function AboutMePage() {
             </div>
           </div>
 
-          <div className="relative z-[3] mx-auto mb-[-94px] flex w-full max-w-[660px] justify-center self-end lg:mb-[-110px]">
+          <div className="kp-reveal relative z-[3] mx-auto mb-[-94px] flex w-full max-w-[660px] justify-center self-end lg:mb-[-110px]" data-reveal="right" data-reveal-delay="1">
             <Image
               src="/images/nora-about-page.png"
               alt="Nora Wan, Perth photographer"
               width={1050}
               height={1941}
-              priority
+              preload
+              quality={80}
               sizes="(max-width: 1024px) 84vw, 560px"
               className="h-[min(118vw,660px)] w-auto max-w-none object-contain lg:h-[820px] xl:h-[900px]"
             />
@@ -89,7 +90,7 @@ export function AboutMePage() {
 
       <section className="pb-16 pt-32 sm:pb-20 sm:pt-36 lg:pt-32">
         <div className="kp-container">
-          <div className="grid items-end gap-6 lg:grid-cols-[0.75fr_1fr]">
+          <div className="kp-reveal grid items-end gap-6 lg:grid-cols-[0.75fr_1fr]" data-reveal="soft">
             <h2 className="kp-h2 text-[clamp(1.8rem,4vw,3.2rem)]">My process</h2>
             <p className="max-w-2xl font-light leading-relaxed text-navy/80">
               A clear structure keeps the day relaxed while still making sure every photo earns its
@@ -97,8 +98,13 @@ export function AboutMePage() {
             </p>
           </div>
           <div className="mt-12 grid gap-8 lg:grid-cols-4">
-            {process.map((step) => (
-              <div key={step.title} className="pt-6">
+            {process.map((step, index) => (
+              <div
+                key={step.title}
+                className="kp-reveal pt-6"
+                data-reveal="up"
+                data-reveal-delay={index}
+              >
                 <span className="mb-6 block h-[3px] w-12 rounded-full bg-gold" />
                 <span className="text-[72px] font-black leading-none text-gold">{step.number}</span>
                 <h3 className="mt-4 text-[24px] font-light uppercase leading-tight">{step.title}</h3>
@@ -112,29 +118,33 @@ export function AboutMePage() {
       <section className="bg-cream pb-20">
         <div className="kp-container grid gap-5 md:grid-cols-[1.08fr_0.92fr] md:items-stretch">
           <div className="grid gap-5">
-            <div className="relative min-h-[340px] overflow-hidden rounded-[8px] md:min-h-[430px] lg:min-h-[500px]">
+            <div className="kp-reveal group relative min-h-[340px] overflow-hidden rounded-[8px] md:min-h-[430px] lg:min-h-[500px]" data-reveal="left">
               <Image
                 src="/images/about-wedding-5lc-158.jpg"
                 alt="Wedding couple walking through a celebration"
                 fill
+                loading="lazy"
+                quality={70}
                 sizes="(max-width: 768px) 100vw, 56vw"
-                className="object-cover object-[center_48%]"
+                className="object-cover object-[center_48%] transition-transform duration-700 group-hover:scale-105"
               />
             </div>
-            <div className="bg-navy px-8 py-10 text-cream md:px-10">
+            <div className="kp-reveal bg-navy px-8 py-10 text-cream md:px-10" data-reveal="up" data-reveal-delay="1">
               <h2 className="text-[clamp(1.6rem,3.4vw,2.5rem)] font-light leading-tight">
                 Want photos that feel natural, look polished and are ready to share?
               </h2>
               <QuoteTrigger className="kp-btn-heart mt-8">Enquire now</QuoteTrigger>
             </div>
           </div>
-          <div className="relative min-h-[520px] overflow-hidden rounded-[8px] md:h-full md:min-h-0">
+          <div className="kp-reveal group relative min-h-[520px] overflow-hidden rounded-[8px] md:h-full md:min-h-0" data-reveal="right" data-reveal-delay="1">
             <Image
               src="/images/about-meerkat2.jpg"
               alt="Meerkat standing in the sand"
               fill
+              loading="lazy"
+              quality={70}
               sizes="(max-width: 768px) 100vw, 44vw"
-              className="object-cover object-[center_54%]"
+              className="object-cover object-[center_54%] transition-transform duration-700 group-hover:scale-105"
             />
           </div>
         </div>

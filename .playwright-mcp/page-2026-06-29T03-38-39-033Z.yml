@@ -22,7 +22,7 @@
       - img "Product photography" [ref=e24]
       - generic [ref=e28]:
         - heading "Perth photography for your biggest moments & your brand" [level=1] [ref=e29]
-        - paragraph [ref=e30]: From weddings, families and birthdays to headshots, products and events — relaxed shoots, beautiful galleries, and one photographer with you from first hello to final delivery.
+        - paragraph [ref=e30]: From weddings, families and birthdays to headshots, products and events  relaxed shoots, beautiful galleries, and one photographer with you from first hello to final delivery.
         - link "Get a quote" [ref=e31] [cursor=pointer]:
           - /url: "#contact"
         - generic [ref=e32]:
@@ -39,15 +39,15 @@
         - img [ref=e47]
     - generic [ref=e54]:
       - heading "Photography you’ll be proud to share" [level=2] [ref=e55]
-      - heading "Weddings, portraits, events & everything in between — across Perth" [level=1] [ref=e56]
+      - heading "Weddings, portraits, events & everything in between  across Perth" [level=1] [ref=e56]
       - link "Get a quote" [ref=e57] [cursor=pointer]:
         - /url: "#contact"
     - generic [ref=e59]:
       - generic [ref=e60]:
         - heading "Services" [level=2] [ref=e61]
-        - heading "Whatever you’re celebrating or building, the goal’s the same — photos that feel like you, and work hard wherever you use them." [level=3] [ref=e62]
+        - heading "Whatever you’re celebrating or building, the goal’s the same  photos that feel like you, and work hard wherever you use them." [level=3] [ref=e62]
       - generic [ref=e63]:
-        - paragraph [ref=e64]: From weddings and family sessions to headshots, products and events, I photograph it all across Perth — with relaxed direction on the day and a beautifully finished gallery at the end.
+        - paragraph [ref=e64]: From weddings and family sessions to headshots, products and events, I photograph it all across Perth  with relaxed direction on the day and a beautifully finished gallery at the end.
         - paragraph [ref=e65]: "What I photograph:"
         - list [ref=e66]:
           - listitem [ref=e67]:
@@ -84,13 +84,13 @@
             - generic [ref=e115]:
               - paragraph [ref=e116]: Corporate functions, awards nights and milestone celebrations, captured with a clean documentary eye for both the headline moments and the candid ones.
               - generic [ref=e117]: Find out more
-        - link "Birthday Parties Decorated birthday party venue with balloons Decorations, candid guests and all the little in-between moments — the photos that make you feel like you were right back in the room. Find out more" [ref=e118] [cursor=pointer]:
+        - link "Birthday Parties Decorated birthday party venue with balloons Decorations, candid guests and all the little in-between moments  the photos that make you feel like you were right back in the room. Find out more" [ref=e118] [cursor=pointer]:
           - /url: /services#link-birthday-parties
           - heading "Birthday Parties" [level=4] [ref=e120]
           - generic [ref=e122]:
             - img "Decorated birthday party venue with balloons" [ref=e123]
             - generic [ref=e124]:
-              - paragraph [ref=e125]: Decorations, candid guests and all the little in-between moments — the photos that make you feel like you were right back in the room.
+              - paragraph [ref=e125]: Decorations, candid guests and all the little in-between moments  the photos that make you feel like you were right back in the room.
               - generic [ref=e126]: Find out more
         - link "Headshots Professional business headshot portrait Confident, natural headshots for LinkedIn, teams and personal brands. Relaxed direction, flattering light and profile-ready files. Find out more" [ref=e127] [cursor=pointer]:
           - /url: /services#link-headshots
@@ -108,13 +108,13 @@
             - generic [ref=e142]:
               - paragraph [ref=e143]: Jewellery, food, eCommerce and small-business products, shot with real detail and texture so they look as good online as they do in person.
               - generic [ref=e144]: Find out more
-        - link "Family & Lifestyle Family lifestyle portrait beside a lake Warm, natural sessions for families, couples and lifestyle shoots — gently directed, never stiff, and easy to relax into. Find out more" [ref=e145] [cursor=pointer]:
+        - link "Family & Lifestyle Family lifestyle portrait beside a lake Warm, natural sessions for families, couples and lifestyle shoots  gently directed, never stiff, and easy to relax into. Find out more" [ref=e145] [cursor=pointer]:
           - /url: /services#link-family-lifestyle
           - heading "Family & Lifestyle" [level=4] [ref=e147]
           - generic [ref=e149]:
             - img "Family lifestyle portrait beside a lake" [ref=e150]
             - generic [ref=e151]:
-              - paragraph [ref=e152]: Warm, natural sessions for families, couples and lifestyle shoots — gently directed, never stiff, and easy to relax into.
+              - paragraph [ref=e152]: Warm, natural sessions for families, couples and lifestyle shoots  gently directed, never stiff, and easy to relax into.
               - generic [ref=e153]: Find out more
         - link "Wedding Photography Wedding couple kissing during a sparkler entrance Weddings, engagements and anniversaries photographed with care for the atmosphere, the emotion and the people who matter most. Find out more" [ref=e154] [cursor=pointer]:
           - /url: /services#link-wedding-photography
@@ -124,19 +124,19 @@
             - generic [ref=e160]:
               - paragraph [ref=e161]: Weddings, engagements and anniversaries photographed with care for the atmosphere, the emotion and the people who matter most.
               - generic [ref=e162]: Find out more
-        - link "Meerkats & Pets Pet dog portrait with owner Pets, animals and the four-legged members of the family — photographed with patience, treats on standby and plenty of room for the unexpected. Find out more" [ref=e163] [cursor=pointer]:
+        - link "Meerkats & Pets Pet dog portrait with owner Pets, animals and the four-legged members of the family  photographed with patience, treats on standby and plenty of room for the unexpected. Find out more" [ref=e163] [cursor=pointer]:
           - /url: /services#link-meerkats-pets
           - heading "Meerkats & Pets" [level=4] [ref=e165]
           - generic [ref=e167]:
             - img "Pet dog portrait with owner" [ref=e168]
             - generic [ref=e169]:
-              - paragraph [ref=e170]: Pets, animals and the four-legged members of the family — photographed with patience, treats on standby and plenty of room for the unexpected.
+              - paragraph [ref=e170]: Pets, animals and the four-legged members of the family  photographed with patience, treats on standby and plenty of room for the unexpected.
               - generic [ref=e171]: Find out more
     - generic [ref=e172]:
       - img [ref=e174]
       - generic [ref=e176]:
         - heading "A look at recent work" [level=2] [ref=e177]
-        - paragraph [ref=e178]: A glimpse at recent shoots across Perth — celebrations, portraits, products and brands. Different people, different briefs, the same care every time.
+        - paragraph [ref=e178]: A glimpse at recent shoots across Perth  celebrations, portraits, products and brands. Different people, different briefs, the same care every time.
         - paragraph [ref=e179]: "A few of the things I shoot:"
         - list [ref=e180]:
           - listitem [ref=e181]: Weddings, engagements and family celebrations
@@ -144,7 +144,7 @@
           - listitem [ref=e185]: Events and corporate functions
           - listitem [ref=e187]: Product, food and eCommerce photography
           - listitem [ref=e189]: Pets, animals and lifestyle stories
-        - heading "Have a look below — and if it feels like your kind of shoot, I’d love to hear from you." [level=4] [ref=e191]
+        - heading "Have a look below  and if it feels like your kind of shoot, I’d love to hear from you." [level=4] [ref=e191]
       - generic [ref=e193]:
         - img "Event photography gallery preview" [ref=e194]
         - img "Birthday party photography gallery preview" [ref=e195]
@@ -178,7 +178,7 @@
         - generic [ref=e225]:
           - heading "How a shoot with me works" [level=2] [ref=e226]
           - paragraph [ref=e227]: A simple, relaxed process from start to finish
-          - paragraph [ref=e228]: Every Meerkat shoot is planned around what you actually need — whether that’s a wedding, a family session, a set of headshots or a full product range.
+          - paragraph [ref=e228]: Every Meerkat shoot is planned around what you actually need  whether that’s a wedding, a family session, a set of headshots or a full product range.
           - paragraph [ref=e229]: A clear, easy process keeps the day feeling relaxed and makes sure the final photos do exactly what you need them to.
           - heading "Interested?" [level=3] [ref=e230]
           - paragraph [ref=e231]: Take a look at the four steps below, or enquire now and we’ll talk through your shoot.
@@ -213,14 +213,14 @@
           - heading "About Me" [level=2] [ref=e266]
           - heading "A friendly Perth photographer for people, milestones & brands" [level=3] [ref=e267]
           - generic [ref=e268]:
-            - paragraph [ref=e269]: Hi, I’m Nora Wan — a Perth photographer with 15+ years behind the camera and a real knack for making people feel at ease in front of it.
-            - paragraph [ref=e270]: From weddings, families and birthdays to headshots, products and events, I cover a huge range of shoots — always with relaxed direction, an eye for the genuine moments, and galleries you’ll actually be proud to share.
+            - paragraph [ref=e269]: Hi, I’m Nora Wan  a Perth photographer with 15+ years behind the camera and a real knack for making people feel at ease in front of it.
+            - paragraph [ref=e270]: From weddings, families and birthdays to headshots, products and events, I cover a huge range of shoots  always with relaxed direction, an eye for the genuine moments, and galleries you’ll actually be proud to share.
             - paragraph [ref=e271]: Based in Perth, I work right across Western Australia and happily travel Australia-wide for the right project.
           - link "Read more about me" [ref=e272] [cursor=pointer]:
             - /url: /about-me
       - generic [ref=e274]:
         - heading "Why work with me?" [level=2] [ref=e275]
-        - heading "Easy to work with — and genuinely good at the job" [level=3] [ref=e276]
+        - heading "Easy to work with  and genuinely good at the job" [level=3] [ref=e276]
         - generic [ref=e277]:
           - generic [ref=e278]:
             - paragraph [ref=e279]: I care about far more than just pretty pictures. I want you to actually enjoy the shoot and walk away with photos that feel like you. So I take the time to understand what you need, plan it out properly, and bring fifteen years of experience to every single session.
@@ -316,7 +316,7 @@
         - button "What types of photography do you do?" [expanded] [ref=e422] [cursor=pointer]:
           - generic [ref=e423]: What types of photography do you do?
           - generic [ref=e424]: "-"
-        - paragraph [ref=e428]: A real mix — weddings, engagements and anniversaries, birthday parties, family and lifestyle sessions, headshots, product photography, events, and of course pets. If it's worth photographing, there's a good chance I shoot it.
+        - paragraph [ref=e428]: A real mix  weddings, engagements and anniversaries, birthday parties, family and lifestyle sessions, headshots, product photography, events, and of course pets. If it's worth photographing, there's a good chance I shoot it.
       - generic [ref=e429]:
         - button "Do you shoot on location around Perth or only in-studio?" [ref=e430] [cursor=pointer]:
           - generic [ref=e431]: Do you shoot on location around Perth or only in-studio?
@@ -368,7 +368,7 @@
         - paragraph [ref=e487]:
           - text: I shoot both
           - strong [ref=e488]: on location and in-studio
-          - text: across Perth, Mount Nasura and the surrounding suburbs — and I’m happy to travel Australia-wide for the right project.
+          - text: across Perth, Mount Nasura and the surrounding suburbs  and I’m happy to travel Australia-wide for the right project.
         - paragraph [ref=e489]: Get in touch to talk through your shoot, check availability and sort out the details. I’d love to hear what you’ve got planned.
       - img [ref=e491]
       - generic [ref=e493]:

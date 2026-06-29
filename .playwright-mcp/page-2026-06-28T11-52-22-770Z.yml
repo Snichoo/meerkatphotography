@@ -222,7 +222,7 @@
           - heading "Commercial & corporate photographer in Melbourne" [level=3] [ref=e259]
           - generic [ref=e260]:
             - paragraph [ref=e261]: I’m Kit, a Melbourne-based commercial and corporate photographer with over 15 years of experience helping businesses create professional, brand-aligned imagery for marketing, advertising and corporate use.
-            - paragraph [ref=e262]: I specialise in commercial photography, corporate photography and business headshots — capturing high-quality images that reflect a company’s values, people and culture. My work supports branding, marketing campaigns, websites and professional profiles.
+            - paragraph [ref=e262]: I specialise in commercial photography, corporate photography and business headshots  capturing high-quality images that reflect a company’s values, people and culture. My work supports branding, marketing campaigns, websites and professional profiles.
             - paragraph [ref=e263]: Based in Melbourne, I work with businesses across Victoria and Australia-wide.
           - link "Read more about me" [ref=e264] [cursor=pointer]:
             - /url: /about-me
@@ -231,7 +231,7 @@
         - heading "Communication and collaboration as the foundation of our creative process" [level=3] [ref=e268]
         - generic [ref=e269]:
           - generic [ref=e270]:
-            - paragraph [ref=e271]: I’m dedicated to more than creating powerful and influential images and video — I want to bring your values, products and people to life in a captivating and unmistakable way. With communication and collaboration as the foundation of my creative process, I take the time, do the research and bring the experience to consistently deliver strong results.
+            - paragraph [ref=e271]: I’m dedicated to more than creating powerful and influential images and video  I want to bring your values, products and people to life in a captivating and unmistakable way. With communication and collaboration as the foundation of my creative process, I take the time, do the research and bring the experience to consistently deliver strong results.
             - paragraph [ref=e272]: "Why clients work with us:"
             - list [ref=e273]:
               - listitem [ref=e274]:
@@ -388,7 +388,7 @@
           - generic [ref=e492]:
             - paragraph [ref=e493]: What type of service do you require?
             - combobox [ref=e494]:
-              - option "—Please choose an option—" [disabled] [selected]
+              - option "Please choose an option" [disabled] [selected]
               - option "Event"
               - option "Birthday Party"
               - option "Headshots"
@@ -400,7 +400,7 @@
           - generic [ref=e495]:
             - paragraph [ref=e496]: How did you find us?
             - combobox [ref=e497]:
-              - option "—Please choose an option—" [disabled] [selected]
+              - option "Please choose an option" [disabled] [selected]
               - option "Google Search"
               - option "Google Maps"
               - option "Recommendation"

@@ -8,14 +8,14 @@ export function Contact() {
 
   return (
     <section id="contact" className="bg-cream">
-      <div className="kp-container max-w-5xl pb-20 pt-20 text-center">
+      <div className="kp-container kp-reveal max-w-5xl pb-20 pt-20 text-center" data-reveal="soft">
         <div className="mx-auto mb-10 h-px w-full max-w-2xl bg-navy/30" />
         <h2 className="text-[clamp(1.8rem,4vw,2.9rem)] font-light leading-tight text-navy">
           Based in Perth, available across Western Australia
         </h2>
         <p className="mt-6 font-light leading-relaxed text-navy/80">
           I shoot both <strong className="font-semibold text-navy">on location and in-studio</strong>{" "}
-          across Perth, Mount Nasura and the surrounding suburbs &mdash;
+          across Perth, Mount Nasura and the surrounding suburbs
           and I&rsquo;m happy to travel Australia-wide for the right project.
         </p>
         <p className="mt-4 font-light text-navy/80">
@@ -55,17 +55,20 @@ export function Contact() {
               type="text"
               required
               placeholder="Your name*"
-              className={`${inputClass} sm:col-span-2`}
+              className={`${inputClass} kp-reveal sm:col-span-2`}
+              data-reveal="up"
             />
-            <input type="email" required placeholder="Email*" className={inputClass} />
-            <input type="tel" required placeholder="Phone*" className={inputClass} />
+            <input type="email" required placeholder="Email*" className={`${inputClass} kp-reveal`} data-reveal="left" data-reveal-delay="1" />
+            <input type="tel" required placeholder="Phone*" className={`${inputClass} kp-reveal`} data-reveal="right" data-reveal-delay="1" />
             <textarea
               rows={4}
               placeholder="Message"
-              className={`${inputClass} h-[150px] sm:col-span-2`}
+              className={`${inputClass} kp-reveal h-[150px] sm:col-span-2`}
+              data-reveal="up"
+              data-reveal-delay="2"
             />
 
-            <div className="relative text-center sm:col-span-2">
+            <div className="kp-reveal relative text-center sm:col-span-2" data-reveal="zoom" data-reveal-delay="3">
               <button
                 type="submit"
                 className="kp-btn-outline text-cream hover:bg-cream hover:text-navy"
@@ -97,4 +100,4 @@ export function Contact() {
 }
 
 const inputClass =
-  "h-[45px] w-full rounded-[10px] border border-cream bg-cream px-4 pb-[0.7rem] pt-[0.6rem] text-[15px] font-light text-navy placeholder:text-[#777676cc] outline-none transition focus:border-navy";
+  "h-[45px] w-full rounded-[10px] border border-cream bg-cream px-4 pb-[0.7rem] pt-[0.6rem] text-[15px] font-light text-navy placeholder:text-[#777676cc] outline-none transition-all focus:-translate-y-0.5 focus:border-navy focus:shadow-[0_12px_24px_rgba(56,47,39,0.16)]";

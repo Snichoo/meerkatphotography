@@ -10,7 +10,7 @@
 | white        | `#FFFFFF`        | button text |
 | overlay      | `rgba(0,0,0,0.74)` | hero/nav overlay |
 
-## Typography — Poppins (sans-serif)
+## Typography  Poppins (sans-serif)
 - Body: 16px / weight 400 / color #2B2D3F
 - H1: ~46px / weight 400 / line-height ~60px
 - H2: ~46px / weight 600 / UPPERCASE, letter-spacing normal

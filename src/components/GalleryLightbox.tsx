@@ -33,7 +33,15 @@ function PreviewImage({
         side === "left" ? "left-[-11vw]" : "right-[-11vw]"
       )}
     >
-      <Image src={image.src} alt="" fill sizes="34vw" className="object-cover" />
+      <Image
+        src={image.src}
+        alt=""
+        fill
+        loading="lazy"
+        quality={60}
+        sizes="34vw"
+        className="object-cover"
+      />
     </div>
   );
 }
@@ -120,7 +128,7 @@ export function GalleryLightbox({
 
   return (
     <>
-      <div className="fixed inset-0 z-[1042] bg-cream/[0.98] lg:bg-cream/90" aria-hidden="true" />
+      <div className="animate-fade-in fixed inset-0 z-[1042] bg-cream/[0.98] lg:bg-cream/90" aria-hidden="true" />
       <div
         role="dialog"
         aria-modal="true"
@@ -167,15 +175,16 @@ export function GalleryLightbox({
             {showNavigation && <PreviewImage image={slides.previous} side="left" />}
             {showNavigation && <PreviewImage image={slides.next} side="right" />}
 
-            <figure className="relative z-[2] flex w-full max-w-[1144px] flex-col items-center">
+            <figure className="animate-soft-pop relative z-[2] flex w-full max-w-[1144px] flex-col items-center">
               <Image
                 src={slides.current.src}
                 alt={`${title} gallery photo ${currentIndex + 1}`}
                 width={slides.current.width}
                 height={slides.current.height}
+                loading="eager"
+                quality={80}
                 sizes="(min-width: 1024px) 1144px, 90vw"
                 className="h-auto w-auto max-h-[calc(100vh-142px)] max-w-full object-contain"
-                priority
               />
             </figure>
           </div>

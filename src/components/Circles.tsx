@@ -14,7 +14,7 @@ export function Circles() {
     const io = new IntersectionObserver(
       ([entry]) => {
         // Toggle on every entry/exit so the reveal replays each time the
-        // section scrolls into view — whether scrolling down or back up.
+        // section scrolls into view  whether scrolling down or back up.
         setInView(entry.isIntersecting);
       },
       { threshold: 0.35 }
@@ -54,7 +54,7 @@ export function Circles() {
             Photography you&rsquo;ll be proud to share
           </h2>
           <h1 className="mt-3 max-w-[24ch] text-[clamp(1rem,2.1vw,1.7rem)] font-light text-cream/85 sm:mt-5">
-            Weddings, portraits, events &amp; everything in between &mdash; across Perth
+            Weddings, portraits, events &amp; everything in between across Perth
           </h1>
           <QuoteTrigger className="kp-btn-heart mt-5 text-[clamp(0.95rem,1.7vw,1.5rem)] sm:mt-7">
             Get a quote

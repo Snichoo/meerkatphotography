@@ -54,8 +54,8 @@
       - generic [ref=e44]:
         - generic [ref=e47]:
           - heading "Services" [level=1] [ref=e48]
-          - heading "Whatever you’re celebrating or building, the goal’s the same — photos that feel like you, and work hard wherever you use them." [level=2] [ref=e49]
-          - paragraph [ref=e50]: From weddings, birthdays and family sessions to headshots, products and events, here’s everything I photograph across Perth — each one with relaxed direction and a beautifully finished gallery.
+          - heading "Whatever you’re celebrating or building, the goal’s the same  photos that feel like you, and work hard wherever you use them." [level=2] [ref=e49]
+          - paragraph [ref=e50]: From weddings, birthdays and family sessions to headshots, products and events, here’s everything I photograph across Perth  each one with relaxed direction and a beautifully finished gallery.
           - link "Scroll to browse" [ref=e51] [cursor=pointer]:
             - /url: "#link-event-photography"
             - text: Scroll to browse
@@ -76,7 +76,7 @@
               - heading "Event Photography" [level=2] [ref=e64]
               - generic [ref=e65]:
                 - paragraph [ref=e66]: Corporate functions, awards nights, conferences and milestone celebrations, photographed with a calm, documentary approach.
-                - paragraph [ref=e67]: I cover the headline moments — the speeches, the awards, the big reveal — alongside the candid energy in the room, so the event feels exactly like it did on the day.
+                - paragraph [ref=e67]: I cover the headline moments  the speeches, the awards, the big reveal  alongside the candid energy in the room, so the event feels exactly like it did on the day.
               - link "View Gallery" [ref=e68] [cursor=pointer]:
                 - /url: /services/event-photography
         - generic [ref=e69]:
@@ -109,7 +109,7 @@
             - generic [ref=e87]:
               - heading "Headshots" [level=2] [ref=e88]
               - generic [ref=e89]:
-                - paragraph [ref=e90]: Headshots for LinkedIn, websites, teams and personal brands — directed so you feel comfortable and look like the best version of yourself.
+                - paragraph [ref=e90]: Headshots for LinkedIn, websites, teams and personal brands  directed so you feel comfortable and look like the best version of yourself.
                 - paragraph [ref=e91]: Sessions can run on location or in a clean studio-style setup, with consistent lighting and profile-ready files for press, proposals and social channels.
               - link "View Gallery" [ref=e92] [cursor=pointer]:
                 - /url: /services/headshots
@@ -144,7 +144,7 @@
               - heading "Family & Lifestyle" [level=2] [ref=e112]
               - generic [ref=e113]:
                 - paragraph [ref=e114]: Family and lifestyle sessions built around natural connection, gentle direction and the small in-between moments that often turn out to be your favourites.
-                - paragraph [ref=e115]: Warm, personal and easy to relax into — whether you're after family memories, a couple's session, a brand story or lifestyle content.
+                - paragraph [ref=e115]: Warm, personal and easy to relax into  whether you're after family memories, a couple's session, a brand story or lifestyle content.
               - link "View Gallery" [ref=e116] [cursor=pointer]:
                 - /url: /services/family-lifestyle
         - generic [ref=e117]:
@@ -177,7 +177,7 @@
             - generic [ref=e135]:
               - heading "Meerkats & Pets" [level=2] [ref=e136]
               - generic [ref=e137]:
-                - paragraph [ref=e138]: Pets, animals and the four-legged members of the family — photographed with patience, treats on hand and plenty of room for the unexpected.
+                - paragraph [ref=e138]: Pets, animals and the four-legged members of the family  photographed with patience, treats on hand and plenty of room for the unexpected.
                 - paragraph [ref=e139]: Every animal sets its own pace, so sessions stay flexible and fun, chasing the genuine character and personality that make these photos worth keeping.
               - link "View Gallery" [ref=e140] [cursor=pointer]:
                 - /url: /services/meerkats-pets

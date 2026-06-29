@@ -291,7 +291,7 @@
             - heading "What is corporate photography, and how can it benefit my business? +" [level=3] [ref=e225] [cursor=pointer]:
               - text: What is corporate photography, and how can it benefit my business?
               - generic [ref=e226]: +
-            - paragraph [ref=e229]: Corporate photography is about showing your business at its best — through professional, authentic imagery that reflects your people, culture, and values. Great photography builds trust, strengthens your brand, and helps clients connect with you before you even meet. It’s more than pictures, it’s your business story, told visually.
+            - paragraph [ref=e229]: Corporate photography is about showing your business at its best  through professional, authentic imagery that reflects your people, culture, and values. Great photography builds trust, strengthens your brand, and helps clients connect with you before you even meet. It’s more than pictures, it’s your business story, told visually.
           - heading "What corporate photography services do you specialise in? +" [level=3] [ref=e231] [cursor=pointer]:
             - text: What corporate photography services do you specialise in?
             - generic [ref=e232]: +
@@ -366,7 +366,7 @@
             - paragraph [ref=e340]: What type of service do you require?
             - paragraph [ref=e342]:
               - combobox [ref=e344]:
-                - option "—Please choose an option—" [selected]
+                - option "Please choose an option" [selected]
                 - option "Headshot/Portrait"
                 - option "Corporate"
                 - option "Commercial"
@@ -383,7 +383,7 @@
             - paragraph [ref=e350]: How did you find us?
             - paragraph [ref=e352]:
               - combobox [ref=e354]:
-                - option "—Please choose an option—" [selected]
+                - option "Please choose an option" [selected]
                 - option "Google Search"
                 - option "Google Maps"
                 - option "Recommendation"

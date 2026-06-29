@@ -13,20 +13,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.3.1] - 2026-03-29
 
 ### Fixed
-- `sync-agent-rules.sh` failing to resolve `@file` imports on Windows due to CRLF line endings — platform instruction files now correctly inline the Inspection Guide content
+- `sync-agent-rules.sh` failing to resolve `@file` imports on Windows due to CRLF line endings  platform instruction files now correctly inline the Inspection Guide content
 
 ## [0.3.0] - 2026-03-29
 
 ### Added
-- Multi-URL support for `/clone-website` — clone multiple sites in a single command with parallel processing and isolated output
-- CI quality gates via GitHub Actions — automated lint, typecheck, and build on every push and PR
+- Multi-URL support for `/clone-website`  clone multiple sites in a single command with parallel processing and isolated output
+- CI quality gates via GitHub Actions  automated lint, typecheck, and build on every push and PR
 - `npm run typecheck` and `npm run check` scripts for local quality validation
 - `.gitattributes` for cross-platform line ending normalization
 - `.nvmrc` to pin Node.js 20 for contributor consistency
 
 ### Changed
-- Streamlined PR template — removed redundant checklist items and screenshots section
-- Improved project description and README — clearer use cases, limitations, and modern wording
+- Streamlined PR template  removed redundant checklist items and screenshots section
+- Improved project description and README  clearer use cases, limitations, and modern wording
 - Refined documentation and agent rules across all platforms for clarity and consistency
 - Fixed CRLF handling in `sync-skills.mjs` for reliable Windows operation
 

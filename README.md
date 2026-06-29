@@ -4,7 +4,7 @@
 
 A reusable template for reverse-engineering any website into a clean, modern Next.js codebase using AI coding agents. 
 
-**Recommended: [Claude Code](https://docs.anthropic.com/en/docs/claude-code) with Opus 4.7 for best results** — but works with a variety of AI coding agents.
+**Recommended: [Claude Code](https://docs.anthropic.com/en/docs/claude-code) with Opus 4.7 for best results**  but works with a variety of AI coding agents.
 
 Point it at a URL, run `/clone-website`, and your AI agent will inspect the site, extract design tokens and assets, write component specs, and dispatch parallel builders to reconstruct every section.
 
@@ -41,7 +41,7 @@ Point it at a URL, run `/clone-website`, and your AI agent will inspect the site
    ```bash
    npm install
    ```
-4. **Start your AI agent** — Claude Code recommended:
+4. **Start your AI agent**  Claude Code recommended:
    ```bash
    claude --chrome
    ```
@@ -49,15 +49,15 @@ Point it at a URL, run `/clone-website`, and your AI agent will inspect the site
    ```
    /clone-website <target-url1> [<target-url2> ...]
    ```
-6. **Customize** (optional) — after the base clone is built, modify as needed
+6. **Customize** (optional)  after the base clone is built, modify as needed
 
-> Using a different agent? Open `AGENTS.md` for project instructions — most agents pick it up automatically.
+> Using a different agent? Open `AGENTS.md` for project instructions  most agents pick it up automatically.
 
 ## Supported Platforms
 
 | Agent                                                         | Status                     |
 | ------------------------------------------------------------- | -------------------------- |
-| [Claude Code](https://docs.anthropic.com/en/docs/claude-code) | **Recommended** — Opus 4.7 |
+| [Claude Code](https://docs.anthropic.com/en/docs/claude-code) | **Recommended**  Opus 4.7 |
 | [Codex CLI](https://github.com/openai/codex)                  | Supported                  |
 | [OpenCode](https://opencode.ai/)                              | Supported                  |
 | [GitHub Copilot](https://github.com/features/copilot)         | Supported                  |
@@ -78,34 +78,34 @@ Point it at a URL, run `/clone-website`, and your AI agent will inspect the site
 
 ## Tech Stack
 
-- **Next.js 16** — App Router, React 19, TypeScript strict
-- **shadcn/ui** — Radix primitives + Tailwind CSS v4
-- **Tailwind CSS v4** — oklch design tokens
-- **Lucide React** — default icons (replaced by extracted SVGs during cloning)
+- **Next.js 16**  App Router, React 19, TypeScript strict
+- **shadcn/ui**  Radix primitives + Tailwind CSS v4
+- **Tailwind CSS v4**  oklch design tokens
+- **Lucide React**  default icons (replaced by extracted SVGs during cloning)
 
 ## How It Works
 
 The `/clone-website` skill runs a multi-phase pipeline:
 
-1. **Reconnaissance** — screenshots, design token extraction, interaction sweep (scroll, click, hover, responsive)
-2. **Foundation** — updates fonts, colors, globals, downloads all assets
-3. **Component Specs** — writes detailed spec files (`docs/research/components/`) with exact computed CSS values, states, behaviors, and content
-4. **Parallel Build** — dispatches builder agents in git worktrees, one per section/component
-5. **Assembly & QA** — merges worktrees, wires up the page, runs visual diff against the original
+1. **Reconnaissance**  screenshots, design token extraction, interaction sweep (scroll, click, hover, responsive)
+2. **Foundation**  updates fonts, colors, globals, downloads all assets
+3. **Component Specs**  writes detailed spec files (`docs/research/components/`) with exact computed CSS values, states, behaviors, and content
+4. **Parallel Build**  dispatches builder agents in git worktrees, one per section/component
+5. **Assembly & QA**  merges worktrees, wires up the page, runs visual diff against the original
 
-Each builder agent receives the full component specification inline — exact `getComputedStyle()` values, interaction models, multi-state content, responsive breakpoints, and asset paths. No guessing.
+Each builder agent receives the full component specification inline  exact `getComputedStyle()` values, interaction models, multi-state content, responsive breakpoints, and asset paths. No guessing.
 
 ## Use Cases
 
-- **Platform migration** — rebuild a site you own from WordPress/Webflow/Squarespace into a modern Next.js codebase
-- **Lost source code** — your site is live but the repo is gone, the developer left, or the stack is legacy. Get the code back in a modern format
-- **Learning** — deconstruct how production sites achieve specific layouts, animations, and responsive behavior by working with real code
+- **Platform migration**  rebuild a site you own from WordPress/Webflow/Squarespace into a modern Next.js codebase
+- **Lost source code**  your site is live but the repo is gone, the developer left, or the stack is legacy. Get the code back in a modern format
+- **Learning**  deconstruct how production sites achieve specific layouts, animations, and responsive behavior by working with real code
 
 ## Not Intended For
 
-- **Phishing or impersonation** — this project must not be used for deceptive purposes, impersonation, or any activity that breaks the law.
-- **Passing off someone's design as your own** — logos, brand assets, and original copy belong to their owners.
-- **Violating terms of service** — some sites explicitly prohibit scraping or reproduction. Check first.
+- **Phishing or impersonation**  this project must not be used for deceptive purposes, impersonation, or any activity that breaks the law.
+- **Passing off someone's design as your own**  logos, brand assets, and original copy belong to their owners.
+- **Violating terms of service**  some sites explicitly prohibit scraping or reproduction. Check first.
 
 ## Project Structure
 

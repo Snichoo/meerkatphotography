@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# sync-agent-rules.sh — Generate AI agent config files from AGENTS.md
+# sync-agent-rules.sh  Generate AI agent config files from AGENTS.md
 #
 # AGENTS.md is the single source of truth. This script creates copies
 # for agents that don't read AGENTS.md natively (Cline, Continue,
@@ -52,7 +52,7 @@ resolve_imports() {
 
 RESOLVED_CONTENT="$(resolve_imports)"
 
-HEADER="<!-- AUTO-GENERATED from AGENTS.md — do not edit directly.
+HEADER="<!-- AUTO-GENERATED from AGENTS.md  do not edit directly.
      Run \`bash scripts/sync-agent-rules.sh\` to regenerate. -->"
 
 # Helper: write a generated file with header
@@ -66,13 +66,13 @@ write_file() {
 
 echo "Syncing agent rules from AGENTS.md..."
 
-# GitHub Copilot Chat — .github/copilot-instructions.md
+# GitHub Copilot Chat  .github/copilot-instructions.md
 write_file "$REPO_ROOT/.github/copilot-instructions.md" "$RESOLVED_CONTENT"
 
-# Cline / Roo Code — .clinerules
+# Cline / Roo Code  .clinerules
 write_file "$REPO_ROOT/.clinerules" "$RESOLVED_CONTENT"
 
-# Continue — .continue/rules/project.md
+# Continue  .continue/rules/project.md
 CONTINUE_FRONTMATTER="---
 description: Project conventions for AI Website Clone Template
 alwaysApply: true
@@ -80,7 +80,7 @@ alwaysApply: true
 write_file "$REPO_ROOT/.continue/rules/project.md" "$CONTINUE_FRONTMATTER
 $RESOLVED_CONTENT"
 
-# Amazon Q Developer — .amazonq/rules/project.md
+# Amazon Q Developer  .amazonq/rules/project.md
 write_file "$REPO_ROOT/.amazonq/rules/project.md" "$RESOLVED_CONTENT"
 
 echo ""

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * extract-icons.mjs — slice a "contact sheet" of line-art icons into individual assets.
+ * extract-icons.mjs  slice a "contact sheet" of line-art icons into individual assets.
  *
  * Many AI image tools (and stock icon sheets) hand you a single PNG with several
  * icons stacked vertically on a white background. This tool auto-detects each icon
@@ -103,7 +103,7 @@ async function main() {
   const bands = merged.filter(([s, e]) => e - s + 1 >= minHeight);
 
   if (!bands.length) {
-    console.error("No icon bands detected — try lowering --threshold or --min-height.");
+    console.error("No icon bands detected  try lowering --threshold or --min-height.");
     process.exit(1);
   }
   console.log(`Detected ${bands.length} icon(s) in ${path.basename(input)} (${W}x${H}).`);

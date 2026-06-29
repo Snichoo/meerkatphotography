@@ -53,19 +53,19 @@ const noArgs = (text) => text.replace(/\$ARGUMENTS/g, 'the target URL provided b
 console.log('Syncing clone-website skill to all platforms...');
 console.log(`  Source: .claude/skills/clone-website/SKILL.md\n`);
 
-// 1. Codex CLI — same SKILL.md format, same $ARGUMENTS syntax
+// 1. Codex CLI  same SKILL.md format, same $ARGUMENTS syntax
 write('.codex/skills/clone-website/SKILL.md', raw);
 
-// 2. GitHub Copilot — same SKILL.md format
+// 2. GitHub Copilot  same SKILL.md format
 write('.github/skills/clone-website/SKILL.md', raw);
 
-// 3. Cursor — plain markdown, no argument substitution support
+// 3. Cursor  plain markdown, no argument substitution support
 write('.cursor/commands/clone-website.md', HEADER + noArgs(body));
 
-// 4. Windsurf — markdown workflow
+// 4. Windsurf  markdown workflow
 write('.windsurf/workflows/clone-website.md', HEADER + noArgs(body));
 
-// 5. Gemini CLI — TOML format, {{args}} for arguments
+// 5. Gemini CLI  TOML format, {{args}} for arguments
 const geminiBody = body.replace(/\$ARGUMENTS/g, '{{args}}');
 write(
   '.gemini/commands/clone-website.toml',
@@ -76,25 +76,25 @@ write(
     `prompt = '''\n${geminiBody}\n'''\n`
 );
 
-// 6. OpenCode — markdown + YAML frontmatter, $ARGUMENTS works natively
+// 6. OpenCode  markdown + YAML frontmatter, $ARGUMENTS works natively
 write(
   '.opencode/commands/clone-website.md',
   `---\ndescription: "${shortDesc}"\n---\n${HEADER}${body}`
 );
 
-// 7. Augment Code — markdown + YAML frontmatter
+// 7. Augment Code  markdown + YAML frontmatter
 write(
   '.augment/commands/clone-website.md',
   `---\ndescription: "${shortDesc}"\nargument-hint: "<url>"\n---\n${HEADER}${body}`
 );
 
-// 8. Continue — prompt file with invokable: true
+// 8. Continue  prompt file with invokable: true
 write(
   '.continue/commands/clone-website.md',
   `---\nname: clone-website\ndescription: "${shortDesc}"\ninvokable: true\n---\n${HEADER}${body}`
 );
 
-// 9. Amazon Q — JSON agent definition
+// 9. Amazon Q  JSON agent definition
 write(
   '.amazonq/cli-agents/clone-website.json',
   JSON.stringify(

@@ -18,7 +18,7 @@ export const servicesPageItems: ServicesPageItem[] = [
     alt: "Corporate award recipients on stage",
     paragraphs: [
       "Corporate functions, awards nights, conferences and milestone celebrations, photographed with a calm, documentary approach.",
-      "I cover the headline moments — the speeches, the awards, the big reveal — alongside the candid energy in the room, so the event feels exactly like it did on the day.",
+      "I cover the headline moments  the speeches, the awards, the big reveal  alongside the candid energy in the room, so the event feels exactly like it did on the day.",
     ],
     href: "/services/event-photography",
     gallery: serviceGalleries["event-photography"],
@@ -41,7 +41,7 @@ export const servicesPageItems: ServicesPageItem[] = [
     image: "/images/hero/portrait.webp",
     alt: "Professional business headshot portrait",
     paragraphs: [
-      "Headshots for LinkedIn, websites, teams and personal brands — directed so you feel comfortable and look like the best version of yourself.",
+      "Headshots for LinkedIn, websites, teams and personal brands  directed so you feel comfortable and look like the best version of yourself.",
       "Sessions can run on location or in a clean studio-style setup, with consistent lighting and profile-ready files for press, proposals and social channels.",
     ],
     href: "/services/headshots",
@@ -66,7 +66,7 @@ export const servicesPageItems: ServicesPageItem[] = [
     alt: "Family lifestyle portrait beside a lake",
     paragraphs: [
       "Family and lifestyle sessions built around natural connection, gentle direction and the small in-between moments that often turn out to be your favourites.",
-      "Warm, personal and easy to relax into — whether you're after family memories, a couple's session, a brand story or lifestyle content.",
+      "Warm, personal and easy to relax into  whether you're after family memories, a couple's session, a brand story or lifestyle content.",
     ],
     href: "/services/family-lifestyle",
     gallery: serviceGalleries["family-lifestyle"],
@@ -89,7 +89,7 @@ export const servicesPageItems: ServicesPageItem[] = [
     image: "/images/hero/pet.webp",
     alt: "Pet dog portrait with owner",
     paragraphs: [
-      "Pets, animals and the four-legged members of the family — photographed with patience, treats on hand and plenty of room for the unexpected.",
+      "Pets, animals and the four-legged members of the family  photographed with patience, treats on hand and plenty of room for the unexpected.",
       "Every animal sets its own pace, so sessions stay flexible and fun, chasing the genuine character and personality that make these photos worth keeping.",
     ],
     href: "/services/meerkats-pets",

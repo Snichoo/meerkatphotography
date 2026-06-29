@@ -29,6 +29,20 @@
       opacity: 1;
     }
   }
+
+  --animate-soft-pop: kp-soft-pop 0.7s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  @keyframes kp-soft-pop {
+    from {
+      opacity: 0;
+      transform: translateY(18px) scale(0.96);
+      filter: blur(3px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      filter: blur(0);
+    }
+  }
 }
 
 @theme inline {
@@ -124,8 +138,19 @@
     font-weight: 300;
     line-height: 1.1;
     text-transform: uppercase;
-    transition: background-color 0.25s ease, color 0.25s ease,
-      border-color 0.25s ease;
+    transition: transform 0.25s ease, background-color 0.25s ease,
+      color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    will-change: transform;
+  }
+  .kp-btn-outline:hover,
+  .kp-btn-heart:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 26px rgba(56, 47, 39, 0.18);
+  }
+  .kp-btn-outline:active,
+  .kp-btn-heart:active {
+    transform: translateY(0);
+    box-shadow: none;
   }
 
   /* Solid CTA in the heart-red accent sampled from the meerkat logo */
@@ -172,6 +197,25 @@
     background-size: 4px 2px;
   }
 
+  .kp-hover-lift {
+    transition: transform 0.28s ease, box-shadow 0.28s ease,
+      border-color 0.28s ease, color 0.28s ease, background-color 0.28s ease;
+    will-change: transform;
+  }
+  .kp-hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 38px rgba(56, 47, 39, 0.2);
+  }
+
+  .kp-hero-slide {
+    animation: kp-hero-zoom 14s ease-in-out infinite alternate;
+    transform-origin: center;
+  }
+
+  .kp-floating {
+    animation: kp-float 6s ease-in-out infinite;
+  }
+
 }
 
 /* Reveal-on-scroll animation */
@@ -183,6 +227,96 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes kp-hero-zoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.07);
+  }
+}
+
+@keyframes kp-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@layer utilities {
+  .kp-reveal {
+    --kp-reveal-x: 0px;
+    --kp-reveal-y: 30px;
+    --kp-reveal-scale: 1;
+    --kp-reveal-blur: 0px;
+    --kp-reveal-delay: 0ms;
+    --kp-reveal-duration: 760ms;
+  }
+
+  body.kp-reveal-ready .kp-reveal {
+    opacity: 0;
+    transform: translate3d(var(--kp-reveal-x), var(--kp-reveal-y), 0)
+      scale(var(--kp-reveal-scale));
+    filter: blur(var(--kp-reveal-blur));
+    transition: opacity var(--kp-reveal-duration) cubic-bezier(0.2, 0.8, 0.2, 1)
+        var(--kp-reveal-delay),
+      transform var(--kp-reveal-duration) cubic-bezier(0.2, 0.8, 0.2, 1)
+        var(--kp-reveal-delay),
+      filter var(--kp-reveal-duration) cubic-bezier(0.2, 0.8, 0.2, 1)
+        var(--kp-reveal-delay);
+    will-change: opacity, transform, filter;
+  }
+
+  body.kp-reveal-ready .kp-reveal.is-visible {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+    filter: blur(0);
+  }
+
+  .kp-reveal[data-reveal="fade"] {
+    --kp-reveal-y: 0px;
+  }
+  .kp-reveal[data-reveal="left"] {
+    --kp-reveal-x: -34px;
+    --kp-reveal-y: 0px;
+  }
+  .kp-reveal[data-reveal="right"] {
+    --kp-reveal-x: 34px;
+    --kp-reveal-y: 0px;
+  }
+  .kp-reveal[data-reveal="zoom"] {
+    --kp-reveal-y: 18px;
+    --kp-reveal-scale: 0.96;
+    --kp-reveal-blur: 2px;
+  }
+  .kp-reveal[data-reveal="soft"] {
+    --kp-reveal-y: 18px;
+    --kp-reveal-scale: 0.985;
+  }
+
+  .kp-reveal[data-reveal-delay="1"] {
+    --kp-reveal-delay: 90ms;
+  }
+  .kp-reveal[data-reveal-delay="2"] {
+    --kp-reveal-delay: 180ms;
+  }
+  .kp-reveal[data-reveal-delay="3"] {
+    --kp-reveal-delay: 270ms;
+  }
+  .kp-reveal[data-reveal-delay="4"] {
+    --kp-reveal-delay: 360ms;
+  }
+  .kp-reveal[data-reveal-delay="5"] {
+    --kp-reveal-delay: 450ms;
+  }
+  .kp-reveal[data-reveal-delay="6"] {
+    --kp-reveal-delay: 540ms;
   }
 }
 
@@ -221,5 +355,42 @@
   }
   .kp-circle-inner.is-inview {
     opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .kp-hero-slide,
+  .kp-floating,
+  .animate-scroll-nudge,
+  .animate-bounce,
+  .animate-soft-pop,
+  .animate-fade-in {
+    animation: none !important;
+  }
+
+  body.kp-reveal-ready .kp-reveal {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    transition: none;
+  }
+
+  .kp-circle-side,
+  .kp-circle-inner,
+  .kp-btn-outline,
+  .kp-btn-heart,
+  .kp-hover-lift {
+    transition: none !important;
+  }
+
+  .kp-btn-outline:hover,
+  .kp-btn-heart:hover,
+  .kp-hover-lift:hover {
+    transform: none;
+    box-shadow: none;
   }
 }

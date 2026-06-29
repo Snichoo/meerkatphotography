@@ -14,7 +14,12 @@ export function Faq() {
           {faqs.map((faq, i) => {
             const isOpen = open === i;
             return (
-              <div key={faq.q} className="m-0">
+              <div
+                key={faq.q}
+                className="kp-reveal m-0"
+                data-reveal="up"
+                data-reveal-delay={i % 4}
+              >
                 <button
                   type="button"
                   onClick={() => setOpen(isOpen ? null : i)}

@@ -9,27 +9,32 @@ export function Services() {
     <section id="services" className="bg-navy text-cream">
       <div className="w-full pb-32 pt-24">
         {/* Heading + statement */}
-        <div className="mx-auto max-w-[1180px] px-5 text-center">
+        <div className="kp-reveal mx-auto max-w-[1180px] px-5 text-center" data-reveal="soft">
           <h2 className="kp-h2 text-[clamp(2.2rem,4.8vw,4.2rem)]">Services</h2>
           <h3 className="mx-auto mt-9 max-w-[1050px] text-[clamp(1.65rem,3.2vw,3rem)] font-light leading-snug text-cream">
-            Whatever you&rsquo;re celebrating or building, the goal&rsquo;s the same &mdash; photos
+            Whatever you&rsquo;re celebrating or building, the goal&rsquo;s the same photos
             that feel like you, and work hard wherever you use them.
           </h3>
         </div>
 
         {/* Left-aligned intro copy + specialise list */}
-        <div className="mx-auto mt-16 max-w-[980px] space-y-5 px-5 text-[clamp(1.05rem,1.35vw,1.35rem)] font-light leading-relaxed text-cream/85">
+        <div className="kp-reveal mx-auto mt-16 max-w-[980px] space-y-5 px-5 text-[clamp(1.05rem,1.35vw,1.35rem)] font-light leading-relaxed text-cream/85" data-reveal="up" data-reveal-delay="1">
           <p>
             From weddings and family sessions to headshots, products and events, I photograph it all
-            across Perth &mdash; with relaxed direction on the day and a beautifully finished
+            across Perth with relaxed direction on the day and a beautifully finished
             gallery at the end.
           </p>
           <p>What I photograph:</p>
           <ul className="grid grid-cols-1 gap-x-8 gap-y-4 pl-0 sm:grid-cols-2">
-            {servicesSpecialise.map(({ icon, label }) => {
+            {servicesSpecialise.map(({ icon, label }, index) => {
               const Icon = photoIcons[icon];
               return (
-                <li key={label} className="flex items-center gap-4">
+                <li
+                  key={label}
+                  className="kp-reveal flex items-center gap-4"
+                  data-reveal="left"
+                  data-reveal-delay={(index % 4) + 1}
+                >
                   <span className="flex size-16 shrink-0 items-center justify-center rounded-full border border-gold/35 bg-gold/10 text-gold">
                     <Icon className="size-10" />
                   </span>
@@ -41,7 +46,7 @@ export function Services() {
           <p>Based in Perth, available across Western Australia and Australia-wide.</p>
         </div>
 
-        {/* Service cards — title + dotted connector + rounded image with hover reveal.
+        {/* Service cards  title + dotted connector + rounded image with hover reveal.
             Flex-wrap + justify-center so the final odd card (Meerkats & Pets) centres
             on the last row instead of sitting alone on the left. */}
         <div className="mt-22 grid w-full grid-cols-1 gap-x-8 gap-y-20 px-6 sm:grid-cols-2 sm:px-10 lg:grid-cols-3 lg:px-12 xl:gap-x-10 xl:px-16">
@@ -49,8 +54,11 @@ export function Services() {
             <Link
               key={service.title}
               href={service.href}
+              prefetch={false}
+              data-reveal="zoom"
+              data-reveal-delay={index % 4}
               className={cn(
-                "group flex min-w-0 flex-col",
+                "kp-reveal kp-hover-lift group flex min-w-0 flex-col",
                 index === services.length - 1 &&
                   "sm:col-span-2 sm:mx-auto sm:w-[calc((100%_-_2rem)/2)] lg:col-span-1 lg:col-start-2 lg:w-full"
               )}
@@ -69,7 +77,9 @@ export function Services() {
                   src={service.image}
                   alt={service.alt}
                   fill
-                  sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                  loading="lazy"
+                  quality={70}
+                  sizes="(min-width: 1280px) 30vw, (min-width: 1024px) 33vw, (min-width: 640px) 46vw, 92vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 {/* Hover overlay reveals the description + Find out more */}

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import { RevealOnScroll } from "@/components/RevealOnScroll";
 import { QuoteModalProvider } from "@/components/QuoteModal";
 
 const poppins = Poppins({
@@ -31,9 +32,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${poppins.variable} h-full antialiased`}>
+    <html lang="en" data-scroll-behavior="smooth" className={`${poppins.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col">
-        <QuoteModalProvider>{children}</QuoteModalProvider>
+        <QuoteModalProvider>
+          <RevealOnScroll />
+          {children}
+        </QuoteModalProvider>
       </body>
     </html>
   );

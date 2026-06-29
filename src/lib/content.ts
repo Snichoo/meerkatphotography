@@ -36,7 +36,7 @@ export const services: Service[] = [
   {
     title: "Birthday Parties",
     description:
-      "Decorations, candid guests and all the little in-between moments — the photos that make you feel like you were right back in the room.",
+      "Decorations, candid guests and all the little in-between moments  the photos that make you feel like you were right back in the room.",
     image: "/images/hero/birthday.webp",
     alt: "Decorated birthday party venue with balloons",
     href: "/services#link-birthday-parties",
@@ -60,7 +60,7 @@ export const services: Service[] = [
   {
     title: "Family & Lifestyle",
     description:
-      "Warm, natural sessions for families, couples and lifestyle shoots — gently directed, never stiff, and easy to relax into.",
+      "Warm, natural sessions for families, couples and lifestyle shoots  gently directed, never stiff, and easy to relax into.",
     image: "/images/hero/family.webp",
     alt: "Family lifestyle portrait beside a lake",
     href: "/services#link-family-lifestyle",
@@ -76,7 +76,7 @@ export const services: Service[] = [
   {
     title: "Meerkats & Pets",
     description:
-      "Pets, animals and the four-legged members of the family — photographed with patience, treats on standby and plenty of room for the unexpected.",
+      "Pets, animals and the four-legged members of the family  photographed with patience, treats on standby and plenty of room for the unexpected.",
     image: "/images/hero/pet.webp",
     alt: "Pet dog portrait with owner",
     href: "/services#link-meerkats-pets",
@@ -97,7 +97,7 @@ export const processSteps: ProcessStep[] = [
   {
     title: "Let's meet & brief",
     body: [
-      "We start with a quick chat — phone, video or in person — to talk through your ideas, locations, the style you're after and how you'll use the final photos.",
+      "We start with a quick chat  phone, video or in person  to talk through your ideas, locations, the style you're after and how you'll use the final photos.",
     ],
   },
   {
@@ -146,12 +146,12 @@ export const whyPoints: { lead: string; rest: string }[] = [
 export const testimonials: Testimonial[] = [
   {
     quote:
-      "Nora captured our product launch exactly how we'd imagined — sharp, warm and full of energy. The whole process was easy and the turnaround beat the deadline. Couldn't recommend her more.",
+      "Nora captured our product launch exactly how we'd imagined  sharp, warm and full of energy. The whole process was easy and the turnaround beat the deadline. Couldn't recommend her more.",
     author: "Hannah Reyes, Lumen & Co",
   },
   {
     quote:
-      "She made everyone relaxed for our team headshots, even the camera-shy ones. Polished, consistent and genuinely flattering results — we've already booked her again.",
+      "She made everyone relaxed for our team headshots, even the camera-shy ones. Polished, consistent and genuinely flattering results  we've already booked her again.",
     author: "Marcus Feld, Brightside Collective",
   },
   {
@@ -166,7 +166,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     quote:
-      "The photos from our gala were stunning — natural, vibrant and beautifully composed. Nora has a real eye for the small moments. Our whole team was thrilled.",
+      "The photos from our gala were stunning  natural, vibrant and beautifully composed. Nora has a real eye for the small moments. Our whole team was thrilled.",
     author: "Eleanor Voss, Northcliffe Events",
   },
 ];
@@ -174,7 +174,7 @@ export const testimonials: Testimonial[] = [
 export const faqs: Faq[] = [
   {
     q: "What types of photography do you do?",
-    a: "A real mix — weddings, engagements and anniversaries, birthday parties, family and lifestyle sessions, headshots, product photography, events, and of course pets. If it's worth photographing, there's a good chance I shoot it.",
+    a: "A real mix  weddings, engagements and anniversaries, birthday parties, family and lifestyle sessions, headshots, product photography, events, and of course pets. If it's worth photographing, there's a good chance I shoot it.",
   },
   {
     q: "Do you shoot on location around Perth or only in-studio?",

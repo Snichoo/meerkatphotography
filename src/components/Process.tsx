@@ -23,7 +23,7 @@ export function Process() {
 
       <div className="kp-container pb-24">
         {/* Intro */}
-        <div className="mx-auto max-w-3xl text-center">
+        <div className="kp-reveal mx-auto max-w-3xl text-center" data-reveal="soft">
           <h2 className="kp-h2 text-[clamp(1.9rem,4.4vw,3.2rem)]">
             How a shoot with me works
           </h2>
@@ -31,7 +31,7 @@ export function Process() {
             A simple, relaxed process from start to finish
           </p>
           <p className="mt-4 font-light leading-relaxed text-cream/80">
-            Every Meerkat shoot is planned around what you actually need &mdash; whether that&rsquo;s
+            Every Meerkat shoot is planned around what you actually need whether that&rsquo;s
             a wedding, a family session, a set of headshots or a full product range.
           </p>
           <p className="mt-3 font-light text-cream/80">
@@ -48,8 +48,8 @@ export function Process() {
         </div>
 
         {/* Numbered tabs */}
-        <div className="relative mt-[60px]">
-          <div className="grid grid-cols-4 gap-x-2 sm:gap-x-6 lg:gap-x-10">
+        <div className="kp-reveal relative mt-[60px]" data-reveal="up" data-reveal-delay="1">
+          <div className="relative z-10 grid grid-cols-4 gap-x-2 sm:gap-x-6 lg:gap-x-10">
             {processSteps.map((step, i) => {
               const isActive = i === active;
               return (
@@ -57,12 +57,13 @@ export function Process() {
                   key={step.title}
                   type="button"
                   onClick={() => setActive(i)}
+                  aria-pressed={isActive}
                   className={cn(
-                    "group relative z-[1] flex items-start px-1 pb-20 text-left transition-colors md:pb-[125px]",
+                    "group relative flex items-start px-1 pb-20 text-left transition-colors md:pb-[125px]",
                     isActive ? "text-gold" : "text-cream/90 hover:text-gold"
                   )}
                 >
-                  <span className="flex items-center bg-navy pb-[5px] leading-none">
+                  <span className="relative z-10 flex items-center bg-navy pb-[5px] leading-none">
                     <span className="mr-1.5 text-[clamp(2.5rem,8.35vw,7.5rem)] font-black leading-[0.8] md:mr-[15px]">
                       {i + 1}
                     </span>
@@ -77,7 +78,7 @@ export function Process() {
 
           <div
             className={cn(
-              "pointer-events-none absolute bottom-0 left-0 h-[80%] w-1/4 transition-transform duration-500 ease-[cubic-bezier(1,.01,0,1.22)] md:h-[calc(100%-60px)]",
+              "pointer-events-none absolute bottom-0 left-0 z-0 h-[80%] w-1/4 transition-transform duration-500 ease-[cubic-bezier(1,.01,0,1.22)] md:h-[calc(100%-60px)]",
               lineTransforms[active]
             )}
           >
@@ -87,7 +88,7 @@ export function Process() {
         </div>
 
         {/* Active step content panel */}
-        <div className="-mt-7 rounded-[20px] border-[5px] border-gold bg-cream px-5 pb-8 pt-10 text-center text-navy md:border-[10px] md:px-8 md:pb-[30px] md:pt-[70px]">
+        <div className="kp-reveal -mt-7 rounded-[20px] border-[5px] border-gold bg-cream px-5 pb-8 pt-10 text-center text-navy md:border-[10px] md:px-8 md:pb-[30px] md:pt-[70px]" data-reveal="zoom" data-reveal-delay="2">
           <div key={active} className="animate-fade-in">
             <h4 className="text-[clamp(1.6rem,2.65vw,2.375rem)] font-light leading-tight text-navy">
               {processSteps[active].title}
@@ -101,7 +102,9 @@ export function Process() {
         </div>
 
         <div className="mt-12 text-center">
-          <QuoteTrigger className="kp-btn-heart">Enquire now</QuoteTrigger>
+          <QuoteTrigger className="kp-btn-heart kp-reveal" data-reveal="zoom">
+            Enquire now
+          </QuoteTrigger>
         </div>
       </div>
     </section>

@@ -52,10 +52,10 @@
           - listitem [ref=e61]: Event photography and short-form brand video
         - paragraph [ref=e63]: We work with Melbourne businesses and deliver projects across Victoria and Australia-wide.
       - generic [ref=e64]:
-        - link "Commercial Photography Compelling, unique images for all your commercial needs — advertising, marketing and a cohesive brand image that showcases your products and services. Find out more" [ref=e65] [cursor=pointer]:
+        - link "Commercial Photography Compelling, unique images for all your commercial needs  advertising, marketing and a cohesive brand image that showcases your products and services. Find out more" [ref=e65] [cursor=pointer]:
           - /url: /services
           - heading "Commercial Photography" [level=4] [ref=e67]
-          - paragraph [ref=e69]: Compelling, unique images for all your commercial needs — advertising, marketing and a cohesive brand image that showcases your products and services.
+          - paragraph [ref=e69]: Compelling, unique images for all your commercial needs  advertising, marketing and a cohesive brand image that showcases your products and services.
           - generic [ref=e70]: Find out more
         - link "Corporate Photography High-quality images that accurately reflect your company's values and people, helping establish or enhance your brand and connect with your audience. Find out more" [ref=e72] [cursor=pointer]:
           - /url: /services
@@ -77,10 +77,10 @@
           - heading "Portrait Photography" [level=4] [ref=e95]
           - paragraph [ref=e97]: Artistic, skillful portraiture that captures the essence and personality of individuals and communicates a clear message.
           - generic [ref=e98]: Find out more
-        - link "Product Photography Showcase your products in the best possible light — imagery that inspires customers, drives sales and builds an irresistible brand presence. Find out more" [ref=e100] [cursor=pointer]:
+        - link "Product Photography Showcase your products in the best possible light  imagery that inspires customers, drives sales and builds an irresistible brand presence. Find out more" [ref=e100] [cursor=pointer]:
           - /url: /services
           - heading "Product Photography" [level=4] [ref=e102]
-          - paragraph [ref=e104]: Showcase your products in the best possible light — imagery that inspires customers, drives sales and builds an irresistible brand presence.
+          - paragraph [ref=e104]: Showcase your products in the best possible light  imagery that inspires customers, drives sales and builds an irresistible brand presence.
           - generic [ref=e105]: Find out more
       - link "View all services" [ref=e108] [cursor=pointer]:
         - /url: /services
@@ -180,7 +180,7 @@
           - heading "Commercial & corporate photographer in Melbourne" [level=3] [ref=e217]
           - generic [ref=e218]:
             - paragraph [ref=e219]: I’m Kit, a Melbourne-based commercial and corporate photographer with over 15 years of experience helping businesses create professional, brand-aligned imagery for marketing, advertising and corporate use.
-            - paragraph [ref=e220]: I specialise in commercial photography, corporate photography and business headshots — capturing high-quality images that reflect a company’s values, people and culture. My work supports branding, marketing campaigns, websites and professional profiles.
+            - paragraph [ref=e220]: I specialise in commercial photography, corporate photography and business headshots  capturing high-quality images that reflect a company’s values, people and culture. My work supports branding, marketing campaigns, websites and professional profiles.
             - paragraph [ref=e221]: Based in Melbourne, I work with businesses across Victoria and Australia-wide.
           - link "Read more about me" [ref=e222] [cursor=pointer]:
             - /url: /about-me
@@ -189,7 +189,7 @@
         - heading "Communication and collaboration as the foundation of our creative process" [level=3] [ref=e226]
         - generic [ref=e227]:
           - generic [ref=e228]:
-            - paragraph [ref=e229]: I’m dedicated to more than creating powerful and influential images and video — I want to bring your values, products and people to life in a captivating and unmistakable way. With communication and collaboration as the foundation of my creative process, I take the time, do the research and bring the experience to consistently deliver strong results.
+            - paragraph [ref=e229]: I’m dedicated to more than creating powerful and influential images and video  I want to bring your values, products and people to life in a captivating and unmistakable way. With communication and collaboration as the foundation of my creative process, I take the time, do the research and bring the experience to consistently deliver strong results.
             - paragraph [ref=e230]: "Why clients work with us:"
             - list [ref=e231]:
               - listitem [ref=e232]:
@@ -256,7 +256,7 @@
             - img [ref=e326]
             - img [ref=e328]
           - paragraph [ref=e330]: Kit and Dani made the entire process seamless and were so easy to work with. The final results were incredible and there was an incredibly speedy turnaround. Highly recommend!
-          - generic [ref=e331]: "- Chiara — RISE, 101 Collins"
+          - generic [ref=e331]: "- Chiara  RISE, 101 Collins"
       - blockquote [ref=e335]:
         - generic [ref=e336]:
           - generic [ref=e337]:
@@ -322,7 +322,7 @@
         - button "Do you offer photo + video packages?" [ref=e422] [cursor=pointer]:
           - generic [ref=e423]: Do you offer photo + video packages?
           - generic [ref=e424]: +
-        - paragraph [ref=e426]: Yes. We provide integrated photo and short-form video options — ideal for campaigns, interviews and product launches.
+        - paragraph [ref=e426]: Yes. We provide integrated photo and short-form video options  ideal for campaigns, interviews and product launches.
       - generic [ref=e427]:
         - button "How do we book or get a quote?" [ref=e428] [cursor=pointer]:
           - generic [ref=e429]: How do we book or get a quote?
@@ -346,7 +346,7 @@
           - generic [ref=e450]:
             - paragraph [ref=e451]: What type of service do you require?
             - combobox [ref=e452]:
-              - option "—Please choose an option—" [disabled] [selected]
+              - option "Please choose an option" [disabled] [selected]
               - option "Headshot/Portrait"
               - option "Corporate"
               - option "Commercial"
@@ -358,7 +358,7 @@
           - generic [ref=e453]:
             - paragraph [ref=e454]: How did you find us?
             - combobox [ref=e455]:
-              - option "—Please choose an option—" [disabled] [selected]
+              - option "Please choose an option" [disabled] [selected]
               - option "Google Search"
               - option "Google Maps"
               - option "Recommendation"
