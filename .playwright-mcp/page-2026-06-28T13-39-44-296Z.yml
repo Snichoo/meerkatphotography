@@ -1,0 +1,251 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Meerkat Photography" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img "Meerkat Photography" [ref=e5]
+        - generic [ref=e6]:
+          - generic [ref=e7]: Meerkat
+          - generic [ref=e8]: Photography
+      - navigation [ref=e9]:
+        - link "About Me" [ref=e10] [cursor=pointer]:
+          - /url: /about-me
+        - link "Services" [ref=e11] [cursor=pointer]:
+          - /url: /services
+        - link "Contact Us" [ref=e12] [cursor=pointer]:
+          - /url: "#contact"
+      - generic [ref=e13]:
+        - link "Facebook" [ref=e14] [cursor=pointer]:
+          - /url: https://www.facebook.com/meerkatphotography
+          - img [ref=e15]
+        - link "Instagram" [ref=e17] [cursor=pointer]:
+          - /url: https://instagram.com/kitspix/
+          - img [ref=e18]
+        - link "Get a quote" [ref=e22] [cursor=pointer]:
+          - /url: "#contact"
+          - img [ref=e23]
+          - generic [ref=e25]: GET A QUOTE
+  - main [ref=e26]:
+    - generic [ref=e27]:
+      - complementary [ref=e28]:
+        - navigation [ref=e29]:
+          - link "Our Services" [ref=e30] [cursor=pointer]:
+            - /url: "#section-overview"
+            - text: Our Services
+          - list [ref=e32]:
+            - listitem [ref=e33]:
+              - link "Event Photography" [ref=e34] [cursor=pointer]:
+                - /url: "#link-event-photography"
+            - listitem [ref=e35]:
+              - link "Birthday Parties" [ref=e36] [cursor=pointer]:
+                - /url: "#link-birthday-parties"
+            - listitem [ref=e37]:
+              - link "Headshots" [ref=e38] [cursor=pointer]:
+                - /url: "#link-headshots"
+            - listitem [ref=e39]:
+              - link "Product Photography" [ref=e40] [cursor=pointer]:
+                - /url: "#link-product-photography"
+            - listitem [ref=e41]:
+              - link "Family & Lifestyle" [ref=e42] [cursor=pointer]:
+                - /url: "#link-family-lifestyle"
+            - listitem [ref=e43]:
+              - link "Wedding Photography" [ref=e44] [cursor=pointer]:
+                - /url: "#link-wedding-photography"
+            - listitem [ref=e45]:
+              - link "Meerkats & Pets" [ref=e46] [cursor=pointer]:
+                - /url: "#link-meerkats-pets"
+      - generic [ref=e47]:
+        - generic [ref=e50]:
+          - heading "Services" [level=1] [ref=e51]
+          - heading "Whatever you’re celebrating or building, the goal’s the same — photos that feel like you, and work hard wherever you use them." [level=2] [ref=e52]
+          - paragraph [ref=e53]: From weddings, birthdays and family sessions to headshots, products and events, here’s everything I photograph across Melbourne — each one with relaxed direction and a beautifully finished gallery.
+          - link "Scroll to browse" [ref=e54] [cursor=pointer]:
+            - /url: "#link-event-photography"
+        - generic [ref=e55]:
+          - button "View gallery for Event Photography" [ref=e56]
+          - img "Corporate award recipients on stage" [ref=e57]
+          - button "View gallery for Event Photography": VIEW GALLERY
+          - generic [ref=e58]:
+            - button "More Information" [ref=e59]:
+              - generic [ref=e60]: More Information
+            - generic [ref=e61]:
+              - heading "Event Photography" [level=2] [ref=e62]
+              - generic [ref=e63]:
+                - paragraph [ref=e64]: Corporate functions, awards nights, conferences and milestone celebrations, photographed with a calm, documentary approach.
+                - paragraph [ref=e65]: I cover the headline moments — the speeches, the awards, the big reveal — alongside the candid energy in the room, so the event feels exactly like it did on the day.
+              - button "View Gallery" [ref=e66]
+        - generic [ref=e67]:
+          - button "View gallery for Birthday Parties" [ref=e68]
+          - img "Decorated birthday party venue with balloons" [ref=e69]
+          - button "View gallery for Birthday Parties": VIEW GALLERY
+          - generic [ref=e70]:
+            - button "More Information" [ref=e71]:
+              - generic [ref=e72]: More Information
+            - generic [ref=e73]:
+              - heading "Birthday Parties" [level=2] [ref=e74]
+              - generic [ref=e75]:
+                - paragraph [ref=e76]: Birthdays photographed for the colour, the atmosphere, the little details and, most of all, the people who came to celebrate.
+                - paragraph [ref=e77]: From decorations and group shots to speeches, cake and the dance floor, I capture the whole story without anyone feeling like they're posing for a camera.
+              - button "View Gallery" [ref=e78]
+        - generic [ref=e79]:
+          - button "View gallery for Headshots" [ref=e80]
+          - img "Professional business headshot portrait" [ref=e81]
+          - button "View gallery for Headshots": VIEW GALLERY
+          - generic [ref=e82]:
+            - button "More Information" [ref=e83]:
+              - generic [ref=e84]: More Information
+            - generic [ref=e85]:
+              - heading "Headshots" [level=2] [ref=e86]
+              - generic [ref=e87]:
+                - paragraph [ref=e88]: Headshots for LinkedIn, websites, teams and personal brands — directed so you feel comfortable and look like the best version of yourself.
+                - paragraph [ref=e89]: Sessions can run on location or in a clean studio-style setup, with consistent lighting and profile-ready files for press, proposals and social channels.
+              - button "View Gallery" [ref=e90]
+        - generic [ref=e91]:
+          - button "View gallery for Product Photography" [ref=e92]
+          - img "Close-up product photography for a luxury bottle" [ref=e93]
+          - button "View gallery for Product Photography": VIEW GALLERY
+          - generic [ref=e94]:
+            - button "More Information" [ref=e95]:
+              - generic [ref=e96]: More Information
+            - generic [ref=e97]:
+              - heading "Product Photography" [level=2] [ref=e98]
+              - generic [ref=e99]:
+                - paragraph [ref=e100]: Product photography for jewellery, food, eCommerce and small business, built around detail, texture and the way your product needs to sell.
+                - paragraph [ref=e101]: Whether it's clean and simple for an online store or more styled for a campaign, the images are shaped to sit naturally across your web, social and print.
+              - button "View Gallery" [ref=e102]
+        - generic [ref=e103]:
+          - button "View gallery for Family & Lifestyle" [ref=e104]
+          - img "Family lifestyle portrait beside a lake" [ref=e105]
+          - button "View gallery for Family & Lifestyle": VIEW GALLERY
+          - generic [ref=e106]:
+            - button "More Information" [ref=e107]:
+              - generic [ref=e108]: More Information
+            - generic [ref=e109]:
+              - heading "Family & Lifestyle" [level=2] [ref=e110]
+              - generic [ref=e111]:
+                - paragraph [ref=e112]: Family and lifestyle sessions built around natural connection, gentle direction and the small in-between moments that often turn out to be your favourites.
+                - paragraph [ref=e113]: Warm, personal and easy to relax into — whether you're after family memories, a couple's session, a brand story or lifestyle content.
+              - button "View Gallery" [ref=e114]
+        - generic [ref=e115]:
+          - button "View gallery for Wedding Photography" [ref=e116]
+          - img "Wedding couple kissing during a sparkler entrance" [ref=e117]
+          - button "View gallery for Wedding Photography": VIEW GALLERY
+          - generic [ref=e118]:
+            - button "More Information" [ref=e119]:
+              - generic [ref=e120]: More Information
+            - generic [ref=e121]:
+              - heading "Wedding Photography" [level=2] [ref=e122]
+              - generic [ref=e123]:
+                - paragraph [ref=e124]: Weddings, engagements and anniversaries photographed with care for the atmosphere, the emotion and the people around you.
+                - paragraph [ref=e125]: From intimate ceremonies to big celebrations and proposal-style shoots, the process stays relaxed and easy from the first plan through to your final gallery.
+              - button "View Gallery" [ref=e126]
+        - generic [ref=e127]:
+          - button "View gallery for Meerkats & Pets" [ref=e128]
+          - img "Pet dog portrait with owner" [ref=e129]
+          - button "View gallery for Meerkats & Pets": VIEW GALLERY
+          - generic [ref=e130]:
+            - button "More Information" [ref=e131]:
+              - generic [ref=e132]: More Information
+            - generic [ref=e133]:
+              - heading "Meerkats & Pets" [level=2] [ref=e134]
+              - generic [ref=e135]:
+                - paragraph [ref=e136]: Pets, animals and the four-legged members of the family — photographed with patience, treats on hand and plenty of room for the unexpected.
+                - paragraph [ref=e137]: Every animal sets its own pace, so sessions stay flexible and fun, chasing the genuine character and personality that make these photos worth keeping.
+              - button "View Gallery" [ref=e138]
+  - generic [ref=e141]:
+    - textbox "Your name*" [ref=e142]
+    - textbox "Email*" [ref=e143]
+    - textbox "Phone" [ref=e144]
+    - textbox "Message" [ref=e145]
+    - generic [ref=e146]:
+      - paragraph [ref=e147]: What are you looking to shoot?
+      - combobox [ref=e148]:
+        - option "—Please choose an option—" [disabled] [selected]
+        - option "Wedding / Engagement / Anniversary"
+        - option "Birthday Party"
+        - option "Family and Lifestyle"
+        - option "Headshots"
+        - option "Product"
+        - option "Event"
+        - option "Meerkats and Pets"
+        - option "Other"
+    - generic [ref=e149]:
+      - paragraph [ref=e150]: How did you hear about me?
+      - combobox [ref=e151]:
+        - option "—Please choose an option—" [disabled] [selected]
+        - option "Google Search"
+        - option "Google Maps"
+        - option "Recommendation"
+        - option "Friend"
+        - option "Social Media"
+        - option "Other Site"
+    - button "Submit" [ref=e153]
+  - contentinfo [ref=e154]:
+    - generic [ref=e155]:
+      - generic [ref=e156]:
+        - generic [ref=e158]: Newsletter
+        - textbox "Email" [ref=e160]
+        - button "Sign Up" [ref=e162]
+      - generic [ref=e164]:
+        - link "Meerkat Photography" [ref=e166] [cursor=pointer]:
+          - /url: /
+          - img "Meerkat Photography" [ref=e167]
+        - generic [ref=e168]:
+          - generic [ref=e169]: Contact
+          - generic [ref=e171]: Melbourne, Australia
+          - generic [ref=e172]:
+            - text: "Phone:"
+            - link "0405 260 868" [ref=e173] [cursor=pointer]:
+              - /url: tel:0405 260 868
+          - generic [ref=e174]:
+            - text: "Email:"
+            - link "hello@meerkat.photo" [ref=e175] [cursor=pointer]:
+              - /url: mailto:hello@meerkat.photo
+          - link "Book a Shoot" [ref=e176] [cursor=pointer]:
+            - /url: "#contact"
+          - generic [ref=e177]:
+            - link "Facebook" [ref=e178] [cursor=pointer]:
+              - /url: https://www.facebook.com/meerkatphotography
+              - img [ref=e179]
+            - link "Instagram" [ref=e181] [cursor=pointer]:
+              - /url: https://instagram.com/kitspix/
+              - img [ref=e182]
+        - navigation [ref=e186]:
+          - generic [ref=e187]: Services
+          - list [ref=e189]:
+            - listitem [ref=e190]:
+              - link "Event Photography" [ref=e191] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e192]:
+              - link "Birthday Parties" [ref=e193] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e194]:
+              - link "Headshots" [ref=e195] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e196]:
+              - link "Product Photography" [ref=e197] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e198]:
+              - link "Family & Lifestyle" [ref=e199] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e200]:
+              - link "Wedding Photography" [ref=e201] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e202]:
+              - link "Meerkats & Pets" [ref=e203] [cursor=pointer]:
+                - /url: /services
+        - navigation [ref=e204]:
+          - generic [ref=e205]: Useful Links
+          - list [ref=e207]:
+            - listitem [ref=e208]:
+              - link "About Me" [ref=e209] [cursor=pointer]:
+                - /url: /about-me
+            - listitem [ref=e210]:
+              - link "Services" [ref=e211] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e212]:
+              - link "Contact Us" [ref=e213] [cursor=pointer]:
+                - /url: "#contact"
+      - paragraph [ref=e214]: (c) Meerkat Photography 2026.
+  - button "Open Next.js Dev Tools" [ref=e220] [cursor=pointer]:
+    - img [ref=e221]

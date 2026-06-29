@@ -1,0 +1,154 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Meerkat Photography" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img "Meerkat Photography" [ref=e5]
+        - generic [ref=e6]:
+          - generic [ref=e7]: Meerkat
+          - generic [ref=e8]: Photography
+      - navigation [ref=e9]:
+        - link "About Me" [ref=e10] [cursor=pointer]:
+          - /url: /about-me
+        - link "Services" [ref=e11] [cursor=pointer]:
+          - /url: /services
+        - link "Contact Us" [ref=e12] [cursor=pointer]:
+          - /url: /contact-us
+      - generic [ref=e13]:
+        - link "Facebook" [ref=e14] [cursor=pointer]:
+          - /url: https://www.facebook.com/meerkatphotography
+          - img [ref=e15]
+        - link "Instagram" [ref=e17] [cursor=pointer]:
+          - /url: https://instagram.com/kitspix/
+          - img [ref=e18]
+        - link "Get a quote" [ref=e22] [cursor=pointer]:
+          - /url: /contact-us#contact
+          - text: Get a Quote
+  - main [ref=e23]:
+    - generic [ref=e24]:
+      - generic [ref=e25]:
+        - generic [ref=e26]:
+          - heading "Meet Nora Wan. Perth photography with heart." [level=1] [ref=e27]
+          - generic [ref=e28]:
+            - paragraph [ref=e29]: I’m Nora Wan, the photographer behind Meerkat Photography. I work directly with every client, keeping the process calm, personal and easy from the first enquiry to the final gallery.
+            - paragraph [ref=e30]: "My style is warm, observant and practical: enough direction to help you feel comfortable, enough space for real moments to happen, and finished photos that feel polished without losing their personality."
+          - generic [ref=e31]:
+            - link "Book a shoot" [ref=e32] [cursor=pointer]:
+              - /url: "#contact"
+            - link "View services" [ref=e33] [cursor=pointer]:
+              - /url: /services
+        - img "Nora Wan, Perth photographer" [ref=e35]
+      - img [ref=e37]
+    - generic [ref=e40]:
+      - generic [ref=e41]:
+        - heading "My process" [level=2] [ref=e42]
+        - paragraph [ref=e43]: A clear structure keeps the day relaxed while still making sure every photo earns its place.
+      - generic [ref=e44]:
+        - generic [ref=e45]:
+          - text: "1"
+          - heading "Brief" [level=3] [ref=e47]
+          - paragraph [ref=e48]: We talk through your ideas, the people involved, locations and how you'll use the photos, so we're on the same page before the camera comes out.
+        - generic [ref=e49]:
+          - text: "2"
+          - heading "Shoot" [level=3] [ref=e51]
+          - paragraph [ref=e52]: I guide the session, manage the light and keep the day moving, without ever making it feel stiff or rushed.
+        - generic [ref=e53]:
+          - text: "3"
+          - heading "Review" [level=3] [ref=e55]
+          - paragraph [ref=e56]: I hand-pick and carefully edit the strongest images, so the final set feels consistent, polished and complete.
+        - generic [ref=e57]:
+          - text: "4"
+          - heading "Delivery" [level=3] [ref=e59]
+          - paragraph [ref=e60]: You get a beautiful online gallery of high-res, ready-to-use files, perfect for printing, sharing or your website.
+    - generic [ref=e62]:
+      - generic [ref=e63]:
+        - img "Wedding couple walking through a celebration" [ref=e65]
+        - generic [ref=e66]:
+          - heading "Want photos that feel natural, look polished and are ready to share?" [level=2] [ref=e67]
+          - link "Enquire now" [ref=e68] [cursor=pointer]:
+            - /url: "#contact"
+      - img "Meerkat standing in the sand" [ref=e70]
+  - generic [ref=e71]:
+    - generic [ref=e72]:
+      - heading "Based in Perth, available across Western Australia" [level=2] [ref=e74]
+      - paragraph [ref=e75]:
+        - text: I shoot both
+        - strong [ref=e76]: on location and in-studio
+        - text: across Perth, Mount Nasura and the surrounding suburbs — and I’m happy to travel Australia-wide for the right project.
+      - paragraph [ref=e77]: Get in touch to talk through your shoot, check availability and sort out the details. I’d love to hear what you’ve got planned.
+    - img [ref=e79]
+    - generic [ref=e81]:
+      - generic [ref=e83]:
+        - textbox "Your name*" [ref=e84]
+        - textbox "Email*" [ref=e85]
+        - textbox "Phone*" [ref=e86]
+        - textbox "Message" [ref=e87]
+        - button "Submit" [ref=e89]
+      - img [ref=e90]
+  - contentinfo [ref=e92]:
+    - generic [ref=e93]:
+      - generic [ref=e94]:
+        - generic [ref=e95]:
+          - link "Meerkat Photography" [ref=e96] [cursor=pointer]:
+            - /url: /
+            - img "Meerkat Photography" [ref=e97]
+          - generic [ref=e98]:
+            - link "Facebook" [ref=e99] [cursor=pointer]:
+              - /url: https://www.facebook.com/meerkatphotography
+              - img [ref=e100]
+            - link "Instagram" [ref=e102] [cursor=pointer]:
+              - /url: https://instagram.com/kitspix/
+              - img [ref=e103]
+        - generic [ref=e107]:
+          - generic [ref=e108]: Contact
+          - generic [ref=e110]: 9/8 Dale Street, Mount Nasura WA 6112, Australia
+          - generic [ref=e111]:
+            - text: "Phone:"
+            - link "0408 847 723" [ref=e112] [cursor=pointer]:
+              - /url: tel:0408 847 723
+          - generic [ref=e113]:
+            - text: "Email:"
+            - link "nora@meerkatphotography.au" [ref=e114] [cursor=pointer]:
+              - /url: mailto:nora@meerkatphotography.au
+          - link "Book a Shoot" [ref=e115] [cursor=pointer]:
+            - /url: /contact-us#contact
+          - iframe [ref=e117]
+        - navigation [ref=e118]:
+          - generic [ref=e119]: Services
+          - list [ref=e121]:
+            - listitem [ref=e122]:
+              - link "Event Photography" [ref=e123] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e124]:
+              - link "Birthday Parties" [ref=e125] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e126]:
+              - link "Headshots" [ref=e127] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e128]:
+              - link "Product Photography" [ref=e129] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e130]:
+              - link "Family & Lifestyle" [ref=e131] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e132]:
+              - link "Wedding Photography" [ref=e133] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e134]:
+              - link "Meerkats & Pets" [ref=e135] [cursor=pointer]:
+                - /url: /services
+        - navigation [ref=e136]:
+          - generic [ref=e137]: Useful Links
+          - list [ref=e139]:
+            - listitem [ref=e140]:
+              - link "About Me" [ref=e141] [cursor=pointer]:
+                - /url: /about-me
+            - listitem [ref=e142]:
+              - link "Services" [ref=e143] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e144]:
+              - link "Contact Us" [ref=e145] [cursor=pointer]:
+                - /url: /contact-us
+      - paragraph [ref=e146]: (c) Meerkat Photography 2026.
+  - button "Open Next.js Dev Tools" [ref=e152] [cursor=pointer]:
+    - img [ref=e153]

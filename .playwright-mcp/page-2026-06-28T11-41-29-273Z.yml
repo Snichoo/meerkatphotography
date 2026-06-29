@@ -1,0 +1,650 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Nifty Skips" [ref=e4] [cursor=pointer]:
+        - /url: "#top"
+        - img "Nifty Skips" [ref=e5]
+      - navigation [ref=e6]:
+        - link "Get An Instant Quote" [ref=e7] [cursor=pointer]:
+          - /url: "#quote"
+          - img [ref=e8]
+          - generic [ref=e9]: Get An Instant Quote
+        - link "Or Call 1300 815 247" [ref=e10] [cursor=pointer]:
+          - /url: tel:1300815247
+          - img [ref=e11]
+          - generic [ref=e13]: Or Call 1300 815 247
+  - main [ref=e14]:
+    - generic [ref=e15]:
+      - img "Nifty Skips mobile skip trailer being towed" [ref=e16]
+      - generic [ref=e19]:
+        - generic [ref=e20]:
+          - paragraph [ref=e21]:
+            - img [ref=e22]
+            - text: Brisbane | Logan | Moreton Bay
+          - heading "Save Yourself Four Trips to the Dump. We'll Drop a 4m³ Skip in Your Driveway by Tomorrow." [level=1] [ref=e23]:
+            - generic [ref=e24]: Save Yourself
+            - text: Four Trips to the Dump.
+            - text: We'll Drop a 4m³ Skip in Your Driveway by Tomorrow.
+          - paragraph [ref=e25]: Our 4m³ mobile skip trailer holds about four box-trailer loads of rubbish (roughly 16 wheelie bins). It parks legally on the street or down your driveway, loads through rear barn doors at waist height, and the lid locks so no one tips their rubbish in overnight.
+          - generic [ref=e27]:
+            - generic [ref=e28]:
+              - link "Get An Instant Quote" [ref=e29] [cursor=pointer]:
+                - /url: "#quote"
+                - img [ref=e30]
+                - text: Get An Instant Quote
+              - img
+            - link "Or Call 1300 815 247" [ref=e31] [cursor=pointer]:
+              - /url: tel:1300815247
+              - generic [ref=e32]: Or Call
+              - img [ref=e33]
+              - generic [ref=e35]: 1300 815 247
+            - generic [ref=e36]:
+              - generic [ref=e37]:
+                - img [ref=e38]
+                - text: Pick your suburb and dates.
+              - generic [ref=e39]:
+                - img [ref=e40]
+                - text: Price back instantly.
+        - list [ref=e41]:
+          - listitem [ref=e42]:
+            - img [ref=e43]
+            - generic [ref=e44]:
+              - text: 5.0★ from
+              - text: 50+ Google Reviews
+          - listitem [ref=e45]:
+            - img [ref=e46]
+            - generic [ref=e47]:
+              - text: 4m³ Skip =
+              - text: 4 Box-Trailer Loads
+          - listitem [ref=e48]:
+            - img [ref=e49]
+            - generic [ref=e50]:
+              - text: Lockable
+              - text: Lid Standard
+          - listitem [ref=e51]:
+            - img [ref=e52]
+            - generic [ref=e53]:
+              - text: No Council
+              - text: Permits Needed
+          - listitem [ref=e54]:
+            - img [ref=e55]
+            - generic [ref=e56]:
+              - text: Brisbane | Logan
+              - text: Moreton Bay
+    - generic [ref=e57]:
+      - img [ref=e58]
+      - generic [ref=e59]:
+        - generic [ref=e60]:
+          - img [ref=e61]
+          - img [ref=e63]
+          - img [ref=e65]
+          - img [ref=e67]
+          - img [ref=e69]
+        - paragraph [ref=e71]: Outstanding service from Nifty Skips. Online enquiry on NYE, phone call from Brad within 10 minutes, and the skip delivered to our driveway an hour later. Collected promptly on Saturday morning. Fast, efficient and highly recommended.
+        - generic [ref=e72]:
+          - img "Bek Peters" [ref=e73]
+          - generic [ref=e74]: Bek Peters
+    - generic [ref=e76]:
+      - generic [ref=e77]:
+        - heading "Why People Pick Nifty Over a Regular Skip Bin" [level=2] [ref=e79]:
+          - text: Why People
+          - generic [ref=e80]: Pick Nifty Over a
+          - text: Regular Skip Bin
+        - img "Nifty Skips trailer rear view" [ref=e82]
+      - paragraph [ref=e83]: A 4m³ mobile skip trailer is what you book when a traditional steel skip can't physically fit down your driveway, or you don't fancy filling out a council permit form to park rubbish outside your own house. Here's what you actually get when Brad rocks up.
+      - generic [ref=e84]:
+        - generic [ref=e85]:
+          - img [ref=e86]
+          - generic [ref=e87]:
+            - heading "Fits Where Steel Skips Can’t" [level=3] [ref=e88]
+            - paragraph [ref=e89]: Tight inner-city driveways, underground carparks, narrow lanes, behind the gate next to the garage. If a tradesman’s ute can get there, the trailer can get there.
+        - generic [ref=e90]:
+          - img [ref=e91]
+          - generic [ref=e92]:
+            - heading "Lockable Lid Stops Overnight Dumpers" [level=3] [ref=e93]
+            - paragraph [ref=e94]: The lid clicks shut and locks. Strangers can’t tip their rubbish in overnight and the lid stays closed until you next need it open.
+        - generic [ref=e95]:
+          - img [ref=e96]
+          - generic [ref=e97]:
+            - heading "No Council Permits" [level=3] [ref=e98]
+            - paragraph [ref=e99]: The skip is a road-registered trailer, so you can park it legally on the street outside your place. With a regular skip bin you’re filling out a BCC permit form and paying for the privilege. With us, you’re not.
+        - generic [ref=e100]:
+          - img [ref=e101]
+          - generic [ref=e102]:
+            - heading "Won’t Crack Concrete or Wreck the Lawn" [level=3] [ref=e103]
+            - paragraph [ref=e104]: A regular skip sits on metal feet and leaves rust marks, crack lines, and lawn damage. Ours rolls on rubber wheels. We drop it, position it, and take it away with our ute when we’re done.
+        - generic [ref=e105]:
+          - img [ref=e106]
+          - generic [ref=e107]:
+            - heading "Loads at Waist Height" [level=3] [ref=e108]
+            - paragraph [ref=e109]: Walk loads of timber, plasterboard, and green waste straight in through the rear barn doors. You’re not hoisting a 30kg load over a 1.2m steel wall. Your back will notice the difference compared to a regular skip.
+        - generic [ref=e110]:
+          - img [ref=e111]
+          - generic [ref=e112]:
+            - heading "Same-Day Delivery Available" [level=3] [ref=e113]
+            - paragraph [ref=e114]: Book before mid-morning and we’ll usually get it to you the same day. Otherwise it’s there by tomorrow.
+    - generic [ref=e115]:
+      - img [ref=e116]
+      - generic [ref=e117]:
+        - generic [ref=e118]:
+          - img [ref=e119]
+          - img [ref=e121]
+          - img [ref=e123]
+          - img [ref=e125]
+          - img [ref=e127]
+        - paragraph [ref=e129]: Brad made hiring a breeze, what we like was been able to lock the skip. Fits in a tight spot with ease, very easy to load with barn doors. Highly recommend.
+        - generic [ref=e130]:
+          - img "Darren Windsor" [ref=e131]
+          - generic [ref=e132]: Darren Windsor
+    - generic [ref=e134]:
+      - heading "What You Can Fit (And What Has to Stay Out)" [level=2] [ref=e135]:
+        - generic [ref=e136]: What You Can Fit
+        - text: (And What Has to Stay Out)
+      - paragraph [ref=e137]: A 4m³ mobile skip trailer holds the same as four box-trailer loads or 16 standard wheelie bins, and takes up to 1,000kg of weight. Most home clean-ups, garden tidy-ups, and small renos fit comfortably inside one. Here's the rundown.
+      - img "Red ute towing the Nifty Skips trailer on grass" [ref=e139]
+      - generic [ref=e140]:
+        - generic [ref=e141]:
+          - generic [ref=e142]:
+            - img [ref=e143]
+            - generic [ref=e145]: Fits Comfortably
+          - generic [ref=e146]:
+            - generic [ref=e147]:
+              - img [ref=e148]
+              - generic [ref=e149]:
+                - heading "Household Junk" [level=3] [ref=e150]
+                - paragraph [ref=e151]: Furniture you've been meaning to bin, broken appliances, kids' toys, bags of clothes, that mattress topper from 2014. Standard household rubbish, no questions.
+            - generic [ref=e152]:
+              - img [ref=e153]
+              - generic [ref=e154]:
+                - heading "Green Waste" [level=3] [ref=e155]
+                - paragraph [ref=e156]: Grass clippings, hedge trimmings, branches, leaves, small shrubs. Yard tidy-ups are one of the most common reasons people book.
+            - generic [ref=e157]:
+              - img [ref=e158]
+              - generic [ref=e159]:
+                - heading "Renovation Waste" [level=3] [ref=e160]
+                - paragraph [ref=e161]: Timber offcuts, plasterboard, tiles, bricks, broken concrete. Up to the 1,000kg weight limit.
+            - generic [ref=e162]:
+              - img [ref=e163]
+              - generic [ref=e164]:
+                - heading "E-Waste" [level=3] [ref=e165]
+                - paragraph [ref=e166]: Old TVs, microwaves, computer towers, small whitegoods. We sort it on collection.
+        - generic [ref=e167]:
+          - generic [ref=e168]:
+            - img [ref=e169]
+            - generic [ref=e171]: Has to Stay Out
+          - generic [ref=e172]:
+            - generic [ref=e173]:
+              - img [ref=e174]
+              - generic [ref=e175]:
+                - heading "Hazardous Materials" [level=3] [ref=e176]
+                - paragraph [ref=e177]: Paints, chemicals, oils, asbestos, anything with a flammable or corrosive label.
+            - generic [ref=e178]:
+              - img [ref=e179]
+              - generic [ref=e180]:
+                - heading "Dangerous Items" [level=3] [ref=e181]
+                - paragraph [ref=e182]: Gas bottles, flammable liquids, medical waste, anything sharp without containment.
+            - generic [ref=e183]:
+              - img [ref=e184]
+              - generic [ref=e185]:
+                - heading "Heavy Loose Material" [level=3] [ref=e186]
+                - paragraph [ref=e187]: Soil, large logs, batteries. Loose soil and large logs put the trailer over its weight limit fast and we'd rather flag it before you load it.
+            - generic [ref=e188]:
+              - img [ref=e189]
+              - generic [ref=e190]:
+                - heading "Extras (Keep Separate)" [level=3] [ref=e191]
+                - paragraph [ref=e192]: Mattresses and tyres are accepted but charged separately and must not go inside the trailer. Mention them when you book and we'll quote.
+      - link "Get An Instant Quote" [ref=e194] [cursor=pointer]:
+        - /url: "#quote"
+        - img [ref=e195]
+        - text: Get An Instant Quote
+    - generic [ref=e196]:
+      - img [ref=e197]
+      - generic [ref=e198]:
+        - generic [ref=e199]:
+          - img [ref=e200]
+          - img [ref=e202]
+          - img [ref=e204]
+          - img [ref=e206]
+          - img [ref=e208]
+        - paragraph [ref=e210]: I am currently renovating and had more rubbish than what my wheelie bin could handle. I phoned Brad at Nifty Skips and ordered a skip bin for all the extra reno rubbish. He delivered the bin for me the next day and saved me quite the hassle. I live in an area where the streets are quite narrow and was worried about the bin annoying my nosey neighbours. It fitted perfectly and was easy for Brad to drop it off. So happy with the whole process.
+        - generic [ref=e211]:
+          - img "Shauna Rose" [ref=e212]
+          - generic [ref=e213]: Shauna Rose
+    - generic [ref=e215]:
+      - heading "From Quote to Empty Driveway in Three Steps" [level=2] [ref=e217]:
+        - text: From Quote to Empty Driveway
+        - generic [ref=e218]: in Three Steps
+      - generic [ref=e219]:
+        - list [ref=e220]:
+          - listitem [ref=e221]:
+            - img [ref=e223]
+            - generic [ref=e225]:
+              - paragraph [ref=e226]: STEP 1
+              - heading "Get a Quote Online or by Phone" [level=3] [ref=e227]
+              - paragraph [ref=e228]: Pick your suburb, drop-off date, and pick-up date. Online quote comes back in under a minute. Prefer to talk? Call 1300 815 247 and Brad will sort it.
+          - listitem [ref=e229]:
+            - img [ref=e231]
+            - generic [ref=e233]:
+              - paragraph [ref=e234]: STEP 2
+              - heading "We Drop It in Your Driveway" [level=3] [ref=e235]
+              - paragraph [ref=e236]: Brad delivers the skip on the morning you've booked. He'll text you when he's on the way and again when he's parked it. Standard hire is three days but you can extend if the clean-up runs long.
+          - listitem [ref=e237]:
+            - img [ref=e239]
+            - generic [ref=e240]:
+              - paragraph [ref=e241]: STEP 3
+              - heading "Load It at Your Own Pace, We Take It Away" [level=3] [ref=e242]
+              - paragraph [ref=e243]: Load through the rear barn doors, lock the lid overnight, fill it as full as the weight limit allows. Brad comes back on the agreed day and the skip leaves the property the same way it arrived.
+        - generic [ref=e244]:
+          - img
+          - link "Get An Instant Quote" [ref=e245] [cursor=pointer]:
+            - /url: "#quote"
+            - img [ref=e246]
+            - text: Get An Instant Quote
+        - paragraph [ref=e247]: Most quotes come back within 30 seconds.
+    - generic [ref=e248]:
+      - img [ref=e249]
+      - generic [ref=e250]:
+        - generic [ref=e251]:
+          - img [ref=e252]
+          - img [ref=e254]
+          - img [ref=e256]
+          - img [ref=e258]
+          - img [ref=e260]
+        - paragraph [ref=e262]: Needed a green waste skip for our place in Brisbane, but we have an awkward driveway and not much room to get one dropped. Called Nifty Skips and got a mobile skip bin trailer delivered to the northside. Because they’re trailers, it was parked out on the street, and we could lock the lid closed so no one dumped rubbish in there overnight. Really easy and simple service, I’d recommend it to anyone doing a yard cleanup.
+        - generic [ref=e263]:
+          - img "Tyson Blanch" [ref=e264]
+          - generic [ref=e265]: Tyson Blanch
+    - generic [ref=e267]:
+      - heading "Where We Drop Skips" [level=2] [ref=e268]:
+        - text: Where
+        - generic [ref=e269]: We Drop Skips
+      - paragraph [ref=e270]: We cover Brisbane City, Logan, and Moreton Bay Council areas out of our North Lakes base. If you're inside this footprint, you'll usually get same-day or next-day delivery.
+      - generic [ref=e271]:
+        - generic [ref=e272]:
+          - heading "Brisbane Northside" [level=3] [ref=e273]
+          - list [ref=e274]:
+            - listitem [ref=e275]:
+              - img [ref=e276]
+              - text: Chermside
+            - listitem [ref=e277]:
+              - img [ref=e278]
+              - text: Aspley
+            - listitem [ref=e279]:
+              - img [ref=e280]
+              - text: Kedron
+            - listitem [ref=e281]:
+              - img [ref=e282]
+              - text: Stafford
+            - listitem [ref=e283]:
+              - img [ref=e284]
+              - text: Wavell Heights
+            - listitem [ref=e285]:
+              - img [ref=e286]
+              - text: Nundah
+            - listitem [ref=e287]:
+              - img [ref=e288]
+              - text: Chermside
+            - listitem [ref=e289]:
+              - img [ref=e290]
+              - text: Hamilton
+            - listitem [ref=e291]:
+              - img [ref=e292]
+              - text: Ascot
+            - listitem [ref=e293]:
+              - img [ref=e294]
+              - text: Clayfield
+            - listitem [ref=e295]:
+              - img [ref=e296]
+              - text: Banyo
+            - listitem [ref=e297]:
+              - img [ref=e298]
+              - text: Geebung
+            - listitem [ref=e299]:
+              - img [ref=e300]
+              - text: Bridgeman Downs
+            - listitem [ref=e301]:
+              - img [ref=e302]
+              - text: Bald Hills
+            - listitem [ref=e303]:
+              - img [ref=e304]
+              - text: Carseldine
+        - img "Nifty Skips trailer" [ref=e307]
+        - generic [ref=e308]:
+          - heading "Brisbane Southside" [level=3] [ref=e309]
+          - list [ref=e310]:
+            - listitem [ref=e311]:
+              - img [ref=e312]
+              - text: Mt Gravatt
+            - listitem [ref=e313]:
+              - img [ref=e314]
+              - text: Sunnybank
+            - listitem [ref=e315]:
+              - img [ref=e316]
+              - text: Holland Park
+            - listitem [ref=e317]:
+              - img [ref=e318]
+              - text: Coorparoo
+            - listitem [ref=e319]:
+              - img [ref=e320]
+              - text: Camp Hill
+            - listitem [ref=e321]:
+              - img [ref=e322]
+              - text: Carindale
+            - listitem [ref=e323]:
+              - img [ref=e324]
+              - text: Mansfield
+            - listitem [ref=e325]:
+              - img [ref=e326]
+              - text: Eight Mile Plains
+            - listitem [ref=e327]:
+              - img [ref=e328]
+              - text: Calamvale
+            - listitem [ref=e329]:
+              - img [ref=e330]
+              - text: Yeronga
+            - listitem [ref=e331]:
+              - img [ref=e332]
+              - text: Annerley
+            - listitem [ref=e333]:
+              - img [ref=e334]
+              - text: Salisbury
+      - generic [ref=e335]:
+        - generic [ref=e336]:
+          - heading "Brisbane East & West" [level=3] [ref=e337]
+          - list [ref=e338]:
+            - listitem [ref=e339]:
+              - img [ref=e340]
+              - text: Wynnum
+            - listitem [ref=e341]:
+              - img [ref=e342]
+              - text: Manly
+            - listitem [ref=e343]:
+              - img [ref=e344]
+              - text: Carina
+            - listitem [ref=e345]:
+              - img [ref=e346]
+              - text: Cannon Hill
+            - listitem [ref=e347]:
+              - img [ref=e348]
+              - text: Morningside
+            - listitem [ref=e349]:
+              - img [ref=e350]
+              - text: Bulimba
+            - listitem [ref=e351]:
+              - img [ref=e352]
+              - text: Hawthorne
+            - listitem [ref=e353]:
+              - img [ref=e354]
+              - text: Toowong
+            - listitem [ref=e355]:
+              - img [ref=e356]
+              - text: Indooroopilly
+            - listitem [ref=e357]:
+              - img [ref=e358]
+              - text: St Lucia
+            - listitem [ref=e359]:
+              - img [ref=e360]
+              - text: Auchenflower
+            - listitem [ref=e361]:
+              - img [ref=e362]
+              - text: Paddington
+            - listitem [ref=e363]:
+              - img [ref=e364]
+              - text: The Gap
+        - generic [ref=e365]:
+          - heading "Logan" [level=3] [ref=e366]
+          - list [ref=e367]:
+            - listitem [ref=e368]:
+              - img [ref=e369]
+              - text: Logan Central
+            - listitem [ref=e370]:
+              - img [ref=e371]
+              - text: Springwood
+            - listitem [ref=e372]:
+              - img [ref=e373]
+              - text: Underwood
+            - listitem [ref=e374]:
+              - img [ref=e375]
+              - text: Daisy Hill
+            - listitem [ref=e376]:
+              - img [ref=e377]
+              - text: Shailer Park
+            - listitem [ref=e378]:
+              - img [ref=e379]
+              - text: Loganholme
+            - listitem [ref=e380]:
+              - img [ref=e381]
+              - text: Beenleigh
+            - listitem [ref=e382]:
+              - img [ref=e383]
+              - text: Browns Plains
+            - listitem [ref=e384]:
+              - img [ref=e385]
+              - text: Marsden
+            - listitem [ref=e386]:
+              - img [ref=e387]
+              - text: Crestmead
+            - listitem [ref=e388]:
+              - img [ref=e389]
+              - text: Park Ridge
+            - listitem [ref=e390]:
+              - img [ref=e391]
+              - text: Yarrabilba
+            - listitem [ref=e392]:
+              - img [ref=e393]
+              - text: Slacks Creek
+            - listitem [ref=e394]:
+              - img [ref=e395]
+              - text: Waterford
+        - generic [ref=e396]:
+          - heading "Moreton Bay" [level=3] [ref=e397]
+          - list [ref=e398]:
+            - listitem [ref=e399]:
+              - img [ref=e400]
+              - text: North Lakes
+            - listitem [ref=e401]:
+              - img [ref=e402]
+              - text: Mango Hill
+            - listitem [ref=e403]:
+              - img [ref=e404]
+              - text: Murrumba Downs
+            - listitem [ref=e405]:
+              - img [ref=e406]
+              - text: Kallangur
+            - listitem [ref=e407]:
+              - img [ref=e408]
+              - text: Petrie
+            - listitem [ref=e409]:
+              - img [ref=e410]
+              - text: Strathpine
+            - listitem [ref=e411]:
+              - img [ref=e412]
+              - text: Brendale
+            - listitem [ref=e413]:
+              - img [ref=e414]
+              - text: Albany Creek
+            - listitem [ref=e415]:
+              - img [ref=e416]
+              - text: Eatons Hill
+            - listitem [ref=e417]:
+              - img [ref=e418]
+              - text: Narangba
+            - listitem [ref=e419]:
+              - img [ref=e420]
+              - text: Burpengary
+            - listitem [ref=e421]:
+              - img [ref=e422]
+              - text: Caboolture
+            - listitem [ref=e423]:
+              - img [ref=e424]
+              - text: Morayfield
+            - listitem [ref=e425]:
+              - img [ref=e426]
+              - text: Deception Bay
+            - listitem [ref=e427]:
+              - img [ref=e428]
+              - text: Redcliffe
+            - listitem [ref=e429]:
+              - img [ref=e430]
+              - text: Margate
+            - listitem [ref=e431]:
+              - img [ref=e432]
+              - text: Scarborough
+            - listitem [ref=e433]:
+              - img [ref=e434]
+              - text: Kippa-Ring
+    - generic [ref=e435]:
+      - img [ref=e436]
+      - generic [ref=e437]:
+        - generic [ref=e438]:
+          - img [ref=e439]
+          - img [ref=e441]
+          - img [ref=e443]
+          - img [ref=e445]
+          - img [ref=e447]
+        - paragraph [ref=e449]: Needed a green waste skip for our place in Brisbane, but we have an awkward driveway and not much room to get one dropped. Called Nifty Skips and got a mobile skip bin trailer delivered to the northside. Because they’re trailers, it was parked out on the street, and we could lock the lid closed so no one dumped rubbish in there overnight. Really easy and simple service, I’d recommend it to anyone doing a yard cleanup.
+        - generic [ref=e450]:
+          - img "Declan Frodsham" [ref=e451]
+          - generic [ref=e452]: Declan Frodsham
+    - generic [ref=e455]:
+      - img "Brad, owner of Nifty Skips" [ref=e457]
+      - generic [ref=e458]:
+        - heading "You'll Deal With Brad. Every Time." [level=2] [ref=e459]:
+          - text: You'll Deal With
+          - generic [ref=e460]: Brad. Every Time.
+        - generic [ref=e461]:
+          - paragraph [ref=e462]: When you call Nifty Skips, Brad answers. When the skip turns up in your driveway, Brad's the one reversing it in. When it's time to pick up, Brad's back. There's no call centre between you and the bloke driving the trailer, which is the entire point.
+          - paragraph [ref=e463]: "That's a deliberate choice. Brad started Nifty because traditional skip bin hire had become clunky: permit forms to fill in, driveways scratched up by metal feet, rubbish from passers-by tipped in overnight, and the back-breaker of lifting reno waste over a 1.2m steel wall. Mobile skip trailers solve all of that, and a hands-on operator solves the rest."
+          - paragraph [ref=e464]: If you've used skip bins before and walked away frustrated, this is the version that fixes those problems.
+    - generic [ref=e465]:
+      - img [ref=e466]
+      - generic [ref=e467]:
+        - generic [ref=e468]:
+          - img [ref=e469]
+          - img [ref=e471]
+          - img [ref=e473]
+          - img [ref=e475]
+          - img [ref=e477]
+        - paragraph [ref=e479]: Brad was great helped us out during the xmas new yr time frame while everyone else was shut shop. Highly recommend him.
+        - generic [ref=e480]:
+          - img "Jay Williams" [ref=e481]
+          - generic [ref=e482]: Jay Williams
+    - generic [ref=e484]:
+      - heading "Common Questions, Straight Answers" [level=2] [ref=e485]:
+        - text: Common Questions,
+        - generic [ref=e486]: Straight Answers
+      - generic [ref=e487]:
+        - generic [ref=e488]:
+          - generic [ref=e489]:
+            - button "How much does a 4m³ skip cost?" [ref=e490]:
+              - generic [ref=e491]: How much does a 4m³ skip cost?
+              - img [ref=e492]
+            - paragraph [ref=e494]: Pricing depends on your suburb and the dates you need. Plug your details into the instant quote tool and you’ll see the price in under a minute. The quote is free, there’s no minimum spend, and you’re only charged once the trailer’s confirmed and booked in.
+          - generic [ref=e495]:
+            - button "How long is the standard hire?" [ref=e496]:
+              - generic [ref=e497]: How long is the standard hire?
+              - img [ref=e498]
+            - paragraph [ref=e500]: Three days. That’s enough for most weekend clean-ups, garden tidy-ups, and small renos. If you need it longer, mention it when you book and we’ll extend the hire.
+          - generic [ref=e501]:
+            - button "Do I need a permit from the council?" [ref=e502]:
+              - generic [ref=e503]: Do I need a permit from the council?
+              - img [ref=e504]
+            - paragraph [ref=e506]: No. The skip is a road-registered trailer, which means you can legally park it on the street outside your property without a Brisbane City Council, Logan, or Moreton Bay Council permit. Saves you the form and the fee.
+          - generic [ref=e507]:
+            - button "Will it damage my driveway or lawn?" [ref=e508]:
+              - generic [ref=e509]: Will it damage my driveway or lawn?
+              - img [ref=e510]
+            - paragraph [ref=e512]: No. The trailer rolls on rubber wheels. A regular skip sits on metal feet, which is where the rust marks and concrete damage come from. We position the trailer, leave it for the hire period, and take it away when you’re done. The driveway looks the same way it did before we arrived.
+          - generic [ref=e513]:
+            - button "What if my driveway is tight or sloped?" [ref=e514]:
+              - generic [ref=e515]: What if my driveway is tight or sloped?
+              - img [ref=e516]
+            - paragraph [ref=e518]: The trailer is built for awkward spots. Brad regularly drops skips in inner-city driveways, behind side gates, and on steep blocks. If you’re worried, send a photo when you book and he’ll confirm it works.
+        - generic [ref=e519]:
+          - generic [ref=e520]:
+            - button "Can I lock the skip overnight?" [ref=e521]:
+              - generic [ref=e522]: Can I lock the skip overnight?
+              - img [ref=e523]
+            - paragraph [ref=e525]: Yes. The lid clicks shut and locks, so strangers can’t tip their rubbish in overnight and your load stays put. It stays closed until you next need it open.
+          - generic [ref=e526]:
+            - button "What about mattresses or tyres?" [ref=e527]:
+              - generic [ref=e528]: What about mattresses or tyres?
+              - img [ref=e529]
+            - paragraph [ref=e531]: Both are accepted but charged separately, and they need to stay outside the trailer (Brad takes them on collection). Flag them when you book.
+          - generic [ref=e532]:
+            - button "What's the weight limit?" [ref=e533]:
+              - generic [ref=e534]: What's the weight limit?
+              - img [ref=e535]
+            - paragraph [ref=e537]: 1,000kg total. That’s enough for a full skip of household rubbish, green waste, or mixed reno waste. Loose soil and large logs hit the limit fast, so check with us before loading those.
+          - generic [ref=e538]:
+            - button "Can I get one today?" [ref=e539]:
+              - generic [ref=e540]: Can I get one today?
+              - img [ref=e541]
+            - paragraph [ref=e543]: Often yes, especially if you book before lunchtime. Same-day delivery isn’t guaranteed but it’s regularly available. Worst case, it’s there by tomorrow.
+    - generic [ref=e544]:
+      - img "Nifty Skips trailer towed past palm trees" [ref=e545]
+      - generic [ref=e548]:
+        - heading "Ready to Get the Junk Gone?" [level=2] [ref=e549]:
+          - text: Ready to Get
+          - generic [ref=e550]: the Junk Gone?
+        - paragraph [ref=e551]: Book the trailer today. Saturday morning, you'll be loading it up while the dump traffic rolls by without you.
+        - generic [ref=e553]:
+          - generic [ref=e554]:
+            - link "Get An Instant Quote" [ref=e555] [cursor=pointer]:
+              - /url: "#quote"
+              - img [ref=e556]
+              - text: Get An Instant Quote
+            - img
+          - link "Or Call 1300 815 247" [ref=e557] [cursor=pointer]:
+            - /url: tel:1300815247
+            - generic [ref=e558]: Or Call
+            - img [ref=e559]
+            - generic [ref=e561]: 1300 815 247
+          - generic [ref=e562]:
+            - generic [ref=e563]:
+              - img [ref=e564]
+              - text: Pick your suburb and dates.
+            - generic [ref=e565]:
+              - img [ref=e566]
+              - text: Price back instantly.
+    - generic [ref=e567]:
+      - img [ref=e568]
+      - generic [ref=e569]:
+        - generic [ref=e570]:
+          - img [ref=e571]
+          - img [ref=e573]
+          - img [ref=e575]
+          - img [ref=e577]
+          - img [ref=e579]
+        - paragraph [ref=e581]: Can’t recommend Nifty Skips enough! Brad rocked up early, made drop-off and collection an absolute breeze, and he’s a local legend to top it off. If you’re planning a cleanup, hit up Brad – you’ll be glad you did!
+        - generic [ref=e582]:
+          - img "Becki NinjaKick" [ref=e583]
+          - generic [ref=e584]: Becki NinjaKick
+  - contentinfo [ref=e585]:
+    - generic [ref=e587]:
+      - img "Nifty Skips" [ref=e588]
+      - list [ref=e589]:
+        - listitem [ref=e590]:
+          - img [ref=e591]
+          - text: 4m³ Skip = 4 Box-Trailer Loads
+        - listitem [ref=e592]:
+          - img [ref=e593]
+          - text: Lockable Lid Standard
+        - listitem [ref=e594]:
+          - img [ref=e595]
+          - text: No Council Permits Needed
+        - listitem [ref=e596]:
+          - img [ref=e597]
+          - generic [ref=e599]:
+            - text: Or Call
+            - link "1300 815 247" [ref=e600] [cursor=pointer]:
+              - /url: tel:1300815247
+        - listitem [ref=e601]:
+          - img [ref=e602]
+          - text: 5.0★ from 50+ Google Reviews
+        - listitem [ref=e603]:
+          - img [ref=e604]
+          - text: Brisbane | Logan | Moreton Bay
+      - paragraph [ref=e605]: © 2026 Nifty Skips. All rights reserved. | Page by Postclick.
+  - button "Open Next.js Dev Tools" [ref=e611] [cursor=pointer]:
+    - img [ref=e612]

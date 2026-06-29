@@ -1,0 +1,311 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Meerkat Photography" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img "Meerkat Photography" [ref=e5]
+        - generic [ref=e6]:
+          - generic [ref=e7]: Meerkat
+          - generic [ref=e8]: Photography
+      - navigation [ref=e9]:
+        - link "About Me" [ref=e10] [cursor=pointer]:
+          - /url: /about-me
+        - link "Services" [ref=e11] [cursor=pointer]:
+          - /url: /services
+        - link "Contact Us" [ref=e12] [cursor=pointer]:
+          - /url: /contact-us
+      - generic [ref=e13]:
+        - link "Facebook" [ref=e14] [cursor=pointer]:
+          - /url: https://www.facebook.com/meerkatphotography
+          - img [ref=e15]
+        - link "Instagram" [ref=e17] [cursor=pointer]:
+          - /url: https://instagram.com/kitspix/
+          - img [ref=e18]
+        - button "Get a quote" [ref=e22]: Get a Quote
+  - main [ref=e23]:
+    - generic [ref=e24]:
+      - complementary [ref=e25]:
+        - navigation [ref=e26]:
+          - link "Our Services" [ref=e27] [cursor=pointer]:
+            - /url: /services
+          - list [ref=e28]:
+            - listitem [ref=e29]:
+              - link "Event Photography" [ref=e30] [cursor=pointer]:
+                - /url: /services/event-photography
+                - text: Event Photography
+            - listitem [ref=e32]:
+              - link "Birthday Parties" [ref=e33] [cursor=pointer]:
+                - /url: /services/birthday-parties
+            - listitem [ref=e34]:
+              - link "Headshots" [ref=e35] [cursor=pointer]:
+                - /url: /services/headshots
+            - listitem [ref=e36]:
+              - link "Product Photography" [ref=e37] [cursor=pointer]:
+                - /url: /services/product-photography
+            - listitem [ref=e38]:
+              - link "Family & Lifestyle" [ref=e39] [cursor=pointer]:
+                - /url: /services/family-lifestyle
+            - listitem [ref=e40]:
+              - link "Wedding Photography" [ref=e41] [cursor=pointer]:
+                - /url: /services/wedding-photography
+            - listitem [ref=e42]:
+              - link "Meerkats & Pets" [ref=e43] [cursor=pointer]:
+                - /url: /services/meerkats-pets
+      - article [ref=e44]:
+        - generic [ref=e46]:
+          - heading "Event Photography" [level=1] [ref=e47]
+          - generic [ref=e48]:
+            - paragraph [ref=e49]: Corporate functions, awards nights, conferences and milestone celebrations, photographed with a calm, documentary approach.
+            - paragraph [ref=e50]: I cover the headline moments — the speeches, the awards, the big reveal — alongside the candid energy in the room, so the event feels exactly like it did on the day.
+        - region "Event Photography gallery" [ref=e51]:
+          - generic [ref=e52]:
+            - figure [ref=e53]:
+              - button "Open Event Photography photo 1" [ref=e54]:
+                - img "Event Photography gallery photo 1" [ref=e55]
+            - figure [ref=e56]:
+              - button "Open Event Photography photo 2" [ref=e57]:
+                - img "Event Photography gallery photo 2" [ref=e58]
+            - figure [ref=e59]:
+              - button "Open Event Photography photo 3" [ref=e60]:
+                - img "Event Photography gallery photo 3" [ref=e61]
+            - figure [ref=e62]:
+              - button "Open Event Photography photo 4" [ref=e63]:
+                - img "Event Photography gallery photo 4" [ref=e64]
+            - figure [ref=e65]:
+              - button "Open Event Photography photo 5" [ref=e66]:
+                - img "Event Photography gallery photo 5" [ref=e67]
+            - figure [ref=e68]:
+              - button "Open Event Photography photo 6" [ref=e69]:
+                - img "Event Photography gallery photo 6" [ref=e70]
+            - figure [ref=e71]:
+              - button "Open Event Photography photo 7" [ref=e72]:
+                - img "Event Photography gallery photo 7" [ref=e73]
+            - figure [ref=e74]:
+              - button "Open Event Photography photo 8" [ref=e75]:
+                - img "Event Photography gallery photo 8" [ref=e76]
+            - figure [ref=e77]:
+              - button "Open Event Photography photo 9" [ref=e78]:
+                - img "Event Photography gallery photo 9" [ref=e79]
+            - figure [ref=e80]:
+              - button "Open Event Photography photo 10" [ref=e81]:
+                - img "Event Photography gallery photo 10" [ref=e82]
+            - figure [ref=e83]:
+              - button "Open Event Photography photo 11" [ref=e84]:
+                - img "Event Photography gallery photo 11" [ref=e85]
+            - figure [ref=e86]:
+              - button "Open Event Photography photo 12" [ref=e87]:
+                - img "Event Photography gallery photo 12" [ref=e88]
+            - figure [ref=e89]:
+              - button "Open Event Photography photo 13" [ref=e90]:
+                - img "Event Photography gallery photo 13" [ref=e91]
+            - figure [ref=e92]:
+              - button "Open Event Photography photo 14" [ref=e93]:
+                - img "Event Photography gallery photo 14" [ref=e94]
+            - figure [ref=e95]:
+              - button "Open Event Photography photo 15" [ref=e96]:
+                - img "Event Photography gallery photo 15" [ref=e97]
+            - figure [ref=e98]:
+              - button "Open Event Photography photo 16" [ref=e99]:
+                - img "Event Photography gallery photo 16" [ref=e100]
+            - figure [ref=e101]:
+              - button "Open Event Photography photo 17" [ref=e102]:
+                - img "Event Photography gallery photo 17" [ref=e103]
+            - figure [ref=e104]:
+              - button "Open Event Photography photo 18" [ref=e105]:
+                - img "Event Photography gallery photo 18" [ref=e106]
+            - figure [ref=e107]:
+              - button "Open Event Photography photo 19" [ref=e108]:
+                - img "Event Photography gallery photo 19" [ref=e109]
+            - figure [ref=e110]:
+              - button "Open Event Photography photo 20" [ref=e111]:
+                - img "Event Photography gallery photo 20" [ref=e112]
+            - figure [ref=e113]:
+              - button "Open Event Photography photo 21" [ref=e114]:
+                - img "Event Photography gallery photo 21" [ref=e115]
+            - figure [ref=e116]:
+              - button "Open Event Photography photo 22" [ref=e117]:
+                - img "Event Photography gallery photo 22" [ref=e118]
+            - figure [ref=e119]:
+              - button "Open Event Photography photo 23" [ref=e120]:
+                - img "Event Photography gallery photo 23" [ref=e121]
+            - figure [ref=e122]:
+              - button "Open Event Photography photo 24" [ref=e123]:
+                - img "Event Photography gallery photo 24" [ref=e124]
+            - figure [ref=e125]:
+              - button "Open Event Photography photo 25" [ref=e126]:
+                - img "Event Photography gallery photo 25" [ref=e127]
+            - figure [ref=e128]:
+              - button "Open Event Photography photo 26" [ref=e129]:
+                - img "Event Photography gallery photo 26" [ref=e130]
+            - figure [ref=e131]:
+              - button "Open Event Photography photo 27" [ref=e132]:
+                - img "Event Photography gallery photo 27" [ref=e133]
+            - figure [ref=e134]:
+              - button "Open Event Photography photo 28" [ref=e135]:
+                - img "Event Photography gallery photo 28" [ref=e136]
+            - figure [ref=e137]:
+              - button "Open Event Photography photo 29" [ref=e138]:
+                - img "Event Photography gallery photo 29" [ref=e139]
+            - figure [ref=e140]:
+              - button "Open Event Photography photo 30" [ref=e141]:
+                - img "Event Photography gallery photo 30" [ref=e142]
+            - figure [ref=e143]:
+              - button "Open Event Photography photo 31" [ref=e144]:
+                - img "Event Photography gallery photo 31" [ref=e145]
+            - figure [ref=e146]:
+              - button "Open Event Photography photo 32" [ref=e147]:
+                - img "Event Photography gallery photo 32" [ref=e148]
+            - figure [ref=e149]:
+              - button "Open Event Photography photo 33" [ref=e150]:
+                - img "Event Photography gallery photo 33" [ref=e151]
+            - figure [ref=e152]:
+              - button "Open Event Photography photo 34" [ref=e153]:
+                - img "Event Photography gallery photo 34" [ref=e154]
+            - figure [ref=e155]:
+              - button "Open Event Photography photo 35" [ref=e156]:
+                - img "Event Photography gallery photo 35" [ref=e157]
+            - figure [ref=e158]:
+              - button "Open Event Photography photo 36" [ref=e159]:
+                - img "Event Photography gallery photo 36" [ref=e160]
+            - figure [ref=e161]:
+              - button "Open Event Photography photo 37" [ref=e162]:
+                - img "Event Photography gallery photo 37" [ref=e163]
+            - figure [ref=e164]:
+              - button "Open Event Photography photo 38" [ref=e165]:
+                - img "Event Photography gallery photo 38" [ref=e166]
+            - figure [ref=e167]:
+              - button "Open Event Photography photo 39" [ref=e168]:
+                - img "Event Photography gallery photo 39" [ref=e169]
+            - figure [ref=e170]:
+              - button "Open Event Photography photo 40" [ref=e171]:
+                - img "Event Photography gallery photo 40" [ref=e172]
+            - figure [ref=e173]:
+              - button "Open Event Photography photo 41" [ref=e174]:
+                - img "Event Photography gallery photo 41" [ref=e175]
+            - figure [ref=e176]:
+              - button "Open Event Photography photo 42" [ref=e177]:
+                - img "Event Photography gallery photo 42" [ref=e178]
+            - figure [ref=e179]:
+              - button "Open Event Photography photo 43" [ref=e180]:
+                - img "Event Photography gallery photo 43" [ref=e181]
+            - figure [ref=e182]:
+              - button "Open Event Photography photo 44" [ref=e183]:
+                - img "Event Photography gallery photo 44" [ref=e184]
+            - figure [ref=e185]:
+              - button "Open Event Photography photo 45" [ref=e186]:
+                - img "Event Photography gallery photo 45" [ref=e187]
+            - figure [ref=e188]:
+              - button "Open Event Photography photo 46" [ref=e189]:
+                - img "Event Photography gallery photo 46" [ref=e190]
+            - figure [ref=e191]:
+              - button "Open Event Photography photo 47" [ref=e192]:
+                - img "Event Photography gallery photo 47" [ref=e193]
+            - figure [ref=e194]:
+              - button "Open Event Photography photo 48" [ref=e195]:
+                - img "Event Photography gallery photo 48" [ref=e196]
+            - figure [ref=e197]:
+              - button "Open Event Photography photo 49" [ref=e198]:
+                - img "Event Photography gallery photo 49" [ref=e199]
+            - figure [ref=e200]:
+              - button "Open Event Photography photo 50" [ref=e201]:
+                - img "Event Photography gallery photo 50" [ref=e202]
+            - figure [ref=e203]:
+              - button "Open Event Photography photo 51" [ref=e204]:
+                - img "Event Photography gallery photo 51" [ref=e205]
+            - figure [ref=e206]:
+              - button "Open Event Photography photo 52" [ref=e207]:
+                - img "Event Photography gallery photo 52" [ref=e208]
+            - figure [ref=e209]:
+              - button "Open Event Photography photo 53" [ref=e210]:
+                - img "Event Photography gallery photo 53" [ref=e211]
+            - figure [ref=e212]:
+              - button "Open Event Photography photo 54" [ref=e213]:
+                - img "Event Photography gallery photo 54" [ref=e214]
+            - figure [ref=e215]:
+              - button "Open Event Photography photo 55" [ref=e216]:
+                - img "Event Photography gallery photo 55" [ref=e217]
+            - figure [ref=e218]:
+              - button "Open Event Photography photo 56" [ref=e219]:
+                - img "Event Photography gallery photo 56" [ref=e220]
+            - figure [ref=e221]:
+              - button "Open Event Photography photo 57" [ref=e222]:
+                - img "Event Photography gallery photo 57" [ref=e223]
+  - generic [ref=e224]:
+    - img [ref=e226]
+    - generic [ref=e229]:
+      - textbox "Your name*" [ref=e230]
+      - textbox "Email*" [ref=e231]
+      - textbox "Phone*" [ref=e232]
+      - textbox "Message" [ref=e233]
+      - button "Submit" [ref=e235]
+  - contentinfo [ref=e236]:
+    - generic [ref=e237]:
+      - generic [ref=e238]:
+        - generic [ref=e239]:
+          - link "Meerkat Photography" [ref=e240] [cursor=pointer]:
+            - /url: /
+            - img "Meerkat Photography" [ref=e241]
+          - generic [ref=e242]:
+            - link "Facebook" [ref=e243] [cursor=pointer]:
+              - /url: https://www.facebook.com/meerkatphotography
+              - img [ref=e244]
+            - link "Instagram" [ref=e246] [cursor=pointer]:
+              - /url: https://instagram.com/kitspix/
+              - img [ref=e247]
+        - generic [ref=e251]:
+          - generic [ref=e252]: Contact
+          - generic [ref=e254]: 9/8 Dale Street, Mount Nasura WA 6112, Australia
+          - generic [ref=e255]:
+            - text: "Phone:"
+            - link "0408 847 723" [ref=e256] [cursor=pointer]:
+              - /url: tel:0408 847 723
+          - generic [ref=e257]:
+            - text: "Email:"
+            - link "nora@meerkatphotography.au" [ref=e258] [cursor=pointer]:
+              - /url: mailto:nora@meerkatphotography.au
+          - button "Book a Shoot" [ref=e259]
+          - iframe [ref=e261]:
+            - link "Open in Maps (opens in new tab)" [ref=f19e4] [cursor=pointer]:
+              - /url: about:invalid#zClosurez
+              - text: Open in Maps
+              - img [ref=f19e6]
+        - navigation [ref=e262]:
+          - generic [ref=e263]: Services
+          - list [ref=e265]:
+            - listitem [ref=e266]:
+              - link "Event Photography" [ref=e267] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e268]:
+              - link "Birthday Parties" [ref=e269] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e270]:
+              - link "Headshots" [ref=e271] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e272]:
+              - link "Product Photography" [ref=e273] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e274]:
+              - link "Family & Lifestyle" [ref=e275] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e276]:
+              - link "Wedding Photography" [ref=e277] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e278]:
+              - link "Meerkats & Pets" [ref=e279] [cursor=pointer]:
+                - /url: /services
+        - navigation [ref=e280]:
+          - generic [ref=e281]: Useful Links
+          - list [ref=e283]:
+            - listitem [ref=e284]:
+              - link "About Me" [ref=e285] [cursor=pointer]:
+                - /url: /about-me
+            - listitem [ref=e286]:
+              - link "Services" [ref=e287] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e288]:
+              - link "Contact Us" [ref=e289] [cursor=pointer]:
+                - /url: /contact-us
+      - paragraph [ref=e290]: (c) Meerkat Photography 2026.
+  - button "Open Next.js Dev Tools" [ref=e296] [cursor=pointer]:
+    - img [ref=e297]
+  - alert [ref=e300]

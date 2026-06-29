@@ -1,0 +1,382 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Kit Photography" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img "Kit Photography" [ref=e5]
+      - button "Toggle menu" [ref=e6]
+  - main [ref=e10]:
+    - generic [ref=e11]:
+      - iframe [ref=e12]:
+        
+      - img [ref=e15]
+      - link "Scroll" [ref=e18] [cursor=pointer]:
+        - /url: "#intro"
+        - generic [ref=e19]: Scroll
+        - img [ref=e20]
+    - generic [ref=e27]:
+      - heading "Capture your business in the best light" [level=2] [ref=e28]
+      - heading "Commercial, Portrait & Product Photography Melbourne" [level=1] [ref=e29]
+      - link "Get a quote" [ref=e30] [cursor=pointer]:
+        - /url: "#contact"
+    - generic [ref=e32]:
+      - generic [ref=e33]:
+        - heading "Services" [level=2] [ref=e34]
+        - heading "Great photography doesn’t just speak for itself… it speaks for you, it works for you and it commands an audience." [level=3] [ref=e35]
+      - generic [ref=e36]:
+        - paragraph [ref=e37]: We’re a Melbourne-based commercial and corporate photography studio providing professional photography and video services for businesses, brands and organisations.
+        - paragraph [ref=e38]: "We specialise in:"
+        - list [ref=e39]:
+          - listitem [ref=e40]: Commercial photography for marketing and advertising
+          - listitem [ref=e42]: Corporate headshots and team photography (studio & onsite)
+          - listitem [ref=e44]: Product and eCommerce photography
+          - listitem [ref=e46]: Lifestyle and brand storytelling photography
+          - listitem [ref=e48]: Event photography and short-form brand video
+        - paragraph [ref=e50]: We work with Melbourne businesses and deliver projects across Victoria and Australia-wide.
+      - generic [ref=e51]:
+        - link "Commercial Photography Compelling, unique images for all your commercial needs — advertising, marketing and a cohesive brand image that showcases your products and services. Find out more" [ref=e52] [cursor=pointer]:
+          - /url: /services
+          - heading "Commercial Photography" [level=4] [ref=e54]
+          - paragraph [ref=e56]: Compelling, unique images for all your commercial needs — advertising, marketing and a cohesive brand image that showcases your products and services.
+          - generic [ref=e57]: Find out more
+        - link "Corporate Photography High-quality images that accurately reflect your company's values and people, helping establish or enhance your brand and connect with your audience. Find out more" [ref=e59] [cursor=pointer]:
+          - /url: /services
+          - heading "Corporate Photography" [level=4] [ref=e61]
+          - paragraph [ref=e63]: High-quality images that accurately reflect your company's values and people, helping establish or enhance your brand and connect with your audience.
+          - generic [ref=e64]: Find out more
+        - link "Corporate Headshot Photography Present yourself and your team in the best possible light, onsite or in the studio, in a style that aligns with your brand. Find out more" [ref=e66] [cursor=pointer]:
+          - /url: /services
+          - heading "Corporate Headshot Photography" [level=4] [ref=e68]
+          - paragraph [ref=e70]: Present yourself and your team in the best possible light, onsite or in the studio, in a style that aligns with your brand.
+          - generic [ref=e71]: Find out more
+        - link "Lifestyle Photography Authentic, relatable imagery that captivates the imagination, desires and aspirations of your audience. Find out more" [ref=e73] [cursor=pointer]:
+          - /url: /services
+          - heading "Lifestyle Photography" [level=4] [ref=e75]
+          - paragraph [ref=e77]: Authentic, relatable imagery that captivates the imagination, desires and aspirations of your audience.
+          - generic [ref=e78]: Find out more
+        - link "Portrait Photography Artistic, skillful portraiture that captures the essence and personality of individuals and communicates a clear message. Find out more" [ref=e80] [cursor=pointer]:
+          - /url: /services
+          - heading "Portrait Photography" [level=4] [ref=e82]
+          - paragraph [ref=e84]: Artistic, skillful portraiture that captures the essence and personality of individuals and communicates a clear message.
+          - generic [ref=e85]: Find out more
+        - link "Product Photography Showcase your products in the best possible light — imagery that inspires customers, drives sales and builds an irresistible brand presence. Find out more" [ref=e87] [cursor=pointer]:
+          - /url: /services
+          - heading "Product Photography" [level=4] [ref=e89]
+          - paragraph [ref=e91]: Showcase your products in the best possible light — imagery that inspires customers, drives sales and builds an irresistible brand presence.
+          - generic [ref=e92]: Find out more
+      - link "View all services" [ref=e95] [cursor=pointer]:
+        - /url: /services
+    - generic [ref=e96]:
+      - img [ref=e98]
+      - generic [ref=e100]:
+        - heading "Case Studies and Portfolio" [level=2] [ref=e101]
+        - paragraph [ref=e102]: We work with businesses, agencies and organisations across Melbourne and Australia to deliver commercial, corporate and brand photography that performs in real-world marketing.
+        - paragraph [ref=e103]: "Our portfolio includes:"
+        - list [ref=e104]:
+          - listitem [ref=e105]: Corporate and executive photography for professional services
+          - listitem [ref=e107]: Government and organisational photography projects
+          - listitem [ref=e109]: Product and eCommerce photography
+          - listitem [ref=e111]: Lifestyle, people and brand storytelling
+          - listitem [ref=e113]: Property and architectural photography
+        - heading "Take a look below at some of our work and see for yourself why we are so proud and passionate about what we do." [level=4] [ref=e115]
+      - generic [ref=e117]:
+        - img "Outdoor education photography" [ref=e118]
+        - img "Health and wellness photography" [ref=e119]
+        - img "Festive retail photography" [ref=e120]
+        - img "Corporate event photography" [ref=e121]
+        - img "Brand hero photography" [ref=e122]
+        - img "Lifestyle photography" [ref=e123]
+        - img "Corporate brand story" [ref=e124]
+        - img "Campaign photography" [ref=e125]
+        - img "Portrait photography" [ref=e126]
+        - img "Retail interior photography" [ref=e127]
+        - img "Education campaign photography" [ref=e128]
+        - img "Agriculture photography" [ref=e129]
+        - img
+        - img
+        - generic [ref=e131]:
+          - button "Previous" [ref=e132] [cursor=pointer]:
+            - img [ref=e133]
+          - generic [ref=e135]:
+            - button "Go to slide 1" [ref=e136]
+            - button "Go to slide 2" [ref=e137]
+            - button "Go to slide 3" [ref=e138]
+            - button "Go to slide 4" [ref=e139]
+            - button "Go to slide 5" [ref=e140]
+            - button "Go to slide 6" [ref=e141]
+            - button "Go to slide 7" [ref=e142]
+            - button "Go to slide 8" [ref=e143]
+            - button "Go to slide 9" [ref=e144]
+            - button "Go to slide 10" [ref=e145]
+            - button "Go to slide 11" [ref=e146]
+            - button "Go to slide 12" [ref=e147]
+          - button "Next" [ref=e148] [cursor=pointer]:
+            - img [ref=e149]
+      - generic [ref=e151]:
+        - link "View Case Studies" [ref=e152] [cursor=pointer]:
+          - /url: "#contact"
+        - link "View Portfolio" [ref=e153] [cursor=pointer]:
+          - /url: "#contact"
+    - generic [ref=e154]:
+      - img [ref=e156]
+      - generic [ref=e158]:
+        - generic [ref=e159]:
+          - heading "Our Approach to your photography project" [level=2] [ref=e160]
+          - paragraph [ref=e161]: A Proven Commercial Photography Process in Melbourne
+          - paragraph [ref=e162]: We’re a Melbourne-based commercial and corporate photography studio delivering tailored photography and video services for businesses and brands.
+          - paragraph [ref=e163]: Our structured approach ensures every project is planned, efficient and aligned with your marketing goals.
+          - heading "Interested?" [level=3] [ref=e164]
+          - paragraph [ref=e165]: Check out our process below, or enquire now to discuss your project.
+        - generic [ref=e167]:
+          - button "1 Lets meet & brief" [ref=e168]:
+            - generic [ref=e169]:
+              - generic [ref=e170]: "1"
+              - generic [ref=e171]: Lets meet & brief
+          - button "2 The Shoot" [ref=e172]:
+            - generic [ref=e173]:
+              - generic [ref=e174]: "2"
+              - generic [ref=e175]: The Shoot
+          - button "3 Post Production" [ref=e176]:
+            - generic [ref=e177]:
+              - generic [ref=e178]: "3"
+              - generic [ref=e179]: Post Production
+          - button "4 Delivery" [ref=e180]:
+            - generic [ref=e181]:
+              - generic [ref=e182]: "4"
+              - generic [ref=e183]: Delivery
+        - generic [ref=e185]:
+          - heading "The Shoot" [level=4] [ref=e186]
+          - generic [ref=e187]:
+            - paragraph [ref=e188]: On the day of the shoot, it pays to have a professional. With 15 years experience we are a team of professional creatives with a refined process. We do the homework and preparation required so on the day we are able to have a relaxed, personable yet professional feel to the shoot.
+            - paragraph [ref=e189]: Taking the stress out of the day for our clients helps to relax potentially nervous subjects, organise people effectively and have a shoot run smoothly and efficiently, making it an enjoyable experience for all.
+            - paragraph [ref=e190]: We bring all equipment needed to the job so that we are able to shoot a range of styles, sizes and angles, enabling shots to be repurposed and utilised across all, and any marketing content.
+            - paragraph [ref=e191]: Our "shoot and review" process, communication skills, and drive for client satisfaction means we are in constant collaboration with our clients to nail their brief every time.
+            - paragraph [ref=e192]: From corporate portraits to lifestyle content for websites, property and landscapes to stunning commercial product shots, we have the expertise and technical skills to get the best results on the day.
+        - link "Enquire now" [ref=e194] [cursor=pointer]:
+          - /url: "#contact"
+    - generic [ref=e196]:
+      - generic [ref=e198]:
+        - img "Kit, Melbourne commercial photographer" [ref=e201]
+        - generic [ref=e202]:
+          - heading "About Me" [level=2] [ref=e203]
+          - heading "Commercial & corporate photographer in Melbourne" [level=3] [ref=e204]
+          - generic [ref=e205]:
+            - paragraph [ref=e206]: I’m Kit, a Melbourne-based commercial and corporate photographer with over 15 years of experience helping businesses create professional, brand-aligned imagery for marketing, advertising and corporate use.
+            - paragraph [ref=e207]: I specialise in commercial photography, corporate photography and business headshots — capturing high-quality images that reflect a company’s values, people and culture. My work supports branding, marketing campaigns, websites and professional profiles.
+            - paragraph [ref=e208]: Based in Melbourne, I work with businesses across Victoria and Australia-wide.
+          - link "Read more about me" [ref=e209] [cursor=pointer]:
+            - /url: /about-me
+      - generic [ref=e211]:
+        - heading "Why work with me?" [level=2] [ref=e212]
+        - heading "Communication and collaboration as the foundation of our creative process" [level=3] [ref=e213]
+        - generic [ref=e214]:
+          - generic [ref=e215]:
+            - paragraph [ref=e216]: I’m dedicated to more than creating powerful and influential images and video — I want to bring your values, products and people to life in a captivating and unmistakable way. With communication and collaboration as the foundation of my creative process, I take the time, do the research and bring the experience to consistently deliver strong results.
+            - paragraph [ref=e217]: "Why clients work with us:"
+            - list [ref=e218]:
+              - listitem [ref=e219]:
+                - generic [ref=e221]:
+                  - strong [ref=e222]: 15+ years' experience
+                  - text: in commercial and corporate photography
+              - listitem [ref=e223]:
+                - generic [ref=e225]:
+                  - strong [ref=e226]: Clear communication & planning
+                  - text: from brief to delivery
+              - listitem [ref=e227]:
+                - generic [ref=e229]:
+                  - strong [ref=e230]: Studio and onsite photography
+                  - text: across Melbourne and Victoria
+              - listitem [ref=e231]:
+                - generic [ref=e233]:
+                  - strong [ref=e234]: Consistent, high-quality results
+                  - text: for marketing, web and campaigns
+              - listitem [ref=e235]:
+                - generic [ref=e237]:
+                  - strong [ref=e238]: Efficient turnaround
+                  - text: with minimal disruption to your team
+            - paragraph [ref=e239]: My collaborative process ensures your brand values, people and products are captured accurately and professionally.
+            - link "Our packages" [ref=e240] [cursor=pointer]:
+              - /url: "#contact"
+          - img "Behind the scenes on a commercial photography shoot" [ref=e242]
+    - generic [ref=e246]:
+      - blockquote [ref=e250]:
+        - generic [ref=e251]:
+          - paragraph [ref=e252]: Absolutely thrilled with Kit's work at our Company Christmas party! The photos were fantastic and truly captured all the moments and details we wanted. Kit was professional, communicative, and delivered the gallery within the timeframe he promised. Highly recommend Kit for any event photography needs!
+          - generic [ref=e253]: "- Melissa Di Biase, Mirvac"
+      - blockquote [ref=e257]:
+        - generic [ref=e258]:
+          - paragraph [ref=e259]: I highly recommend Kit Photography! We had our corporate photos done (which is not always fun!) but Kit Photography made it an enjoyable experience. The photos were both professional and also truly authentic and natural! Will definitely use Kit Photography again.
+          - generic [ref=e260]: "- Donna Abu-Elias, Spectrum Law"
+      - blockquote [ref=e264]:
+        - generic [ref=e265]:
+          - paragraph [ref=e266]: Kit photographed our 3 day company event, with great results! He was super flexible to our changing schedule in the lead-up and even our shooting requirements throughout the event. Would absolutely recommend.
+          - generic [ref=e267]: "- Temara Chapman, Marketing Manager, Rome 2 Rio"
+      - blockquote [ref=e271]:
+        - generic [ref=e272]:
+          - paragraph [ref=e273]: Kit and Dani made the entire process seamless and were so easy to work with. The final results were incredible and there was an incredibly speedy turnaround. Highly recommend!
+          - generic [ref=e274]: "- Chiara — RISE, 101 Collins"
+      - blockquote [ref=e278]:
+        - generic [ref=e279]:
+          - paragraph [ref=e280]: Kit worked with us at a corporate event and took some amazing photos. He was highly professional and the photos were delivered quick and seamlessly.
+          - generic [ref=e281]: "- Georgia"
+      - blockquote [ref=e285]:
+        - generic [ref=e286]:
+          - paragraph [ref=e287]: Absolutely thrilled with Kit's work at our Company Christmas party! The photos were fantastic and truly captured all the moments and details we wanted. Kit was professional, communicative, and delivered the gallery within the timeframe he promised. Highly recommend Kit for any event photography needs!
+          - generic [ref=e288]: "- Melissa Di Biase, Mirvac"
+    - generic [ref=e291]:
+      - generic [ref=e292]:
+        - button "What types of photography do you specialise in?" [expanded] [ref=e293] [cursor=pointer]:
+          - generic [ref=e294]: What types of photography do you specialise in?
+          - generic [ref=e295]: "-"
+        - paragraph [ref=e299]: We specialise in commercial, corporate headshots, portrait, lifestyle, product/eCommerce, property, event and commercial video.
+      - generic [ref=e300]:
+        - button "Do you shoot onsite across Melbourne or only in-studio?" [ref=e301] [cursor=pointer]:
+          - generic [ref=e302]: Do you shoot onsite across Melbourne or only in-studio?
+          - generic [ref=e303]: +
+        - paragraph [ref=e305]: Both. We shoot onsite across Melbourne (CBD, Southbank, Richmond, St Kilda, Docklands) and greater Victoria. We also offer studio sessions on both sides of the city.
+      - generic [ref=e306]:
+        - button "Can you photograph our team at our office?" [ref=e307] [cursor=pointer]:
+          - generic [ref=e308]: Can you photograph our team at our office?
+          - generic [ref=e309]: +
+        - paragraph [ref=e311]: Yes. We bring mobile lighting and backdrops to your workplace for consistent, studio-quality headshots and team photos.
+      - generic [ref=e312]:
+        - button "How long does a typical session take?" [ref=e313] [cursor=pointer]:
+          - generic [ref=e314]: How long does a typical session take?
+          - generic [ref=e315]: +
+        - paragraph [ref=e317]: Headshots usually take 10–15 minutes per person, while commercial or product shoots can range from half-day to full-day depending on the scope. For CEO portraits with more media-style shots, we allow 2–4 hours depending on your shot list.
+      - generic [ref=e318]:
+        - button "How quickly will we receive the final images?" [ref=e319] [cursor=pointer]:
+          - generic [ref=e320]: How quickly will we receive the final images?
+          - generic [ref=e321]: +
+        - paragraph [ref=e323]: Most projects are delivered within 7–10 business days with an online gallery of edited, high-resolution files (web-optimised versions on request).
+      - generic [ref=e324]:
+        - button "Do you provide retouching, hair and makeup?" [ref=e325] [cursor=pointer]:
+          - generic [ref=e326]: Do you provide retouching, hair and makeup?
+          - generic [ref=e327]: +
+        - paragraph [ref=e329]: Yes. Colour correction and light retouching are included; we can organise professional hair, makeup and styling on request.
+      - generic [ref=e330]:
+        - button "Can you match our brand guidelines and visual style?" [ref=e331] [cursor=pointer]:
+          - generic [ref=e332]: Can you match our brand guidelines and visual style?
+          - generic [ref=e333]: +
+        - paragraph [ref=e335]: Absolutely. We align lighting, colour and composition to your brand guidelines and existing content for consistent results.
+      - generic [ref=e336]:
+        - button "Do we receive commercial usage rights?" [ref=e337] [cursor=pointer]:
+          - generic [ref=e338]: Do we receive commercial usage rights?
+          - generic [ref=e339]: +
+        - paragraph [ref=e341]: Yes. Final images include commercial usage rights for your business across web, social and marketing (ask us about extended use if required).
+      - generic [ref=e342]:
+        - button "Do you offer photo + video packages?" [ref=e343] [cursor=pointer]:
+          - generic [ref=e344]: Do you offer photo + video packages?
+          - generic [ref=e345]: +
+        - paragraph [ref=e347]: Yes. We provide integrated photo and short-form video options — ideal for campaigns, interviews and product launches.
+      - generic [ref=e348]:
+        - button "How do we book or get a quote?" [ref=e349] [cursor=pointer]:
+          - generic [ref=e350]: How do we book or get a quote?
+          - generic [ref=e351]: +
+        - paragraph [ref=e353]: Click “Get a Quote” or fill in the enquiry form below, share your brief and preferred dates, and we'll confirm pricing and availability within one business day.
+    - generic [ref=e354]:
+      - generic [ref=e355]:
+        - heading "Melbourne Photography Studio & Service Area" [level=2] [ref=e357]
+        - paragraph [ref=e358]:
+          - text: I offer
+          - strong [ref=e359]: studio and onsite photography
+          - text: throughout the Melbourne CBD, Southbank, Richmond, St Kilda and surrounding suburbs, with the capability to deliver commercial photography projects Australia-wide.
+        - paragraph [ref=e360]: Visit the Melbourne studio or contact me to discuss your photography project, availability and location requirements.
+      - img [ref=e362]
+      - generic [ref=e364]:
+        - generic [ref=e366]:
+          - textbox "Business Name*" [ref=e367]
+          - textbox "Email*" [ref=e368]
+          - textbox "Phone" [ref=e369]
+          - textbox "Message" [ref=e370]
+          - generic [ref=e371]:
+            - paragraph [ref=e372]: What type of service do you require?
+            - combobox [ref=e373]:
+              - option "—Please choose an option—" [disabled] [selected]
+              - option "Headshot/Portrait"
+              - option "Corporate"
+              - option "Commercial"
+              - option "Event/PR"
+              - option "Lifestyle"
+              - option "Product"
+              - option "Property"
+              - option "Other"
+          - generic [ref=e374]:
+            - paragraph [ref=e375]: How did you find us?
+            - combobox [ref=e376]:
+              - option "—Please choose an option—" [disabled] [selected]
+              - option "Google Search"
+              - option "Google Maps"
+              - option "Recommendation"
+              - option "Friend"
+              - option "Social Media"
+              - option "Other Site"
+          - button "Submit" [ref=e378]
+        - img [ref=e379]
+  - contentinfo [ref=e381]:
+    - generic [ref=e382]:
+      - generic [ref=e383]:
+        - generic [ref=e385]: Newsletter
+        - textbox "Email" [ref=e387]
+        - button "Sign Up" [ref=e389]
+      - generic [ref=e391]:
+        - link "Kit Photography" [ref=e393] [cursor=pointer]:
+          - /url: /
+          - img "Kit Photography" [ref=e394]
+        - generic [ref=e395]:
+          - generic [ref=e396]: Contact
+          - generic [ref=e398]: Melbourne, Australia
+          - generic [ref=e399]:
+            - text: "Phone:"
+            - link "0405 260 868" [ref=e400] [cursor=pointer]:
+              - /url: tel:0405 260 868
+          - generic [ref=e401]:
+            - text: "Email:"
+            - link "kit@kit.photo" [ref=e402] [cursor=pointer]:
+              - /url: mailto:kit@kit.photo
+          - link "Book a Shoot" [ref=e403] [cursor=pointer]:
+            - /url: "#contact"
+          - generic [ref=e404]:
+            - link "LinkedIn" [ref=e405] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/kitspix
+              - img [ref=e406]
+            - link "Instagram" [ref=e408] [cursor=pointer]:
+              - /url: https://instagram.com/kitspix/
+              - img [ref=e409]
+        - navigation [ref=e413]:
+          - generic [ref=e414]: Services
+          - list [ref=e416]:
+            - listitem [ref=e417]:
+              - link "Commercial Photography" [ref=e418] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e419]:
+              - link "Corporate Photography" [ref=e420] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e421]:
+              - link "Corporate Headshot Photography" [ref=e422] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e423]:
+              - link "Lifestyle Photography" [ref=e424] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e425]:
+              - link "Portrait Photography" [ref=e426] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e427]:
+              - link "Product Photography" [ref=e428] [cursor=pointer]:
+                - /url: /services
+        - navigation [ref=e429]:
+          - generic [ref=e430]: Useful Links
+          - list [ref=e432]:
+            - listitem [ref=e433]:
+              - link "About Me" [ref=e434] [cursor=pointer]:
+                - /url: /about-me
+            - listitem [ref=e435]:
+              - link "Services" [ref=e436] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e437]:
+              - link "Contact Us" [ref=e438] [cursor=pointer]:
+                - /url: "#contact"
+      - paragraph [ref=e439]: © Kit Photography 2026.
+  - button "Open Next.js Dev Tools" [ref=e445] [cursor=pointer]:
+    - img [ref=e446]
+  - alert [ref=e449]

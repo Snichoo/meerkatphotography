@@ -1,0 +1,392 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Meerkat Photography" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img "Meerkat Photography" [ref=e5]
+        - generic [ref=e6]:
+          - generic [ref=e7]: Meerkat
+          - generic [ref=e8]: Photography
+      - navigation [ref=e9]:
+        - link "About Me" [ref=e10] [cursor=pointer]:
+          - /url: /about-me
+        - link "Services" [ref=e11] [cursor=pointer]:
+          - /url: /services
+        - link "Contact Us" [ref=e12] [cursor=pointer]:
+          - /url: "#contact"
+      - generic [ref=e13]:
+        - link "Facebook" [ref=e14] [cursor=pointer]:
+          - /url: https://www.facebook.com/meerkatphotography
+          - img [ref=e15]
+        - link "Instagram" [ref=e17] [cursor=pointer]:
+          - /url: https://instagram.com/kitspix/
+          - img [ref=e18]
+        - link "Get a quote" [ref=e22] [cursor=pointer]:
+          - /url: "#contact"
+          - img [ref=e23]
+          - generic [ref=e25]: GET A QUOTE
+  - main [ref=e26]:
+    - generic [ref=e27]:
+      - complementary [ref=e28]:
+        - navigation [ref=e29]:
+          - link "Our Services" [ref=e30] [cursor=pointer]:
+            - /url: /services
+          - list [ref=e31]:
+            - listitem [ref=e32]:
+              - link "Event Photography" [ref=e33] [cursor=pointer]:
+                - /url: /services/event-photography
+                - text: Event Photography
+            - listitem [ref=e35]:
+              - link "Birthday Parties" [ref=e36] [cursor=pointer]:
+                - /url: /services/birthday-parties
+            - listitem [ref=e37]:
+              - link "Headshots" [ref=e38] [cursor=pointer]:
+                - /url: /services/headshots
+            - listitem [ref=e39]:
+              - link "Product Photography" [ref=e40] [cursor=pointer]:
+                - /url: /services/product-photography
+            - listitem [ref=e41]:
+              - link "Family & Lifestyle" [ref=e42] [cursor=pointer]:
+                - /url: /services/family-lifestyle
+            - listitem [ref=e43]:
+              - link "Wedding Photography" [ref=e44] [cursor=pointer]:
+                - /url: /services/wedding-photography
+            - listitem [ref=e45]:
+              - link "Meerkats & Pets" [ref=e46] [cursor=pointer]:
+                - /url: /services/meerkats-pets
+          - link "See Pricing" [ref=e47] [cursor=pointer]:
+            - /url: "#contact"
+      - article [ref=e48]:
+        - generic [ref=e50]:
+          - heading "Event Photography" [level=1] [ref=e51]
+          - generic [ref=e52]:
+            - paragraph [ref=e53]: Corporate functions, awards nights, conferences and milestone celebrations, photographed with a calm, documentary approach.
+            - paragraph [ref=e54]: I cover the headline moments — the speeches, the awards, the big reveal — alongside the candid energy in the room, so the event feels exactly like it did on the day.
+        - region "Event Photography gallery" [ref=e55]:
+          - generic [ref=e56]:
+            - figure "1KPJ 63" [ref=e57]:
+              - button "Open 1KPJ 63" [ref=e58]:
+                - img "Event Photography gallery photo - 1KPJ 63" [ref=e60]
+              - generic [ref=e61]: 1KPJ 63
+            - figure "1KPJ 70" [ref=e62]:
+              - button "Open 1KPJ 70" [ref=e63]:
+                - img "Event Photography gallery photo - 1KPJ 70" [ref=e65]
+              - generic [ref=e66]: 1KPJ 70
+            - figure "1stQR 214" [ref=e67]:
+              - button "Open 1stQR 214" [ref=e68]:
+                - img "Event Photography gallery photo - 1stQR 214" [ref=e70]
+              - generic [ref=e71]: 1stQR 214
+            - figure "2SOS 136" [ref=e72]:
+              - button "Open 2SOS 136" [ref=e73]:
+                - img "Event Photography gallery photo - 2SOS 136" [ref=e75]
+              - generic [ref=e76]: 2SOS 136
+            - figure "2SOS 250" [ref=e77]:
+              - button "Open 2SOS 250" [ref=e78]:
+                - img "Event Photography gallery photo - 2SOS 250" [ref=e80]
+              - generic [ref=e81]: 2SOS 250
+            - figure "3SDMotor 191" [ref=e82]:
+              - button "Open 3SDMotor 191" [ref=e83]:
+                - img "Event Photography gallery photo - 3SDMotor 191" [ref=e85]
+              - generic [ref=e86]: 3SDMotor 191
+            - figure "4SDMotor 58" [ref=e87]:
+              - button "Open 4SDMotor 58" [ref=e88]:
+                - img "Event Photography gallery photo - 4SDMotor 58" [ref=e90]
+              - generic [ref=e91]: 4SDMotor 58
+            - figure "4SDMotor 104" [ref=e92]:
+              - button "Open 4SDMotor 104" [ref=e93]:
+                - img "Event Photography gallery photo - 4SDMotor 104" [ref=e95]
+              - generic [ref=e96]: 4SDMotor 104
+            - figure "4SDMotor 205" [ref=e97]:
+              - button "Open 4SDMotor 205" [ref=e98]:
+                - img "Event Photography gallery photo - 4SDMotor 205" [ref=e100]
+              - generic [ref=e101]: 4SDMotor 205
+            - figure "4SDMotor" [ref=e102]:
+              - button "Open 4SDMotor" [ref=e103]:
+                - img "Event Photography gallery photo - 4SDMotor" [ref=e105]
+              - generic [ref=e106]: 4SDMotor
+            - figure "20251106WA1 258" [ref=e107]:
+              - button "Open 20251106WA1 258" [ref=e108]:
+                - img "Event Photography gallery photo - 20251106WA1 258" [ref=e110]
+              - generic [ref=e111]: 20251106WA1 258
+            - figure "20251106WA1 304" [ref=e112]:
+              - button "Open 20251106WA1 304" [ref=e113]:
+                - img "Event Photography gallery photo - 20251106WA1 304" [ref=e115]
+              - generic [ref=e116]: 20251106WA1 304
+            - figure "20251106WA1 321" [ref=e117]:
+              - button "Open 20251106WA1 321" [ref=e118]:
+                - img "Event Photography gallery photo - 20251106WA1 321" [ref=e120]
+              - generic [ref=e121]: 20251106WA1 321
+            - figure "20251106WA1 376" [ref=e122]:
+              - button "Open 20251106WA1 376" [ref=e123]:
+                - img "Event Photography gallery photo - 20251106WA1 376" [ref=e125]
+              - generic [ref=e126]: 20251106WA1 376
+            - figure "20251106WA1 388" [ref=e127]:
+              - button "Open 20251106WA1 388" [ref=e128]:
+                - img "Event Photography gallery photo - 20251106WA1 388" [ref=e130]
+              - generic [ref=e131]: 20251106WA1 388
+            - figure "20251106WA2 2" [ref=e132]:
+              - button "Open 20251106WA2 2" [ref=e133]:
+                - img "Event Photography gallery photo - 20251106WA2 2" [ref=e135]
+              - generic [ref=e136]: 20251106WA2 2
+            - figure "20251106WA2 35" [ref=e137]:
+              - button "Open 20251106WA2 35" [ref=e138]:
+                - img "Event Photography gallery photo - 20251106WA2 35" [ref=e140]
+              - generic [ref=e141]: 20251106WA2 35
+            - figure "20251106WA2 40" [ref=e142]:
+              - button "Open 20251106WA2 40" [ref=e143]:
+                - img "Event Photography gallery photo - 20251106WA2 40" [ref=e145]
+              - generic [ref=e146]: 20251106WA2 40
+            - figure "20251106WA2 89" [ref=e147]:
+              - button "Open 20251106WA2 89" [ref=e148]:
+                - img "Event Photography gallery photo - 20251106WA2 89" [ref=e150]
+              - generic [ref=e151]: 20251106WA2 89
+            - figure "20251106WA2 97" [ref=e152]:
+              - button "Open 20251106WA2 97" [ref=e153]:
+                - img "Event Photography gallery photo - 20251106WA2 97" [ref=e155]
+              - generic [ref=e156]: 20251106WA2 97
+            - figure "20251106WA2 124" [ref=e157]:
+              - button "Open 20251106WA2 124" [ref=e158]:
+                - img "Event Photography gallery photo - 20251106WA2 124" [ref=e160]
+              - generic [ref=e161]: 20251106WA2 124
+            - figure "20251106WA2 133" [ref=e162]:
+              - button "Open 20251106WA2 133" [ref=e163]:
+                - img "Event Photography gallery photo - 20251106WA2 133" [ref=e165]
+              - generic [ref=e166]: 20251106WA2 133
+            - figure "20251106WA2 141" [ref=e167]:
+              - button "Open 20251106WA2 141" [ref=e168]:
+                - img "Event Photography gallery photo - 20251106WA2 141" [ref=e170]
+              - generic [ref=e171]: 20251106WA2 141
+            - figure "20251106WA2 150" [ref=e172]:
+              - button "Open 20251106WA2 150" [ref=e173]:
+                - img "Event Photography gallery photo - 20251106WA2 150" [ref=e175]
+              - generic [ref=e176]: 20251106WA2 150
+            - figure "20251106WA2 151" [ref=e177]:
+              - button "Open 20251106WA2 151" [ref=e178]:
+                - img "Event Photography gallery photo - 20251106WA2 151" [ref=e180]
+              - generic [ref=e181]: 20251106WA2 151
+            - figure "20251106WA2 161" [ref=e182]:
+              - button "Open 20251106WA2 161" [ref=e183]:
+                - img "Event Photography gallery photo - 20251106WA2 161" [ref=e185]
+              - generic [ref=e186]: 20251106WA2 161
+            - figure "20251106WA2 169" [ref=e187]:
+              - button "Open 20251106WA2 169" [ref=e188]:
+                - img "Event Photography gallery photo - 20251106WA2 169" [ref=e190]
+              - generic [ref=e191]: 20251106WA2 169
+            - figure "A Leia 56" [ref=e192]:
+              - button "Open A Leia 56" [ref=e193]:
+                - img "Event Photography gallery photo - A Leia 56" [ref=e195]
+              - generic [ref=e196]: A Leia 56
+            - figure "ARC 409" [ref=e197]:
+              - button "Open ARC 409" [ref=e198]:
+                - img "Event Photography gallery photo - ARC 409" [ref=e200]
+              - generic [ref=e201]: ARC 409
+            - figure "Aug Hnken 98" [ref=e202]:
+              - button "Open Aug Hnken 98" [ref=e203]:
+                - img "Event Photography gallery photo - Aug Hnken 98" [ref=e205]
+              - generic [ref=e206]: Aug Hnken 98
+            - figure "Chillout 178" [ref=e207]:
+              - button "Open Chillout 178" [ref=e208]:
+                - img "Event Photography gallery photo - Chillout 178" [ref=e210]
+              - generic [ref=e211]: Chillout 178
+            - figure "DRC09647" [ref=e212]:
+              - button "Open DRC09647" [ref=e213]:
+                - img "Event Photography gallery photo - DRC09647" [ref=e215]
+              - generic [ref=e216]: DRC09647
+            - figure "J&T 1Anniversary 162" [ref=e217]:
+              - button "Open J&T 1Anniversary 162" [ref=e218]:
+                - img "Event Photography gallery photo - J&T 1Anniversary 162" [ref=e220]
+              - generic [ref=e221]: J&T 1Anniversary 162
+            - figure "J&T 1Anniversary 181" [ref=e222]:
+              - button "Open J&T 1Anniversary 181" [ref=e223]:
+                - img "Event Photography gallery photo - J&T 1Anniversary 181" [ref=e225]
+              - generic [ref=e226]: J&T 1Anniversary 181
+            - figure "KeshFarewell 139" [ref=e227]:
+              - button "Open KeshFarewell 139" [ref=e228]:
+                - img "Event Photography gallery photo - KeshFarewell 139" [ref=e230]
+              - generic [ref=e231]: KeshFarewell 139
+            - figure "M&D Wedding 507" [ref=e232]:
+              - button "Open M&D Wedding 507" [ref=e233]:
+                - img "Event Photography gallery photo - M&D Wedding 507" [ref=e235]
+              - generic [ref=e236]: M&D Wedding 507
+            - figure "MeMe 142" [ref=e237]:
+              - button "Open MeMe 142" [ref=e238]:
+                - img "Event Photography gallery photo - MeMe 142" [ref=e240]
+              - generic [ref=e241]: MeMe 142
+            - figure "MeMe 172" [ref=e242]:
+              - button "Open MeMe 172" [ref=e243]:
+                - img "Event Photography gallery photo - MeMe 172" [ref=e245]
+              - generic [ref=e246]: MeMe 172
+            - figure "MeMe 178" [ref=e247]:
+              - button "Open MeMe 178" [ref=e248]:
+                - img "Event Photography gallery photo - MeMe 178" [ref=e250]
+              - generic [ref=e251]: MeMe 178
+            - figure "MG 10" [ref=e252]:
+              - button "Open MG 10" [ref=e253]:
+                - img "Event Photography gallery photo - MG 10" [ref=e255]
+              - generic [ref=e256]: MG 10
+            - figure "MG 12" [ref=e257]:
+              - button "Open MG 12" [ref=e258]:
+                - img "Event Photography gallery photo - MG 12" [ref=e260]
+              - generic [ref=e261]: MG 12
+            - figure "MGCCI Big 113" [ref=e262]:
+              - button "Open MGCCI Big 113" [ref=e263]:
+                - img "Event Photography gallery photo - MGCCI Big 113" [ref=e265]
+              - generic [ref=e266]: MGCCI Big 113
+            - figure "SBevent 286" [ref=e267]:
+              - button "Open SBevent 286" [ref=e268]:
+                - img "Event Photography gallery photo - SBevent 286" [ref=e270]
+              - generic [ref=e271]: SBevent 286
+            - figure "SDI 319" [ref=e272]:
+              - button "Open SDI 319" [ref=e273]:
+                - img "Event Photography gallery photo - SDI 319" [ref=e275]
+              - generic [ref=e276]: SDI 319
+            - figure "Sundowner 101" [ref=e277]:
+              - button "Open Sundowner 101" [ref=e278]:
+                - img "Event Photography gallery photo - Sundowner 101" [ref=e280]
+              - generic [ref=e281]: Sundowner 101
+            - figure "Sunway 64" [ref=e282]:
+              - button "Open Sunway 64" [ref=e283]:
+                - img "Event Photography gallery photo - Sunway 64" [ref=e285]
+              - generic [ref=e286]: Sunway 64
+            - figure "Sunway 73" [ref=e287]:
+              - button "Open Sunway 73" [ref=e288]:
+                - img "Event Photography gallery photo - Sunway 73" [ref=e290]
+              - generic [ref=e291]: Sunway 73
+            - figure "Sunway 150" [ref=e292]:
+              - button "Open Sunway 150" [ref=e293]:
+                - img "Event Photography gallery photo - Sunway 150" [ref=e295]
+              - generic [ref=e296]: Sunway 150
+            - figure "Sunway 156" [ref=e297]:
+              - button "Open Sunway 156" [ref=e298]:
+                - img "Event Photography gallery photo - Sunway 156" [ref=e300]
+              - generic [ref=e301]: Sunway 156
+            - figure "Sunway 180" [ref=e302]:
+              - button "Open Sunway 180" [ref=e303]:
+                - img "Event Photography gallery photo - Sunway 180" [ref=e305]
+              - generic [ref=e306]: Sunway 180
+            - figure "Sunway 324" [ref=e307]:
+              - button "Open Sunway 324" [ref=e308]:
+                - img "Event Photography gallery photo - Sunway 324" [ref=e310]
+              - generic [ref=e311]: Sunway 324
+            - figure "TopHeineken 4" [ref=e312]:
+              - button "Open TopHeineken 4" [ref=e313]:
+                - img "Event Photography gallery photo - TopHeineken 4" [ref=e315]
+              - generic [ref=e316]: TopHeineken 4
+            - figure "WHM Twitter 219" [ref=e317]:
+              - button "Open WHM Twitter 219" [ref=e318]:
+                - img "Event Photography gallery photo - WHM Twitter 219" [ref=e320]
+              - generic [ref=e321]: WHM Twitter 219
+            - figure "XmasParty 91" [ref=e322]:
+              - button "Open XmasParty 91" [ref=e323]:
+                - img "Event Photography gallery photo - XmasParty 91" [ref=e325]
+              - generic [ref=e326]: XmasParty 91
+            - figure "XmasParty 92" [ref=e327]:
+              - button "Open XmasParty 92" [ref=e328]:
+                - img "Event Photography gallery photo - XmasParty 92" [ref=e330]
+              - generic [ref=e331]: XmasParty 92
+            - figure "XmasParty 101" [ref=e332]:
+              - button "Open XmasParty 101" [ref=e333]:
+                - img "Event Photography gallery photo - XmasParty 101" [ref=e335]
+              - generic [ref=e336]: XmasParty 101
+            - figure "XmasParty 239" [ref=e337]:
+              - button "Open XmasParty 239" [ref=e338]:
+                - img "Event Photography gallery photo - XmasParty 239" [ref=e340]
+              - generic [ref=e341]: XmasParty 239
+  - generic [ref=e344]:
+    - textbox "Your name*" [ref=e345]
+    - textbox "Email*" [ref=e346]
+    - textbox "Phone" [ref=e347]
+    - textbox "Message" [ref=e348]
+    - generic [ref=e349]:
+      - paragraph [ref=e350]: What are you looking to shoot?
+      - combobox [ref=e351]:
+        - option "—Please choose an option—" [disabled] [selected]
+        - option "Wedding / Engagement / Anniversary"
+        - option "Birthday Party"
+        - option "Family and Lifestyle"
+        - option "Headshots"
+        - option "Product"
+        - option "Event"
+        - option "Meerkats and Pets"
+        - option "Other"
+    - generic [ref=e352]:
+      - paragraph [ref=e353]: How did you hear about me?
+      - combobox [ref=e354]:
+        - option "—Please choose an option—" [disabled] [selected]
+        - option "Google Search"
+        - option "Google Maps"
+        - option "Recommendation"
+        - option "Friend"
+        - option "Social Media"
+        - option "Other Site"
+    - button "Submit" [ref=e356]
+  - contentinfo [ref=e357]:
+    - generic [ref=e358]:
+      - generic [ref=e359]:
+        - generic [ref=e361]: Newsletter
+        - textbox "Email" [ref=e363]
+        - button "Sign Up" [ref=e365]
+      - generic [ref=e367]:
+        - link "Meerkat Photography" [ref=e369] [cursor=pointer]:
+          - /url: /
+          - img "Meerkat Photography" [ref=e370]
+        - generic [ref=e371]:
+          - generic [ref=e372]: Contact
+          - generic [ref=e374]: Melbourne, Australia
+          - generic [ref=e375]:
+            - text: "Phone:"
+            - link "0405 260 868" [ref=e376] [cursor=pointer]:
+              - /url: tel:0405 260 868
+          - generic [ref=e377]:
+            - text: "Email:"
+            - link "hello@meerkat.photo" [ref=e378] [cursor=pointer]:
+              - /url: mailto:hello@meerkat.photo
+          - link "Book a Shoot" [ref=e379] [cursor=pointer]:
+            - /url: "#contact"
+          - generic [ref=e380]:
+            - link "Facebook" [ref=e381] [cursor=pointer]:
+              - /url: https://www.facebook.com/meerkatphotography
+              - img [ref=e382]
+            - link "Instagram" [ref=e384] [cursor=pointer]:
+              - /url: https://instagram.com/kitspix/
+              - img [ref=e385]
+        - navigation [ref=e389]:
+          - generic [ref=e390]: Services
+          - list [ref=e392]:
+            - listitem [ref=e393]:
+              - link "Event Photography" [ref=e394] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e395]:
+              - link "Birthday Parties" [ref=e396] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e397]:
+              - link "Headshots" [ref=e398] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e399]:
+              - link "Product Photography" [ref=e400] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e401]:
+              - link "Family & Lifestyle" [ref=e402] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e403]:
+              - link "Wedding Photography" [ref=e404] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e405]:
+              - link "Meerkats & Pets" [ref=e406] [cursor=pointer]:
+                - /url: /services
+        - navigation [ref=e407]:
+          - generic [ref=e408]: Useful Links
+          - list [ref=e410]:
+            - listitem [ref=e411]:
+              - link "About Me" [ref=e412] [cursor=pointer]:
+                - /url: /about-me
+            - listitem [ref=e413]:
+              - link "Services" [ref=e414] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e415]:
+              - link "Contact Us" [ref=e416] [cursor=pointer]:
+                - /url: "#contact"
+      - paragraph [ref=e417]: (c) Meerkat Photography 2026.
+  - button "Open Next.js Dev Tools" [ref=e423] [cursor=pointer]:
+    - img [ref=e424]
+  - alert [ref=e427]

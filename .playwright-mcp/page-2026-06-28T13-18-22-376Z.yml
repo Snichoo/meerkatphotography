@@ -1,0 +1,583 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link:
+        - /url: https://kitphotography.com.au
+      - navigation [ref=e4]:
+        - list [ref=e5]:
+          - listitem [ref=e6]:
+            - link "About" [ref=e7] [cursor=pointer]:
+              - /url: https://kitphotography.com.au/#about-us
+          - listitem [ref=e8]:
+            - link "Services" [ref=e9] [cursor=pointer]:
+              - /url: https://kitphotography.com.au/services/
+          - listitem [ref=e10]:
+            - link "Case Studies" [ref=e11] [cursor=pointer]:
+              - /url: https://kitphotography.com.au/case-studies/
+          - listitem [ref=e12]:
+            - link "Portfolio" [ref=e13] [cursor=pointer]:
+              - /url: https://kitphotography.com.au/portfolio/
+          - listitem [ref=e14]:
+            - link "Blog" [ref=e15] [cursor=pointer]:
+              - /url: https://kitphotography.com.au/blog/
+          - listitem [ref=e16]:
+            - link "Contact Us" [ref=e17] [cursor=pointer]:
+              - /url: https://kitphotography.com.au/contact/
+      - list [ref=e19]:
+        - listitem [ref=e20]:
+          - link [ref=e21] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/kitspix
+            - img [ref=e22]
+        - listitem [ref=e24]:
+          - link [ref=e25] [cursor=pointer]:
+            - /url: https://instagram.com/kitspix/
+            - img [ref=e26]
+      - link "Get a quote" [ref=e30] [cursor=pointer]:
+        - /url: https://kitphotography.com.au/contact/
+  - generic [ref=e31]:
+    - generic [ref=e32]:
+      - link:
+        - /url: https://kitphotography.com.au
+      - img [ref=e34]
+    - navigation [ref=e37]:
+      - list [ref=e38]:
+        - listitem [ref=e39]:
+          - link "About" [ref=e40] [cursor=pointer]:
+            - /url: https://kitphotography.com.au/#about-us
+          - img [ref=e42]
+        - listitem [ref=e45]:
+          - link "Services" [ref=e46] [cursor=pointer]:
+            - /url: https://kitphotography.com.au/services/
+          - img [ref=e48]
+        - listitem [ref=e51]:
+          - link "Case Studies" [ref=e52] [cursor=pointer]:
+            - /url: https://kitphotography.com.au/case-studies/
+          - img [ref=e54]
+        - listitem [ref=e57]:
+          - link "Portfolio" [ref=e58] [cursor=pointer]:
+            - /url: https://kitphotography.com.au/portfolio/
+          - img [ref=e60]
+        - listitem [ref=e63]:
+          - link "Blog" [ref=e64] [cursor=pointer]:
+            - /url: https://kitphotography.com.au/blog/
+        - listitem [ref=e65]:
+          - link "Contact Us" [ref=e66] [cursor=pointer]:
+            - /url: https://kitphotography.com.au/contact/
+    - generic [ref=e67]:
+      - link "Get a quote" [ref=e68] [cursor=pointer]:
+        - /url: https://kitphotography.com.au/contact/
+      - link [ref=e69] [cursor=pointer]:
+        - /url: tel:0405 260 868
+        - img [ref=e70]
+      - list [ref=e73]:
+        - listitem [ref=e74]:
+          - link [ref=e75] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/kitspix
+            - img [ref=e76]
+        - listitem [ref=e78]:
+          - link [ref=e79] [cursor=pointer]:
+            - /url: https://instagram.com/kitspix/
+            - img [ref=e80]
+  - generic [ref=e84]:
+    - generic [ref=e87]:
+      - list [ref=e88]:
+        - listitem [ref=e89]:
+          - link "Our Services" [ref=e90] [cursor=pointer]:
+            - /url: https://kitphotography.com.au/services/
+        - listitem [ref=e91]:
+          - link "Commercial Photography" [ref=e92] [cursor=pointer]:
+            - /url: https://kitphotography.com.au/services/#commercial-photography
+        - listitem [ref=e93]:
+          - link "Corporate Photography" [ref=e94] [cursor=pointer]:
+            - /url: https://kitphotography.com.au/services/#corporate-photography
+        - listitem [ref=e95]:
+          - link "Corporate Headshot Photography" [ref=e96] [cursor=pointer]:
+            - /url: https://kitphotography.com.au/services/#corporate-headshot-photography
+        - listitem [ref=e97]:
+          - link "Lifestyle Photography" [ref=e98] [cursor=pointer]:
+            - /url: https://kitphotography.com.au/services/#lifestyle-photography
+        - listitem [ref=e99]:
+          - link "Portrait Photography" [ref=e100] [cursor=pointer]:
+            - /url: https://kitphotography.com.au/services/#portrait-photography
+        - listitem [ref=e101]:
+          - link "Product Photography" [ref=e102] [cursor=pointer]:
+            - /url: https://kitphotography.com.au/services/#product-photography
+        - listitem [ref=e103]:
+          - link "Event Photography" [ref=e104] [cursor=pointer]:
+            - /url: https://kitphotography.com.au/services/#event-photography
+        - listitem [ref=e105]:
+          - link "Fitness Photography" [ref=e106] [cursor=pointer]:
+            - /url: https://kitphotography.com.au/services/#fitness-photography
+        - listitem [ref=e107]:
+          - link "Property Photography" [ref=e108] [cursor=pointer]:
+            - /url: https://kitphotography.com.au/services/#property-photography
+        - listitem [ref=e109]:
+          - link "Food Photography" [ref=e110] [cursor=pointer]:
+            - /url: https://kitphotography.com.au/services/#food-photography
+        - listitem [ref=e111]:
+          - link "Videography" [ref=e112] [cursor=pointer]:
+            - /url: https://kitphotography.com.au/services/#videography
+      - link "See Pricing" [ref=e114] [cursor=pointer]:
+        - /url: https://kitphotography.com.au/pricing/
+    - generic [ref=e115]:
+      - heading "Commercial Photography" [level=1] [ref=e116]
+      - generic [ref=e117]:
+        - button "More Info" [ref=e118] [cursor=pointer]:
+          - generic [ref=e119]: More Info
+          - img [ref=e120]
+        - generic [ref=e124]:
+          - heading "Your Commercial Photography Specialists In Melbourne" [level=4] [ref=e125]:
+            - strong [ref=e126]: Your Commercial Photography Specialists In Melbourne
+          - heading [level=4]
+          - paragraph [ref=e127]: Commercial photography is the creation of striking, engaging, and informative images for business purposes like advertising and marketing. It is essential for showcasing products, services, and brand identity effectively.
+          - paragraph
+          - paragraph [ref=e128]: Engaging a professional commercial photographer is the best way to enhance your business image. High-quality professional photos display your products and services in the best possible light, giving you a professional edge, and engagement with a wider range of customers and can really set you apart from competitors.
+          - heading "Commercial Photography for Marketing" [level=4] [ref=e129]
+          - paragraph [ref=e130]: Professional imagery plays an important role in how customers perceive your brand. Strong visuals help businesses communicate quality, credibility and professionalism across their marketing.
+          - paragraph [ref=e131]: "Commercial photography is commonly used for:"
+          - list [ref=e132]:
+            - listitem [ref=e133]: Websites and landing pages
+            - listitem [ref=e134]: Advertising campaigns
+            - listitem [ref=e135]: Social media content
+            - listitem [ref=e136]: Product catalogues and brochures
+            - listitem [ref=e137]: Brand and marketing campaigns
+          - paragraph [ref=e138]: Our goal is to create imagery that strengthens your brand and supports your marketing strategy.
+          - paragraph
+          - heading "We can bring your vision to life with 15 years of Experience in Commercial Photography" [level=4] [ref=e139]:
+            - strong [ref=e140]: We can bring your vision to life with 15 years of Experience in Commercial Photography
+          - paragraph:
+            - strong
+          - paragraph [ref=e141]:
+            - text: At Kit Photography we have 15 years of experience in commercial photography,
+            - link "Corporate Photography" [ref=e142] [cursor=pointer]:
+              - /url: https://kitphotography.com.au/services/corporate-photography/
+            - text: and
+            - link "Product photography" [ref=e143] [cursor=pointer]:
+              - /url: https://kitphotography.com.au/services/product-photography/
+            - text: ", shooting a wide range of campaigns, products, and services for businesses all over Australia. We have the skill, experience, equipment, and confidence to shoot everything, from short high-pressure celebrity shoots to much larger national campaigns involving 40 shoots over 12 months."
+          - paragraph
+          - paragraph [ref=e144]: Through close collaboration, communication, and experience we are able to take the time and ask the right questions to understand your needs, requirements, and ideas so that we can confidently bring your vision to life.
+          - paragraph
+          - paragraph [ref=e145]:
+            - text: Our strengths at
+            - link "Kit Photography" [ref=e146] [cursor=pointer]:
+              - /url: https://kitphotography.com.au/
+            - text: involve our broad style, experience, and skill set enables us to be extremely adaptable and flexible to attend to a diverse range of client needs and desires. This experience also stands out in our ability to think on sour feet and adapt to changing situations and needs in a calm professional, accommodating manner. This powerful combination of a “Can Do” attitude, expertise, collaborative skills, and drive for excellence on every job, means we deliver results that always exceed expectations for our clients.
+          - heading "Our Commercial Photography Process" [level=4] [ref=e147]
+          - paragraph [ref=e148]: Every commercial photography project is different, so our process is designed to keep things simple, efficient and aligned with your brand goals.
+          - paragraph [ref=e149]: "What to expect:"
+          - paragraph [ref=e150]:
+            - text: Pre-shoot planning
+            - text: We discuss your brand, marketing goals, locations, and how the images will be used.
+          - paragraph [ref=e151]:
+            - text: Creative direction
+            - text: We plan the style, lighting, and composition to ensure the images match your brand identity.
+          - paragraph [ref=e152]:
+            - text: Professional shoot
+            - text: Whether in studio or on location, we capture strong, engaging images that showcase your business.
+          - paragraph [ref=e153]:
+            - text: Editing and delivery
+            - text: Final images are professionally refined and delivered in both high-resolution and web-ready formats.
+          - heading "On-Location or Studio Commercial Photography" [level=4] [ref=e154]
+          - paragraph [ref=e155]: We offer both on-location and studio commercial photography depending on the style and needs of your project.
+          - paragraph [ref=e156]:
+            - text: On-Location Photography
+            - text: Ideal for businesses wanting to showcase their team, workplace or real operating environment. This style often feels more authentic and approachable.
+          - paragraph [ref=e157]:
+            - text: Studio Photography
+            - text: Perfect for product photography, advertising imagery and campaigns requiring controlled lighting and a refined visual style.
+          - paragraph [ref=e158]: If you’re unsure which approach suits your project, we can help guide you toward the best option.
+          - heading "What You Receive" [level=4] [ref=e159]
+          - paragraph [ref=e160]: Every commercial photography project includes everything you need to confidently use your images across your marketing channels.
+          - paragraph [ref=e161]: "You will receive:"
+          - list [ref=e162]:
+            - listitem [ref=e163]: Professionally captured and refined images
+            - listitem [ref=e164]: High-resolution files suitable for print
+            - listitem [ref=e165]: Web-optimised images for websites and social media
+            - listitem [ref=e166]: Consistent lighting and visual style across the image set
+            - listitem [ref=e167]: Full commercial usage rights
+            - listitem [ref=e168]: Fast turnaround for marketing use
+          - paragraph
+          - heading "Trust the Commercial Photography Melbourne experts to enhance your business’s image" [level=4] [ref=e169]:
+            - strong [ref=e170]: Trust the Commercial Photography Melbourne experts to enhance your business’s image
+          - paragraph
+      - generic [ref=e172]:
+        - link "victoria market poster showing people eating" [ref=e173] [cursor=pointer]:
+          - /url: "#lightbox-gallery"
+          - img "victoria market poster showing people eating" [ref=e174]
+          - paragraph
+        - link "victoria market poster showing people eating" [ref=e175] [cursor=pointer]:
+          - /url: "#lightbox-gallery"
+          - img "victoria market poster showing people eating" [ref=e176]
+          - paragraph
+        - link "Commercial image advertisement for easy lock odor a woman holds a cat" [ref=e177] [cursor=pointer]:
+          - /url: "#lightbox-gallery"
+          - img "Commercial image advertisement for easy lock odor a woman holds a cat" [ref=e178]
+          - paragraph
+        - link "A woman race to head on her red, electric car and dreams Maxxia" [ref=e179] [cursor=pointer]:
+          - /url: "#lightbox-gallery"
+          - img "A woman race to head on her red, electric car and dreams" [ref=e180]
+          - paragraph [ref=e181]: Maxxia
+        - link "Tennis Australia 2" [ref=e182] [cursor=pointer]:
+          - /url: "#lightbox-gallery"
+          - paragraph [ref=e183]: Tennis Australia 2
+        - link "Cardio Tennis" [ref=e184] [cursor=pointer]:
+          - /url: "#lightbox-gallery"
+          - paragraph [ref=e185]: Cardio Tennis
+        - link "Tennis Australia 3" [ref=e186] [cursor=pointer]:
+          - /url: "#lightbox-gallery"
+          - paragraph [ref=e187]: Tennis Australia 3
+        - link "Hot Shots 1" [ref=e188] [cursor=pointer]:
+          - /url: "#lightbox-gallery"
+          - paragraph [ref=e189]: Hot Shots 1
+        - link "Choice Hotels 1" [ref=e190] [cursor=pointer]:
+          - /url: "#lightbox-gallery"
+          - paragraph [ref=e191]: Choice Hotels 1
+        - link "Choice Hotels 2" [ref=e192] [cursor=pointer]:
+          - /url: "#lightbox-gallery"
+          - paragraph [ref=e193]: Choice Hotels 2
+        - link "grain farmers look out over a beautiful valley with the sunset in central New South Wales Cowra Seed & Grain" [ref=e194] [cursor=pointer]:
+          - /url: "#lightbox-gallery"
+          - img "grain farmers look out over a beautiful valley with the sunset in central New South Wales" [ref=e195]
+          - paragraph [ref=e196]: Cowra Seed & Grain
+        - link "A farming man drops seeds through his hands on a farm in New South Wales Cowra Seed & Grain" [ref=e197] [cursor=pointer]:
+          - /url: "#lightbox-gallery"
+          - img "A farming man drops seeds through his hands on a farm in New South Wales" [ref=e198]
+          - paragraph [ref=e199]: Cowra Seed & Grain
+        - link "13 Cabs advert 1 13 Cabs" [ref=e200] [cursor=pointer]:
+          - /url: "#lightbox-gallery"
+          - img "13 Cabs advert 1" [ref=e201]
+          - paragraph [ref=e202]: 13 Cabs
+        - link "13 Cabs advert 3 13 Cabs" [ref=e203] [cursor=pointer]:
+          - /url: "#lightbox-gallery"
+          - img "13 Cabs advert 3" [ref=e204]
+          - paragraph [ref=e205]: 13 Cabs
+        - link "St Catherines School" [ref=e206] [cursor=pointer]:
+          - /url: "#lightbox-gallery"
+          - paragraph [ref=e207]: St Catherines School
+        - link "St Catherines School 2" [ref=e208] [cursor=pointer]:
+          - /url: "#lightbox-gallery"
+          - paragraph [ref=e209]: St Catherines School 2
+        - link "A young Melbourne girl watches jellyfish through a water tank at Sea Life aquarium Melbourne Sealife Aquarium Melbourne" [ref=e210] [cursor=pointer]:
+          - /url: "#lightbox-gallery"
+          - img "A young Melbourne girl watches jellyfish through a water tank at Sea Life aquarium Melbourne" [ref=e211]
+          - paragraph [ref=e212]: Sealife Aquarium Melbourne
+        - link "Coaching Zone" [ref=e213] [cursor=pointer]:
+          - /url: "#lightbox-gallery"
+          - paragraph [ref=e214]: Coaching Zone
+        - link "NAB" [ref=e215] [cursor=pointer]:
+          - /url: "#lightbox-gallery"
+          - paragraph [ref=e216]: NAB
+        - link "Stage school Australia" [ref=e217] [cursor=pointer]:
+          - /url: "#lightbox-gallery"
+          - paragraph [ref=e218]: Stage school Australia
+        - link "Salvation Amry" [ref=e219] [cursor=pointer]:
+          - /url: "#lightbox-gallery"
+          - paragraph [ref=e220]: Salvation Amry
+        - link "Legoland 2" [ref=e221] [cursor=pointer]:
+          - /url: "#lightbox-gallery"
+          - paragraph [ref=e222]: Legoland 2
+        - link "Legoland" [ref=e223] [cursor=pointer]:
+          - /url: "#lightbox-gallery"
+          - paragraph [ref=e224]: Legoland
+        - link "A female swimmer swims underwater at a leisure centre in Melbourne Belgravia Leisure - Swim school" [ref=e225] [cursor=pointer]:
+          - /url: "#lightbox-gallery"
+          - img "A female swimmer swims underwater at a leisure centre in Melbourne" [ref=e226]
+          - paragraph [ref=e227]: Belgravia Leisure - Swim school
+        - link "Jobs Victoria" [ref=e228] [cursor=pointer]:
+          - /url: "#lightbox-gallery"
+          - paragraph [ref=e229]: Jobs Victoria
+        - link [ref=e230] [cursor=pointer]:
+          - /url: "#lightbox-gallery"
+          - paragraph
+        - link "Sky Deck" [ref=e231] [cursor=pointer]:
+          - /url: "#lightbox-gallery"
+          - paragraph [ref=e232]: Sky Deck
+        - link "Sky Deck 2" [ref=e233] [cursor=pointer]:
+          - /url: "#lightbox-gallery"
+          - paragraph [ref=e234]: Sky Deck 2
+        - link "Trinity College" [ref=e235] [cursor=pointer]:
+          - /url: "#lightbox-gallery"
+          - paragraph [ref=e236]: Trinity College
+        - link "Trinity College 2" [ref=e237] [cursor=pointer]:
+          - /url: "#lightbox-gallery"
+          - paragraph [ref=e238]: Trinity College 2
+        - link "Belgravia Leisure" [ref=e239] [cursor=pointer]:
+          - /url: "#lightbox-gallery"
+          - paragraph [ref=e240]: Belgravia Leisure
+        - link [ref=e241] [cursor=pointer]:
+          - /url: "#lightbox-gallery"
+          - paragraph
+        - link "Jetpet" [ref=e242] [cursor=pointer]:
+          - /url: "#lightbox-gallery"
+          - paragraph [ref=e243]: Jetpet
+        - link [ref=e244] [cursor=pointer]:
+          - /url: "#lightbox-gallery"
+          - paragraph
+        - link [ref=e245] [cursor=pointer]:
+          - /url: "#lightbox-gallery"
+          - paragraph
+        - link "Nourish Melbourne" [ref=e246] [cursor=pointer]:
+          - /url: "#lightbox-gallery"
+          - paragraph [ref=e247]: Nourish Melbourne
+        - link "Cherry Hill" [ref=e248] [cursor=pointer]:
+          - /url: "#lightbox-gallery"
+          - paragraph [ref=e249]: Cherry Hill
+        - link "Advertising image for stage school, Australia's production show called wicked. Which holds up a broomstick on stage. Stage School Australia - Wicked" [ref=e250] [cursor=pointer]:
+          - /url: "#lightbox-gallery"
+          - img "Advertising image for stage school, Australia's production show called wicked. Which holds up a broomstick on stage." [ref=e251]
+          - paragraph [ref=e252]: Stage School Australia - Wicked
+        - link "Lipton Tea" [ref=e253] [cursor=pointer]:
+          - /url: "#lightbox-gallery"
+          - paragraph [ref=e254]: Lipton Tea
+        - link "MYOB" [ref=e255] [cursor=pointer]:
+          - /url: "#lightbox-gallery"
+          - paragraph [ref=e256]: MYOB
+        - link "Britex" [ref=e257] [cursor=pointer]:
+          - /url: "#lightbox-gallery"
+          - paragraph [ref=e258]: Britex
+        - link [ref=e259] [cursor=pointer]:
+          - /url: "#lightbox-gallery"
+          - paragraph
+        - link "Pola Dental" [ref=e260] [cursor=pointer]:
+          - /url: "#lightbox-gallery"
+          - paragraph [ref=e261]: Pola Dental
+        - link "Westfield" [ref=e262] [cursor=pointer]:
+          - /url: "#lightbox-gallery"
+          - paragraph [ref=e263]: Westfield
+        - link "Melbourne Airport lifestyle campaign, showing Fashion, food and lifestyle Melbourne Airport" [ref=e264] [cursor=pointer]:
+          - /url: "#lightbox-gallery"
+          - img "Melbourne Airport lifestyle campaign, showing Fashion, food and lifestyle" [ref=e265]
+          - paragraph [ref=e266]: Melbourne Airport
+        - link "Red Cross" [ref=e267] [cursor=pointer]:
+          - /url: "#lightbox-gallery"
+          - paragraph [ref=e268]: Red Cross
+        - link "13 Cabs advert 2 13 Cabs" [ref=e269] [cursor=pointer]:
+          - /url: "#lightbox-gallery"
+          - img "13 Cabs advert 2" [ref=e270]
+          - paragraph [ref=e271]: 13 Cabs
+      - generic [ref=e272]:
+        - heading "Our Commercial Clients" [level=3] [ref=e273]
+        - figure [ref=e274]
+        - generic [ref=e276]:
+          - generic [ref=e277]:
+            - heading "What commercial photography services do you specialise in? +" [level=3] [ref=e278] [cursor=pointer]:
+              - text: What commercial photography services do you specialise in?
+              - generic [ref=e279]: +
+            - paragraph [ref=e282]: Kit Haselden Photography specialises in a diverse range of commercial photography, including advertising, corporate media and headshots, events, architectural, and product photography. They create compelling images that promote brands, showcase products, and highlight spaces with precision and creativity. Their technical skill behind the camera, lighting expertise, professional management and people skills ensures high-quality visuals tailored to meet the unique needs of any business or campaign.
+          - heading "What is your commercial photography pricing? +" [level=3] [ref=e284] [cursor=pointer]:
+            - text: What is your commercial photography pricing?
+            - generic [ref=e285]: +
+          - heading "How long does a commercial photo shoot take? +" [level=3] [ref=e287] [cursor=pointer]:
+            - text: How long does a commercial photo shoot take?
+            - generic [ref=e288]: +
+          - heading "How should I prepare for my commercial photo shoot? +" [level=3] [ref=e290] [cursor=pointer]:
+            - text: How should I prepare for my commercial photo shoot?
+            - generic [ref=e291]: +
+          - heading "When will I receive my commercial photos? +" [level=3] [ref=e293] [cursor=pointer]:
+            - text: When will I receive my commercial photos?
+            - generic [ref=e294]: +
+          - heading "Can you photograph outside Melbourne? +" [level=3] [ref=e296] [cursor=pointer]:
+            - text: Can you photograph outside Melbourne?
+            - generic [ref=e297]: +
+          - heading "What image formats do you provide? +" [level=3] [ref=e299] [cursor=pointer]:
+            - text: What image formats do you provide?
+            - generic [ref=e300]: +
+          - heading "Do you have product photography packages? +" [level=3] [ref=e302] [cursor=pointer]:
+            - text: Do you have product photography packages?
+            - generic [ref=e303]: +
+          - heading "Why choose Kit as your commercial photographer? +" [level=3] [ref=e305] [cursor=pointer]:
+            - text: Why choose Kit as your commercial photographer?
+            - generic [ref=e306]: +
+        - generic [ref=e310]:
+          - generic [ref=e316]:
+            - paragraph [ref=e317]: Huge thanks to Kit and Dani for their professional service, discreet working style, and friendly approach in supporting a four-day conference across various locations with over 100 delegates in Melbourne. Their flexibility and professionalism were second to none, and I would highly recommend Kit Photography for any organisation of business seeking a refresh of their corporate media library
+            - generic [ref=e318]: – Lutheran Principals Australia
+          - generic [ref=e324]:
+            - paragraph [ref=e325]: highly recommend Kit Photography! We had our corporate photos done (which is not always fun!) but Kit Photography made it an enjoyable experience. The photos were both professional and also truly authentic and natural!! Will definitely use Kit Photography again.
+            - generic [ref=e326]: – Donna Abu-Elias, Spectrum Law
+          - generic [ref=e332]:
+            - paragraph [ref=e333]: Kit photographed our 3 day company event, with great results! He was super flexible to our changing schedule in the lead-up and even our shooting requirements throughout the event. Would absolutely recommend.
+            - generic [ref=e334]: – Temara Chapman, Marketing Manger, Rome 2 Rio
+          - generic [ref=e340]:
+            - paragraph [ref=e341]: Highly recommend Kit and his team! Very professional and high level of attention to detail. Extremely happy with the final images, and nailed the brief 100%. Thanks Kit.
+            - generic [ref=e342]: – Jeremy Cleaver, Ray White
+          - generic [ref=e348]:
+            - paragraph [ref=e349]: These are so great!!! We are very happy with the outcome! We have so much we can now use for all our social media which we really need! – SnackHQ
+            - generic [ref=e350]: – SnackHQ – Julia Clark
+  - generic [ref=e351]:
+    - img [ref=e353]
+    - generic [ref=e355]:
+      - generic [ref=e359]:
+        - generic [ref=e360]:
+          - status
+          - list
+        - form "Contact form" [ref=e361]:
+          - generic [ref=e362]:
+            - paragraph [ref=e364]:
+              - textbox "Business Name*" [ref=e366]
+            - paragraph [ref=e368]:
+              - textbox "Email*" [ref=e370]
+            - paragraph [ref=e372]:
+              - textbox "Phone" [ref=e374]
+            - paragraph [ref=e376]:
+              - textbox "Message" [ref=e378]
+            - paragraph [ref=e379]:
+              - generic [ref=e380]:
+                - generic [ref=e381]: Please leave this field empty.
+                - textbox "Please leave this field empty." [ref=e382]:
+                  - /placeholder: Enquiry Type
+            - paragraph [ref=e384]: What type of service do you require?
+            - paragraph [ref=e386]:
+              - combobox [ref=e388]:
+                - option "—Please choose an option—" [selected]
+                - option "Headshot/Portrait"
+                - option "Corporate"
+                - option "Commercial"
+                - option "Event/PR"
+                - option "Lifestyle"
+                - option "Product"
+                - option "Property"
+                - option "Other"
+            - paragraph [ref=e389]:
+              - generic [ref=e390]:
+                - generic [ref=e391]: Please leave this field empty.
+                - textbox "Please leave this field empty." [ref=e392]:
+                  - /placeholder: Enquiry Type
+            - paragraph [ref=e394]: How did you find us?
+            - paragraph [ref=e396]:
+              - combobox [ref=e398]:
+                - option "—Please choose an option—" [selected]
+                - option "Google Search"
+                - option "Google Maps"
+                - option "Recommendation"
+                - option "Friend"
+                - option "Social Media"
+                - option "Other Site"
+            - paragraph [ref=e399]:
+              - generic [ref=e400]:
+                - generic [ref=e401]: Please leave this field empty.
+                - textbox "Please leave this field empty." [ref=e402]:
+                  - /placeholder: Enquiry Type
+            - paragraph [ref=e404]:
+              - button "Submit" [ref=e405] [cursor=pointer]
+      - img [ref=e406]
+    - contentinfo [ref=e408]:
+      - generic [ref=e410]:
+        - generic [ref=e412]:
+          - generic [ref=e413]:
+            - status
+            - list
+          - form "Contact form" [ref=e414]:
+            - generic [ref=e415]:
+              - paragraph [ref=e417]:
+                - generic [ref=e418]: Newsletter
+              - paragraph [ref=e420]:
+                - textbox "Email" [ref=e422]
+              - paragraph [ref=e423]:
+                - generic [ref=e424]:
+                  - generic [ref=e425]: Please leave this field empty.
+                  - textbox "Please leave this field empty." [ref=e426]:
+                    - /placeholder: Enquiry Type
+              - paragraph [ref=e428]:
+                - button "Sign Up" [ref=e429] [cursor=pointer]
+        - generic [ref=e430]:
+          - link:
+            - /url: https://kitphotography.com.au
+        - generic [ref=e432]:
+          - generic [ref=e433]: Contact
+          - generic [ref=e434]: Melbourne, Australia
+          - generic [ref=e435]:
+            - text: "Phone:"
+            - link "0405 260 868" [ref=e436] [cursor=pointer]:
+              - /url: tel:0405 260 868
+          - generic [ref=e437]:
+            - text: "Email:"
+            - link "kit@kit.photo" [ref=e438] [cursor=pointer]:
+              - /url: mailto:kit@kit.photo?subject=Photography%20Enquiry%3A%20
+          - link "Book a Shoot" [ref=e439] [cursor=pointer]:
+            - /url: https://kitphotography.com.au/contact/
+          - list [ref=e441]:
+            - listitem [ref=e442]:
+              - link [ref=e443] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/kitspix
+                - img [ref=e444]
+            - listitem [ref=e446]:
+              - link [ref=e447] [cursor=pointer]:
+                - /url: https://instagram.com/kitspix/
+                - img [ref=e448]
+        - generic [ref=e453]:
+          - generic [ref=e454]: Services
+          - navigation [ref=e455]:
+            - list [ref=e456]:
+              - listitem [ref=e457]:
+                - link "Commercial Photography" [ref=e458] [cursor=pointer]:
+                  - /url: https://kitphotography.com.au/services/commercial-photography/
+              - listitem [ref=e459]:
+                - link "Corporate Photography" [ref=e460] [cursor=pointer]:
+                  - /url: https://kitphotography.com.au/services/corporate-photography/
+              - listitem [ref=e461]:
+                - link "Corporate Headshot Photography" [ref=e462] [cursor=pointer]:
+                  - /url: https://kitphotography.com.au/services/corporate-headshot-photography/
+              - listitem [ref=e463]:
+                - link "Lifestyle Photography" [ref=e464] [cursor=pointer]:
+                  - /url: https://kitphotography.com.au/services/lifestyle-photography/
+              - listitem [ref=e465]:
+                - link "Portrait Photography" [ref=e466] [cursor=pointer]:
+                  - /url: https://kitphotography.com.au/services/portrait-photography/
+              - listitem [ref=e467]:
+                - link "Product Photography" [ref=e468] [cursor=pointer]:
+                  - /url: https://kitphotography.com.au/services/product-photography/
+              - listitem [ref=e469]:
+                - link "Event Photography" [ref=e470] [cursor=pointer]:
+                  - /url: https://kitphotography.com.au/services/event-photography/
+              - listitem [ref=e471]:
+                - link "Property Photography" [ref=e472] [cursor=pointer]:
+                  - /url: https://kitphotography.com.au/services/property-photography/
+              - listitem [ref=e473]:
+                - link "Food Photography" [ref=e474] [cursor=pointer]:
+                  - /url: https://kitphotography.com.au/services/food-photography/
+              - listitem [ref=e475]:
+                - link "Videography" [ref=e476] [cursor=pointer]:
+                  - /url: https://kitphotography.com.au/services/videography/
+              - listitem [ref=e477]:
+                - link "Social Media Videography" [ref=e478] [cursor=pointer]:
+                  - /url: https://kitphotography.com.au/social-media-videography/
+        - generic [ref=e480]:
+          - generic [ref=e481]: Useful Links
+          - navigation [ref=e482]:
+            - list [ref=e483]:
+              - listitem [ref=e484]:
+                - link "Our Packages" [ref=e485] [cursor=pointer]:
+                  - /url: https://kitphotography.com.au/pricing/
+              - listitem [ref=e486]:
+                - link "Business KIT" [ref=e487] [cursor=pointer]:
+                  - /url: https://kitphotography.com.au/business-kit-pack/
+              - listitem [ref=e488]:
+                - link "Contact Us" [ref=e489] [cursor=pointer]:
+                  - /url: https://kitphotography.com.au/contact/
+              - listitem [ref=e490]:
+                - link "Meet The Team" [ref=e491] [cursor=pointer]:
+                  - /url: https://kitphotography.com.au/team/
+              - listitem [ref=e492]:
+                - link "Portfolio" [ref=e493] [cursor=pointer]:
+                  - /url: https://kitphotography.com.au/portfolio/
+              - listitem [ref=e494]:
+                - link "Case Study" [ref=e495] [cursor=pointer]:
+                  - /url: https://kitphotography.com.au/blog/category/case-study/
+              - listitem [ref=e496]:
+                - link "Photography Blog" [ref=e497] [cursor=pointer]:
+                  - /url: https://kitphotography.com.au/blog/
+              - listitem [ref=e498]:
+                - link "Privacy Policy" [ref=e499] [cursor=pointer]:
+                  - /url: https://kitphotography.com.au/privacy-policy/
+              - listitem [ref=e500]:
+                - link "Terms & Conditions" [ref=e501] [cursor=pointer]:
+                  - /url: https://kitphotography.com.au/terms-conditions/
+              - listitem [ref=e502]:
+                - link "Sitemap" [ref=e503] [cursor=pointer]:
+                  - /url: https://kitphotography.com.au/sitemap/
+      - generic [ref=e505]:
+        - text: © Kit Photography 2026.
+        - link "Website by Oink Digital" [ref=e506] [cursor=pointer]:
+          - /url: https://www.oinkdigital.com.au/
