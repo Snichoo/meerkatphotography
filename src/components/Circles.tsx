@@ -47,16 +47,18 @@ export function Circles() {
         )}
       />
 
-      {/* Centre navy circle holding the headline */}
-      <div className="relative z-30 flex aspect-square w-[80%] items-center justify-center rounded-full bg-navy text-cream sm:w-[53.33%]">
+      {/* Centre navy circle holding the headline. `@container` makes the circle
+          itself the sizing context so the text + gaps scale with the circle
+          (via cqw units) and always stay inside it, even on small phones. */}
+      <div className="@container relative z-30 flex aspect-square w-[80%] items-center justify-center rounded-full bg-navy text-cream sm:w-[53.33%]">
         <div className={iv("kp-circle-inner flex flex-col items-center px-[8%] text-center")}>
-          <h2 className="kp-h2 max-w-[13ch] text-[clamp(1.5rem,4.4vw,3.6rem)] font-semibold leading-tight">
+          <h2 className="kp-h2 max-w-[13ch] text-[clamp(0.95rem,7.5cqw,3.6rem)] font-semibold leading-tight">
             Photography you&rsquo;ll be proud to share
           </h2>
-          <h1 className="mt-3 max-w-[24ch] text-[clamp(1rem,2.1vw,1.7rem)] font-light text-cream/85 sm:mt-5">
+          <h1 className="mt-[2.6cqw] max-w-[24ch] text-[clamp(0.72rem,3.54cqw,1.7rem)] font-light leading-snug text-cream/85">
             Weddings, portraits, events &amp; everything in between across Perth
           </h1>
-          <QuoteTrigger className="kp-btn-heart mt-5 text-[clamp(0.95rem,1.7vw,1.5rem)] sm:mt-7">
+          <QuoteTrigger className="kp-btn-heart mt-[3.6cqw] text-[clamp(0.8rem,3.13cqw,1.5rem)]">
             Get a quote
           </QuoteTrigger>
         </div>
