@@ -28,14 +28,16 @@ const process = [
 
 function AboutHeroCurve() {
   return (
-    <div className="relative z-[4] -mt-px h-[96px] md:h-[112px]" aria-hidden="true">
+    <div className="relative z-[4] -mt-px h-[170px] md:h-[210px]" aria-hidden="true">
       <svg
-        viewBox="0 0 1440 120"
+        viewBox="0 0 1440 210"
         preserveAspectRatio="none"
         className="block h-full w-full"
       >
+        {/* One gentle hump: rises smoothly to the centre then back down, with
+            solid cream below it so Nora's lower body is fully hidden. */}
         <path
-          d="M0 120 L0 70 C236 32 510 34 704 65 C792 79 865 86 922 45 C984 0 1065 -7 1140 38 C1247 102 1346 88 1440 68 L1440 120 Z"
+          d="M0 210 L0 78 C430 22 1010 22 1440 78 L1440 210 Z"
           fill={CREAM}
         />
       </svg>
@@ -48,7 +50,7 @@ export function AboutMePage() {
     <main className="bg-cream text-navy">
       <section className="relative overflow-visible bg-navy pt-[140px] text-cream lg:pt-[155px]">
         <div className="kp-container relative z-[2] grid items-end gap-10 pb-0 lg:min-h-[700px] lg:grid-cols-[minmax(0,0.98fr)_minmax(320px,0.72fr)]">
-          <div className="pb-12 lg:pb-28">
+          <div className="relative z-[2] pb-12 lg:pb-28">
             <h1 className="kp-reveal max-w-4xl text-[clamp(2.6rem,6.2vw,5.8rem)] font-semibold uppercase leading-[1.02]" data-reveal="soft">
               Meet Nora Wan. Perth photography with heart.
             </h1>
@@ -72,7 +74,7 @@ export function AboutMePage() {
             </div>
           </div>
 
-          <div className="kp-reveal relative z-[3] mx-auto mb-[-94px] flex w-full max-w-[660px] justify-center self-end lg:mb-[-110px]" data-reveal="right" data-reveal-delay="1">
+          <div className="kp-reveal relative z-[1] mx-auto mb-[-120px] flex w-full max-w-[860px] justify-center self-end lg:mb-[-150px]" data-reveal="right" data-reveal-delay="1">
             <Image
               src="/images/nora-about-page.png"
               alt="Nora Wan, Perth photographer"
@@ -80,8 +82,8 @@ export function AboutMePage() {
               height={1941}
               preload
               quality={80}
-              sizes="(max-width: 1024px) 84vw, 560px"
-              className="h-[min(118vw,660px)] w-auto max-w-none object-contain lg:h-[820px] xl:h-[900px]"
+              sizes="(max-width: 1024px) 96vw, 720px"
+              className="h-[min(135vw,820px)] w-auto max-w-none object-contain lg:h-[1000px] xl:h-[1120px]"
             />
           </div>
         </div>
