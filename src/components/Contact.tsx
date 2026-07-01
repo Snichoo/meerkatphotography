@@ -2,9 +2,12 @@
 
 import { useState } from "react";
 import { NAVY } from "@/components/Curve";
+import { sendEnquiry } from "@/lib/sendEnquiry";
 
 export function Contact() {
   const [sent, setSent] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   return (
     <section id="contact" className="bg-cream">
@@ -45,23 +48,37 @@ export function Contact() {
       <div className="overflow-hidden bg-orange text-cream">
         <div className="kp-container max-w-[1140px] pt-[100px]">
           <form
-            onSubmit={(event) => {
+            onSubmit={async (event) => {
               event.preventDefault();
-              setSent(true);
+              if (sending || sent) return;
+              const form = event.currentTarget;
+              setSending(true);
+              setError(null);
+              try {
+                await sendEnquiry(form, "Contact page");
+                setSent(true);
+                form.reset();
+              } catch (err) {
+                setError(err instanceof Error ? err.message : "Something went wrong.");
+              } finally {
+                setSending(false);
+              }
             }}
             className="grid gap-x-10 gap-y-[30px] pb-[100px] sm:grid-cols-2"
           >
             <input
               type="text"
+              name="name"
               required
               placeholder="Your name*"
               className={`${inputClass} kp-reveal sm:col-span-2`}
               data-reveal="up"
             />
-            <input type="email" required placeholder="Email*" className={`${inputClass} kp-reveal`} data-reveal="left" data-reveal-delay="1" />
-            <input type="tel" required placeholder="Phone*" className={`${inputClass} kp-reveal`} data-reveal="right" data-reveal-delay="1" />
+            <input type="email" name="email" required placeholder="Email*" className={`${inputClass} kp-reveal`} data-reveal="left" data-reveal-delay="1" />
+            <input type="tel" name="phone" required placeholder="Phone*" className={`${inputClass} kp-reveal`} data-reveal="right" data-reveal-delay="1" />
             <textarea
               rows={4}
+              name="message"
               placeholder="Message"
               className={`${inputClass} kp-reveal h-[150px] sm:col-span-2`}
               data-reveal="up"
@@ -71,10 +88,12 @@ export function Contact() {
             <div className="kp-reveal relative text-center sm:col-span-2" data-reveal="zoom" data-reveal-delay="3">
               <button
                 type="submit"
-                className="kp-btn-outline text-cream hover:bg-cream hover:text-navy"
+                disabled={sending || sent}
+                className="kp-btn-outline text-cream hover:bg-cream hover:text-navy disabled:cursor-not-allowed disabled:opacity-70"
               >
-                {sent ? "Thanks, we'll be in touch!" : "Submit"}
+                {sent ? "Thanks, we'll be in touch!" : sending ? "Sending…" : "Submit"}
               </button>
+              {error && <p className="mt-4 text-[14px] font-light text-cream/90">{error}</p>}
             </div>
           </form>
         </div>

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Curve, CREAM } from "@/components/Curve";
+import { sendEnquiry } from "@/lib/sendEnquiry";
 
 const ORANGE = "#d85850";
 
@@ -10,6 +11,8 @@ const inputClass =
 
 export function ServicesEnquiry() {
   const [sent, setSent] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   return (
     <section id="contact" className="bg-orange text-cream">
@@ -18,14 +21,27 @@ export function ServicesEnquiry() {
 
       <div className="kp-container max-w-[1140px] pt-[50px]">
         <form
-          onSubmit={(event) => {
+          onSubmit={async (event) => {
             event.preventDefault();
-            setSent(true);
+            if (sending || sent) return;
+            const form = event.currentTarget;
+            setSending(true);
+            setError(null);
+            try {
+              await sendEnquiry(form, "Services page");
+              setSent(true);
+              form.reset();
+            } catch (err) {
+              setError(err instanceof Error ? err.message : "Something went wrong.");
+            } finally {
+              setSending(false);
+            }
           }}
           className="grid gap-x-10 gap-y-[30px] pb-[90px] sm:grid-cols-2"
         >
           <input
             type="text"
+            name="name"
             required
             placeholder="Your name*"
             className={`${inputClass} kp-reveal sm:col-span-2`}
@@ -33,6 +49,7 @@ export function ServicesEnquiry() {
           />
           <input
             type="email"
+            name="email"
             required
             placeholder="Email*"
             className={`${inputClass} kp-reveal`}
@@ -41,6 +58,7 @@ export function ServicesEnquiry() {
           />
           <input
             type="tel"
+            name="phone"
             required
             placeholder="Phone*"
             className={`${inputClass} kp-reveal`}
@@ -49,6 +67,7 @@ export function ServicesEnquiry() {
           />
           <textarea
             rows={4}
+            name="message"
             placeholder="Message"
             className={`${inputClass} kp-reveal h-[150px] sm:col-span-2`}
             data-reveal="up"
@@ -58,10 +77,12 @@ export function ServicesEnquiry() {
           <div className="kp-reveal relative text-center sm:col-span-2" data-reveal="zoom" data-reveal-delay="3">
             <button
               type="submit"
-              className="inline-flex min-h-[38px] min-w-[120px] items-center justify-center rounded-[8px] border border-cream px-6 py-2 text-[12px] font-light uppercase leading-tight text-cream transition-all hover:-translate-y-0.5 hover:bg-cream hover:text-navy active:translate-y-0"
+              disabled={sending || sent}
+              className="inline-flex min-h-[38px] min-w-[120px] items-center justify-center rounded-[8px] border border-cream px-6 py-2 text-[12px] font-light uppercase leading-tight text-cream transition-all hover:-translate-y-0.5 hover:bg-cream hover:text-navy active:translate-y-0 disabled:cursor-not-allowed disabled:opacity-70"
             >
-              {sent ? "Thanks" : "Submit"}
+              {sent ? "Thanks" : sending ? "Sending…" : "Submit"}
             </button>
+            {error && <p className="mt-4 text-[14px] font-light text-cream/90">{error}</p>}
           </div>
         </form>
       </div>

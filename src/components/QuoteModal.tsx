@@ -9,6 +9,7 @@ import {
   type ButtonHTMLAttributes,
 } from "react";
 import { X } from "lucide-react";
+import { sendEnquiry } from "@/lib/sendEnquiry";
 
 type QuoteModalContextValue = {
   open: () => void;
@@ -31,9 +32,12 @@ const inputClass =
 export function QuoteModalProvider({ children }: { children: React.ReactNode }) {
   const [isOpen, setIsOpen] = useState(false);
   const [sent, setSent] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const open = useCallback(() => {
     setSent(false);
+    setError(null);
     setIsOpen(true);
   }, []);
   const close = useCallback(() => setIsOpen(false), []);
@@ -112,22 +116,39 @@ export function QuoteModalProvider({ children }: { children: React.ReactNode }) 
                 </p>
 
                 <form
-                  onSubmit={(event) => {
+                  onSubmit={async (event) => {
                     event.preventDefault();
-                    setSent(true);
+                    if (sending) return;
+                    const form = event.currentTarget;
+                    setSending(true);
+                    setError(null);
+                    try {
+                      await sendEnquiry(form, "Quote modal");
+                      setSent(true);
+                    } catch (err) {
+                      setError(err instanceof Error ? err.message : "Something went wrong.");
+                    } finally {
+                      setSending(false);
+                    }
                   }}
                   className="mt-6 grid gap-4"
                 >
-                  <input type="text" required placeholder="Your name*" className={inputClass} />
-                  <input type="email" required placeholder="Email*" className={inputClass} />
-                  <input type="tel" required placeholder="Phone*" className={inputClass} />
+                  <input type="text" name="name" required placeholder="Your name*" className={inputClass} />
+                  <input type="email" name="email" required placeholder="Email*" className={inputClass} />
+                  <input type="tel" name="phone" required placeholder="Phone*" className={inputClass} />
                   <textarea
                     rows={4}
+                    name="message"
                     placeholder="Message"
                     className={`${inputClass} h-[120px] py-3`}
                   />
-                  <button type="submit" className="kp-btn-heart mt-2 w-full">
-                    Submit enquiry
+                  {error && <p className="text-[14px] font-light text-orange">{error}</p>}
+                  <button
+                    type="submit"
+                    disabled={sending}
+                    className="kp-btn-heart mt-2 w-full disabled:cursor-not-allowed disabled:opacity-70"
+                  >
+                    {sending ? "Sending…" : "Submit enquiry"}
                   </button>
                 </form>
               </>
