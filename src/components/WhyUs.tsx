@@ -7,7 +7,7 @@ export function WhyUs() {
     <section className="py-16 sm:py-20">
       <div className="kp-container">
         <h2 className="kp-reveal kp-h2 text-[clamp(1.8rem,4.4vw,3rem)] text-navy" data-reveal="soft">
-          Why work with me?
+          Why choose me?
         </h2>
         <h3 className="kp-reveal mt-6 max-w-2xl text-[clamp(1.6rem,3.4vw,2.5rem)] font-light leading-tight text-navy" data-reveal="soft" data-reveal-delay="1">
           Easy to work with and genuinely good at the job
