@@ -1,5 +1,3 @@
-import { serviceGalleries, type GalleryImage } from "@/lib/gallery";
-
 export type ServicesPageItem = {
   id: string;
   title: string;
@@ -7,7 +5,6 @@ export type ServicesPageItem = {
   alt: string;
   paragraphs: string[];
   href: string;
-  gallery: readonly GalleryImage[];
 };
 
 export const servicesPageItems: ServicesPageItem[] = [
@@ -21,7 +18,6 @@ export const servicesPageItems: ServicesPageItem[] = [
       "I cover the headline moments  the speeches, the awards, the big reveal  alongside the candid energy in the room, so the event feels exactly like it did on the day.",
     ],
     href: "/services/event-photography",
-    gallery: serviceGalleries["event-photography"],
   },
   {
     id: "birthday-parties",
@@ -33,7 +29,6 @@ export const servicesPageItems: ServicesPageItem[] = [
       "From decorations and group shots to speeches, cake and the dance floor, I capture the whole story without anyone feeling like they're posing for a camera.",
     ],
     href: "/services/birthday-parties",
-    gallery: serviceGalleries["birthday-parties"],
   },
   {
     id: "headshots",
@@ -45,7 +40,6 @@ export const servicesPageItems: ServicesPageItem[] = [
       "Sessions can run on location or in a clean studio-style setup, with consistent lighting and profile-ready files for press, proposals and social channels.",
     ],
     href: "/services/headshots",
-    gallery: serviceGalleries.headshots,
   },
   {
     id: "product-photography",
@@ -57,7 +51,6 @@ export const servicesPageItems: ServicesPageItem[] = [
       "Whether it's clean and simple for an online store or more styled for a campaign, the images are shaped to sit naturally across your web, social and print.",
     ],
     href: "/services/product-photography",
-    gallery: serviceGalleries["product-photography"],
   },
   {
     id: "family-lifestyle",
@@ -69,7 +62,6 @@ export const servicesPageItems: ServicesPageItem[] = [
       "Warm, personal and easy to relax into  whether you're after family memories, a couple's session, a brand story or lifestyle content.",
     ],
     href: "/services/family-lifestyle",
-    gallery: serviceGalleries["family-lifestyle"],
   },
   {
     id: "wedding-photography",
@@ -81,7 +73,6 @@ export const servicesPageItems: ServicesPageItem[] = [
       "From intimate ceremonies to big celebrations and proposal-style shoots, the process stays relaxed and easy from the first plan through to your final gallery.",
     ],
     href: "/services/wedding-photography",
-    gallery: serviceGalleries["wedding-photography"],
   },
   {
     id: "meerkats-pets",
@@ -93,7 +84,6 @@ export const servicesPageItems: ServicesPageItem[] = [
       "Every animal sets its own pace, so sessions stay flexible and fun, chasing the genuine character and personality that make these photos worth keeping.",
     ],
     href: "/services/meerkats-pets",
-    gallery: serviceGalleries["meerkats-pets"],
   },
 ];
 

@@ -8,6 +8,10 @@ const nextConfig: NextConfig = {
     qualities: [60, 70, 75, 80],
     formats: ["image/webp"],
     minimumCacheTTL: 2678400,
+    // Photos uploaded through the Studio admin are served from Vercel Blob.
+    remotePatterns: [
+      { protocol: "https", hostname: "*.public.blob.vercel-storage.com" },
+    ],
   },
 };
 

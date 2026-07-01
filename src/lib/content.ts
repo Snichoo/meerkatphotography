@@ -13,8 +13,8 @@ export const site = {
   phone: "0408 847 723",
   email: "nora@meerkatphotography.au",
   location: "9/8 Dale Street, Mount Nasura WA 6112, Australia",
-  facebook: "https://www.facebook.com/meerkatphotography",
-  instagram: "https://instagram.com/kitspix/",
+  facebook: "https://www.facebook.com/share/17kvRzSwEA/?mibextid=wwXIfr",
+  instagram: "https://www.instagram.com/meerkat_photography/",
   copyright: "(c) Meerkat Photography 2026.",
 };
 

@@ -18,6 +18,23 @@ function wrapIndex(index: number, length: number) {
   return ((index % length) + length) % length;
 }
 
+// Deterministic reference code derived from a photo's src, so the same photo
+// always shows the same code (it "refers to" that photo rather than being
+// random on every tap).
+function photoCode(src: string) {
+  let hash = 0;
+  for (let i = 0; i < src.length; i += 1) {
+    hash = (hash * 31 + src.charCodeAt(i)) >>> 0;
+  }
+  const alphabet = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+  let code = "";
+  for (let i = 0; i < 6; i += 1) {
+    code += alphabet[hash % alphabet.length];
+    hash = Math.floor(hash / alphabet.length) + (i + 1) * 7;
+  }
+  return `MK-${code.slice(0, 3)}-${code.slice(3)}`;
+}
+
 function PreviewImage({
   image,
   side,
@@ -186,6 +203,9 @@ export function GalleryLightbox({
                 sizes="(min-width: 1024px) 1144px, 90vw"
                 className="h-auto w-auto max-h-[calc(100vh-142px)] max-w-full object-contain"
               />
+              <figcaption className="mt-4 font-heading text-[13px] font-medium uppercase tracking-[0.28em] text-navy/60">
+                {photoCode(slides.current.src)}
+              </figcaption>
             </figure>
           </div>
         </div>

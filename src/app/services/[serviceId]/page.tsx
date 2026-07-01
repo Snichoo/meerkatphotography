@@ -4,6 +4,7 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { ServiceDetailPage } from "@/components/ServiceDetailPage";
 import { ServicesEnquiry } from "@/components/ServicesEnquiry";
+import { getGalleryImages } from "@/lib/galleries-data";
 import { getServiceById, servicesPageItems } from "@/lib/services-page";
 
 type ServiceRouteProps = {
@@ -42,10 +43,12 @@ export default async function ServiceDetailRoute({ params }: ServiceRouteProps) 
     notFound();
   }
 
+  const images = await getGalleryImages(serviceId);
+
   return (
     <>
       <Header variant="cream" activeLabel="Services" />
-      <ServiceDetailPage service={service} />
+      <ServiceDetailPage service={service} images={images} />
       <ServicesEnquiry />
       <Footer />
     </>

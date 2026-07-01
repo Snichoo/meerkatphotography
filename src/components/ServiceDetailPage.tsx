@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ServiceGalleryGrid } from "@/components/ServiceGalleryGrid";
+import type { GalleryImage } from "@/lib/gallery";
 import { servicesPageItems, type ServicesPageItem } from "@/lib/services-page";
 import { cn } from "@/lib/utils";
 
@@ -38,7 +39,13 @@ function ServiceDetailSideNav({ activeId }: { activeId: string }) {
   );
 }
 
-export function ServiceDetailPage({ service }: { service: ServicesPageItem }) {
+export function ServiceDetailPage({
+  service,
+  images,
+}: {
+  service: ServicesPageItem;
+  images: readonly GalleryImage[];
+}) {
   return (
     <main className="bg-cream pt-[82px] lg:pt-[100px]">
       <div className="lg:grid lg:grid-cols-[274px_minmax(0,1fr)]">
@@ -64,7 +71,7 @@ export function ServiceDetailPage({ service }: { service: ServicesPageItem }) {
             aria-label={`${service.title} gallery`}
             className="px-3 pb-16 lg:px-0 lg:pr-5"
           >
-            <ServiceGalleryGrid title={service.title} images={service.gallery} />
+            <ServiceGalleryGrid title={service.title} images={images} />
           </section>
         </article>
       </div>

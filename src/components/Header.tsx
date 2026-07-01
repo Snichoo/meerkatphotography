@@ -80,7 +80,7 @@ export function Header({ variant = "transparent", activeLabel }: HeaderProps) {
             sizes="(max-width: 1024px) 48px, 62px"
             className={cn("h-auto", creamVariant ? "w-[48px] lg:w-[58px]" : "w-[48px] lg:w-[62px]")}
           />
-          <span className="hidden font-heading leading-none sm:flex sm:flex-col">
+          <span className="flex flex-col font-heading leading-none">
             <span className="text-[16px] font-semibold uppercase tracking-[0.16em] lg:text-[18px]">
               Meerkat
             </span>
