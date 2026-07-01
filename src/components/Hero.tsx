@@ -33,6 +33,7 @@ export function Hero() {
   }, []);
 
   useEffect(() => {
+    // Slide transition interval (5 seconds)
     const id = setInterval(() => {
       setActive((i) => {
         const next = (i + 1) % slides.length;
