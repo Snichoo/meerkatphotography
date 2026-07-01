@@ -65,6 +65,8 @@ export async function PATCH(request: Request) {
       return NextResponse.json({ error: error.message }, { status: 503 });
     }
     console.error("[studio] reorder failed", error);
-    return NextResponse.json({ error: "Could not save the new order." }, { status: 500 });
+    const message =
+      error instanceof Error ? error.message : "Could not save the new order.";
+    return NextResponse.json({ error: message }, { status: 500 });
   }
 }

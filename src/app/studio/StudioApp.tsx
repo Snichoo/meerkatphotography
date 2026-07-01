@@ -361,6 +361,27 @@ export function StudioApp({ services, initialGalleries, storageReady }: StudioAp
           </div>
         )}
 
+        {saveState === "error" && saveError && (
+          <div className="mb-5 flex items-start gap-3 rounded-xl border border-red-300 bg-red-50 p-4 text-sm text-red-800">
+            <TriangleAlert className="mt-0.5 h-5 w-5 shrink-0" />
+            <div className="min-w-0">
+              <p className="font-semibold">Couldn&apos;t save your change</p>
+              <p className="mt-1 break-words">{saveError}</p>
+            </div>
+            <button
+              type="button"
+              onClick={() => {
+                setSaveState("idle");
+                setSaveError(null);
+              }}
+              aria-label="Dismiss"
+              className="ml-auto shrink-0 text-red-400 transition hover:text-red-700"
+            >
+              <X className="h-4 w-4" />
+            </button>
+          </div>
+        )}
+
         {/* Toolbar */}
         <div className="mb-5 flex flex-wrap items-center justify-between gap-3">
           <div>

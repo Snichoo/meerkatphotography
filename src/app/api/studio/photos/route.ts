@@ -63,7 +63,8 @@ export async function POST(request: Request) {
   } catch (error) {
     if (error instanceof StudioConfigError) return configError(error);
     console.error("[studio] add photo failed", error);
-    return NextResponse.json({ error: "Could not save the photo." }, { status: 500 });
+    const message = error instanceof Error ? error.message : "Could not save the photo.";
+    return NextResponse.json({ error: message }, { status: 500 });
   }
 }
 
@@ -92,7 +93,8 @@ export async function DELETE(request: Request) {
   } catch (error) {
     if (error instanceof StudioConfigError) return configError(error);
     console.error("[studio] delete photo failed", error);
-    return NextResponse.json({ error: "Could not delete the photo." }, { status: 500 });
+    const message = error instanceof Error ? error.message : "Could not delete the photo.";
+    return NextResponse.json({ error: message }, { status: 500 });
   }
 }
 
@@ -125,6 +127,7 @@ export async function PATCH(request: Request) {
   } catch (error) {
     if (error instanceof StudioConfigError) return configError(error);
     console.error("[studio] edit caption failed", error);
-    return NextResponse.json({ error: "Could not update the caption." }, { status: 500 });
+    const message = error instanceof Error ? error.message : "Could not update the caption.";
+    return NextResponse.json({ error: message }, { status: 500 });
   }
 }
