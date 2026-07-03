@@ -75,6 +75,28 @@ export const servicesPageItems: ServicesPageItem[] = [
     href: "/services/wedding-photography",
   },
   {
+    id: "real-estate",
+    title: "Real Estate",
+    image: "/images/hero/realestate.webp",
+    alt: "Styled hotel-quality bedroom interior",
+    paragraphs: [
+      "Real estate and interior photography that makes a space feel worth walking into  homes, apartments, offices and short-stay rentals.",
+      "Clean lines, balanced light and carefully composed angles, so every listing, portfolio or booking page shows the property at its absolute best.",
+    ],
+    href: "/services/real-estate",
+  },
+  {
+    id: "travel",
+    title: "Travel",
+    image: "/images/hero/travel.webp",
+    alt: "Eiffel Tower on a clear day",
+    paragraphs: [
+      "Travel and destination photography shaped by years of shooting across cities, coastlines and landmarks around the world.",
+      "From sweeping cityscapes to street-level detail, the images carry the light, colour and atmosphere of a place  perfect for tourism, editorial and personal projects.",
+    ],
+    href: "/services/travel",
+  },
+  {
     id: "meerkats-pets",
     title: "Meerkats & Pets",
     image: "/images/hero/pet.webp",

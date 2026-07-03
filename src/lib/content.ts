@@ -74,6 +74,22 @@ export const services: Service[] = [
     href: "/services#link-wedding-photography",
   },
   {
+    title: "Real Estate",
+    description:
+      "Homes, apartments, offices and short-stay rentals, photographed with clean lines and balanced light so every listing looks its absolute best.",
+    image: "/images/hero/realestate.webp",
+    alt: "Styled hotel-quality bedroom interior",
+    href: "/services#link-real-estate",
+  },
+  {
+    title: "Travel",
+    description:
+      "Destination and travel photography from cities, coastlines and landmarks around the world  full of light, colour and atmosphere.",
+    image: "/images/hero/travel.webp",
+    alt: "Eiffel Tower on a clear day",
+    href: "/services#link-travel",
+  },
+  {
     title: "Meerkats & Pets",
     description:
       "Pets, animals and the four-legged members of the family  photographed with patience, treats on standby and plenty of room for the unexpected.",
@@ -90,6 +106,8 @@ export const work: WorkImage[] = [
   { src: "/images/hero/product.webp", alt: "Product photography gallery preview" },
   { src: "/images/hero/family.webp", alt: "Family lifestyle photography gallery preview" },
   { src: "/images/hero/wedding.webp", alt: "Wedding photography gallery preview" },
+  { src: "/images/hero/realestate.webp", alt: "Real estate photography gallery preview" },
+  { src: "/images/hero/travel.webp", alt: "Travel photography gallery preview" },
   { src: "/images/hero/pet.webp", alt: "Pet photography gallery preview" },
 ];
 
@@ -221,6 +239,8 @@ export const serviceOptions = [
   "Headshots",
   "Product",
   "Event",
+  "Real Estate",
+  "Travel",
   "Meerkats and Pets",
   "Other",
 ];

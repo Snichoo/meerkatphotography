@@ -166,7 +166,6 @@ function DesktopServicePanel({ service }: { service: ServicesPageItem }) {
 
   return (
     <section
-      id={`link-${service.id}`}
       onMouseMove={handleMouseMove}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
@@ -216,10 +215,7 @@ function DesktopServicePanel({ service }: { service: ServicesPageItem }) {
 
 function MobileServicePanel({ service }: { service: ServicesPageItem }) {
   return (
-    <section
-      id={`mobile-${service.id}`}
-      className="bg-navy text-cream"
-    >
+    <section className="bg-navy text-cream lg:hidden">
       <div className="kp-reveal relative aspect-[4/3] w-full overflow-hidden bg-navy" data-reveal="zoom">
         <Image
           src={service.image}
@@ -434,15 +430,21 @@ export function ServicesPage() {
             </div>
           </section>
 
+          {/* One anchor wrapper per service so `#link-*` hashes land on the
+              visible panel at every viewport (the desktop panel is hidden on
+              mobile and vice versa). On desktop the negative scroll margin
+              cancels the global 96px scroll-padding so full-screen panels land
+              flush, matching the wheel-snap position. */}
           {servicesPageItems.map((service) => (
-            <DesktopServicePanel key={service.id} service={service} />
+            <div
+              key={service.id}
+              id={`link-${service.id}`}
+              className="lg:-scroll-mt-24"
+            >
+              <DesktopServicePanel service={service} />
+              <MobileServicePanel service={service} />
+            </div>
           ))}
-
-          <div className="lg:hidden">
-            {servicesPageItems.map((service) => (
-              <MobileServicePanel key={service.id} service={service} />
-            ))}
-          </div>
         </div>
       </div>
     </main>
