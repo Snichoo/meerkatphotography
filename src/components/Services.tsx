@@ -47,8 +47,8 @@ export function Services() {
         </div>
 
         {/* Service cards  title + dotted connector + rounded image with hover reveal.
-            Flex-wrap + justify-center so the final odd card (Meerkats & Pets) centres
-            on the last row instead of sitting alone on the left. */}
+            On the 2-col layout the final odd card (Meerkats & Pets) centres on the
+            last row; the 3-col layout divides 9 cards evenly so no override needed. */}
         <div className="mt-22 grid w-full grid-cols-1 gap-x-8 gap-y-20 px-6 sm:grid-cols-2 sm:px-10 lg:grid-cols-3 lg:px-12 xl:gap-x-10 xl:px-16">
           {services.map((service, index) => (
             <Link
@@ -60,7 +60,7 @@ export function Services() {
               className={cn(
                 "kp-reveal kp-hover-lift group flex min-w-0 flex-col",
                 index === services.length - 1 &&
-                  "sm:col-span-2 sm:mx-auto sm:w-[calc((100%_-_2rem)/2)] lg:col-span-1 lg:col-start-2 lg:w-full"
+                  "sm:col-span-2 sm:mx-auto sm:w-[calc((100%_-_2rem)/2)] lg:col-span-1 lg:w-full"
               )}
             >
               {/* Fixed-height header so every image lines up; the dotted line
