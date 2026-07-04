@@ -5,6 +5,10 @@ export type ServicesPageItem = {
   alt: string;
   paragraphs: string[];
   href: string;
+  /** SEO <title> for the detail page (brand is appended by the title template). */
+  metaTitle: string;
+  /** SEO meta description for the detail page (~150–160 chars). */
+  metaDescription: string;
 };
 
 export const servicesPageItems: ServicesPageItem[] = [
@@ -18,6 +22,9 @@ export const servicesPageItems: ServicesPageItem[] = [
       "I cover the headline moments  the speeches, the awards, the big reveal  alongside the candid energy in the room, so the event feels exactly like it did on the day.",
     ],
     href: "/services/event-photography",
+    metaTitle: "Perth Event Photographer",
+    metaDescription:
+      "Event photographer in Perth for corporate functions, awards nights and conferences. Speeches, candids and the big moments, with polished galleries in 7-10 days.",
   },
   {
     id: "birthday-parties",
@@ -29,6 +36,9 @@ export const servicesPageItems: ServicesPageItem[] = [
       "From decorations and group shots to speeches, cake and the dance floor, I capture the whole story without anyone feeling like they're posing for a camera.",
     ],
     href: "/services/birthday-parties",
+    metaTitle: "Perth Birthday Party Photographer",
+    metaDescription:
+      "Birthday party photographer in Perth for 21sts, milestones and family celebrations. Colour, candid guests and every detail, so it feels like you were back in the room.",
   },
   {
     id: "headshots",
@@ -40,6 +50,9 @@ export const servicesPageItems: ServicesPageItem[] = [
       "Sessions can run on location or in a clean studio-style setup, with consistent lighting and profile-ready files for press, proposals and social channels.",
     ],
     href: "/services/headshots",
+    metaTitle: "Perth Headshot Photographer",
+    metaDescription:
+      "Professional headshots in Perth for LinkedIn, teams and personal brands. Relaxed direction, flattering light and profile-ready files, on location or in-studio.",
   },
   {
     id: "product-photography",
@@ -51,6 +64,9 @@ export const servicesPageItems: ServicesPageItem[] = [
       "Whether it's clean and simple for an online store or more styled for a campaign, the images are shaped to sit naturally across your web, social and print.",
     ],
     href: "/services/product-photography",
+    metaTitle: "Perth Product Photographer",
+    metaDescription:
+      "Product photographer in Perth for jewellery, food, eCommerce and small business. Real detail and texture that sells across your web, social and print. Get a quote.",
   },
   {
     id: "family-lifestyle",
@@ -62,6 +78,9 @@ export const servicesPageItems: ServicesPageItem[] = [
       "Warm, personal and easy to relax into  whether you're after family memories, a couple's session, a brand story or lifestyle content.",
     ],
     href: "/services/family-lifestyle",
+    metaTitle: "Perth Family & Lifestyle Photographer",
+    metaDescription:
+      "Warm, natural family and lifestyle photography across Perth. Gentle direction and real connection, with the in-between moments you'll love, even if you hate the camera.",
   },
   {
     id: "wedding-photography",
@@ -73,6 +92,9 @@ export const servicesPageItems: ServicesPageItem[] = [
       "From intimate ceremonies to big celebrations and proposal-style shoots, the process stays relaxed and easy from the first plan through to your final gallery.",
     ],
     href: "/services/wedding-photography",
+    metaTitle: "Perth Wedding Photographer",
+    metaDescription:
+      "Perth wedding photographer capturing weddings, engagements and anniversaries with care for the atmosphere and emotion. Relaxed from first plan to final gallery.",
   },
   {
     id: "real-estate",
@@ -84,6 +106,9 @@ export const servicesPageItems: ServicesPageItem[] = [
       "Clean lines, balanced light and carefully composed angles, so every listing, portfolio or booking page shows the property at its absolute best.",
     ],
     href: "/services/real-estate",
+    metaTitle: "Perth Real Estate Photographer",
+    metaDescription:
+      "Real estate and interior photographer in Perth for homes, apartments, offices and short-stays. Clean lines and balanced light so every listing looks its best.",
   },
   {
     id: "travel",
@@ -95,6 +120,9 @@ export const servicesPageItems: ServicesPageItem[] = [
       "From sweeping cityscapes to street-level detail, the images carry the light, colour and atmosphere of a place  perfect for tourism, editorial and personal projects.",
     ],
     href: "/services/travel",
+    metaTitle: "Perth Travel & Destination Photographer",
+    metaDescription:
+      "Travel and destination photography from a Perth-based photographer. Cities, coastlines and landmarks worldwide, with light and atmosphere for tourism and editorial.",
   },
   {
     id: "meerkats-pets",
@@ -106,6 +134,9 @@ export const servicesPageItems: ServicesPageItem[] = [
       "Every animal sets its own pace, so sessions stay flexible and fun, chasing the genuine character and personality that make these photos worth keeping.",
     ],
     href: "/services/meerkats-pets",
+    metaTitle: "Perth Pet Photographer",
+    metaDescription:
+      "Pet and animal photographer in Perth, working with patience, treats on hand and a flexible pace to capture the genuine character that makes photos worth keeping.",
   },
 ];
 

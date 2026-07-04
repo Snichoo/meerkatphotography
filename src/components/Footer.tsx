@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { services, site } from "@/lib/content";
+import { locations } from "@/lib/locations";
 import { FacebookIcon, InstagramIcon } from "@/components/icons";
 import { QuoteTrigger } from "@/components/QuoteModal";
 
@@ -119,7 +120,27 @@ export function Footer() {
           </nav>
         </div>
 
-        <p className="kp-reveal pt-[100px] text-center text-base font-light text-cream max-md:pt-10 max-md:text-sm" data-reveal="fade">
+        <nav aria-label="Areas we serve" className="kp-reveal mt-[70px] border-t border-cream/15 pt-9 max-md:mt-12" data-reveal="fade">
+          <span className="block text-center text-[13px] font-semibold uppercase tracking-[0.22em] text-gold">
+            Areas we serve
+          </span>
+          <ul className="mt-5 flex flex-wrap justify-center gap-x-6 gap-y-2 text-base font-light max-md:text-sm">
+            {locations.map((location) => (
+              <li key={location.slug}>
+                <Link href={`/locations/${location.slug}`} className="text-cream/85 hover:text-gold">
+                  {location.suburb}
+                </Link>
+              </li>
+            ))}
+            <li>
+              <Link href="/locations" className="text-gold hover:text-cream">
+                All areas
+              </Link>
+            </li>
+          </ul>
+        </nav>
+
+        <p className="kp-reveal pt-[60px] text-center text-base font-light text-cream max-md:pt-10 max-md:text-sm" data-reveal="fade">
           {site.copyright}
         </p>
       </div>
