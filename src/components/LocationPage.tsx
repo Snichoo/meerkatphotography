@@ -35,7 +35,7 @@ export function LocationPage({
             className="kp-reveal text-[13px] font-semibold uppercase tracking-[0.28em] text-gold"
             data-reveal="soft"
           >
-            Perth Photographer · {location.region}
+            {location.kicker ?? `Perth Photographer · ${location.region}`}
           </p>
           <h1
             className="kp-reveal mt-5 max-w-4xl text-[clamp(2.4rem,5.4vw,4.75rem)] font-semibold uppercase leading-[1.04]"
@@ -84,7 +84,7 @@ export function LocationPage({
         <div className="kp-container grid gap-10 lg:grid-cols-[1.35fr_0.65fr] lg:gap-16">
           <div className="kp-reveal space-y-5 text-[clamp(1rem,1.35vw,1.2rem)] font-light leading-relaxed text-navy/85" data-reveal="up">
             <h2 className="kp-h2 mb-2 text-[clamp(1.7rem,3.4vw,2.6rem)] normal-case">
-              Your local {location.suburb} photographer
+              {location.introHeading ?? `Your local ${location.suburb} photographer`}
             </h2>
             {location.intro.map((paragraph) => (
               <p key={paragraph}>{paragraph}</p>
@@ -95,7 +95,7 @@ export function LocationPage({
               Around {location.suburb}
             </h3>
             <p className="mt-4 text-sm font-light leading-relaxed text-cream/80">
-              Favourite spots and settings for shoots nearby:
+              {location.landmarksIntro ?? "Favourite spots and settings for shoots nearby:"}
             </p>
             <ul className="mt-4 space-y-2.5 font-light">
               {location.landmarks.map((spot) => (
@@ -106,8 +106,12 @@ export function LocationPage({
               ))}
             </ul>
             <p className="mt-6 border-t border-cream/15 pt-5 text-sm font-light leading-relaxed text-cream/80">
-              Based nearby in Mount Nasura, so there&rsquo;s less travel, easier planning and a
-              photographer who genuinely knows {location.region}.
+              {location.asideNote ?? (
+                <>
+                  Based nearby in Mount Nasura, so there&rsquo;s less travel, easier planning and a
+                  photographer who genuinely knows {location.region}.
+                </>
+              )}
             </p>
           </aside>
         </div>
@@ -121,9 +125,13 @@ export function LocationPage({
               Photography services in {location.suburb}
             </h2>
             <p className="mt-4 font-light leading-relaxed text-cream/80">
-              Whatever you&rsquo;re celebrating or building, here&rsquo;s what I photograph across{" "}
-              {location.suburb} and the surrounding area  each with relaxed direction and a
-              beautifully finished gallery.
+              {location.servicesIntro ?? (
+                <>
+                  Whatever you&rsquo;re celebrating or building, here&rsquo;s what I photograph across{" "}
+                  {location.suburb} and the surrounding area  each with relaxed direction and a
+                  beautifully finished gallery.
+                </>
+              )}
             </p>
           </div>
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

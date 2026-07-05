@@ -219,7 +219,9 @@ export function locationServiceJsonLd(location: Location): JsonLdData {
     provider: { "@id": BUSINESS_ID },
     areaServed: {
       "@type": "Place",
-      name: `${location.suburb}, Western Australia ${location.postcode}`,
+      name:
+        location.schemaArea ??
+        `${location.suburb}, Western Australia ${location.postcode}`.trim(),
       geo: {
         "@type": "GeoCoordinates",
         latitude: location.geo.lat,

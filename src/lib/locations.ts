@@ -27,6 +27,23 @@ export type Location = {
   nearby: string[];
   /** Unique meta description (~150 chars). */
   metaDescription: string;
+  /**
+   * Optional copy overrides for broad areas (e.g. Perth-wide, Australia-wide)
+   * where the suburb-specific templating on the landing page would read oddly.
+   * Suburb pages leave these unset and use the defaults.
+   */
+  /** Overrides the hero kicker (default: `Perth Photographer · {region}`). */
+  kicker?: string;
+  /** Overrides the intro heading (default: `Your local {suburb} photographer`). */
+  introHeading?: string;
+  /** Overrides the "Around {suburb}" aside lead-in sentence. */
+  landmarksIntro?: string;
+  /** Overrides the services-section lede paragraph. */
+  servicesIntro?: string;
+  /** Overrides the aside bottom note about being based nearby. */
+  asideNote?: string;
+  /** Overrides the schema.org `areaServed` place name (default: `{suburb}, Western Australia {postcode}`). */
+  schemaArea?: string;
 };
 
 export const locations: Location[] = [
@@ -125,6 +142,54 @@ export const locations: Location[] = [
     nearby: ["thornlie", "gosnells"],
     metaDescription:
       "Canning Vale photographer for family sessions, cake-smash birthdays, product and brand photography. Lifestyle photography across Canning Vale, WA.",
+  },
+  {
+    slug: "perth",
+    suburb: "Perth",
+    postcode: "6000",
+    region: "Greater Perth",
+    tagline: "Weddings, families, events and business photography right across Perth, WA.",
+    intro: [
+      "While I'm based in the south-east of the city, I photograph right across greater Perth  from the coast at Cottesloe and Scarborough through the CBD, Fremantle and the Swan Valley to the Perth Hills and everywhere in between.",
+      "Wherever you are in the metro area, I bring the same relaxed approach, studio-quality lighting and quick, polished turnaround. Just tell me the location and I'll come to you.",
+    ],
+    landmarks: ["Kings Park & Botanic Garden", "Elizabeth Quay & the Swan River", "Cottesloe & Scarborough beaches", "Fremantle & the Swan Valley"],
+    geo: { lat: -31.9523, lng: 115.8613 },
+    nearby: ["armadale", "gosnells", "canning-vale"],
+    metaDescription:
+      "Perth photographer for weddings, families, events, headshots and products. On-location photography right across the Perth metro area, WA. Get a quote.",
+    kicker: "Perth Photographer · City-wide",
+    introHeading: "Your Perth-wide photographer",
+    landmarksIntro: "Favourite settings for shoots across the metro area:",
+    servicesIntro:
+      "Whatever you're celebrating or building, here's what I photograph right across Perth  each with relaxed direction and a beautifully finished gallery.",
+    asideNote:
+      "Based in the south-east metro and happy to travel anywhere across greater Perth, so planning stays easy wherever you are.",
+    schemaArea: "Perth, Western Australia",
+  },
+  {
+    slug: "australia",
+    suburb: "Australia",
+    postcode: "",
+    region: "Australia-wide",
+    tagline: "Available to travel Australia-wide for weddings, events and destination shoots.",
+    intro: [
+      "Not in Perth? No problem. I regularly travel interstate and to regional Australia for weddings, milestone events, brand shoots and destination sessions  from coastal elopements to multi-day event coverage.",
+      "Travel is arranged simply as part of your quote, so you get the same photographer, the same style and the same polished galleries wherever in Australia you're planning to shoot.",
+    ],
+    landmarks: ["Destination weddings anywhere in Australia", "Interstate & regional travel by arrangement", "Elopements & multi-day coverage", "Fly-in shoots for events & brands"],
+    geo: { lat: -25.2744, lng: 133.7751 },
+    nearby: ["perth", "armadale"],
+    metaDescription:
+      "Australia-wide photographer available to travel interstate and regionally for weddings, events, brands and destination shoots. Based in Perth, WA. Get a quote.",
+    kicker: "Destination Photographer · Australia-wide",
+    introHeading: "Your Australia-wide photographer",
+    landmarksIntro: "How Australia-wide travel works:",
+    servicesIntro:
+      "Whatever you're planning, here's what I photograph on destination and interstate shoots  each with relaxed direction and a beautifully finished gallery.",
+    asideNote:
+      "Based in Perth and happy to travel Australia-wide, with travel arranged simply as part of your quote.",
+    schemaArea: "Australia",
   },
 ];
 
