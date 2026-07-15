@@ -83,6 +83,17 @@ export function StudioApp({ services, initialGalleries, storageReady }: StudioAp
   const [dragOver, setDragOver] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const saveSeq = useRef(0);
+  // Serializes gallery-metadata writes. The server stores every gallery as one
+  // JSON blob with no locking, so two overlapping POSTs would read the same
+  // state and the second write would clobber the first (silently dropping a
+  // photo). Chaining every mutation guarantees they run one at a time.
+  const mutationChain = useRef<Promise<unknown>>(Promise.resolve());
+
+  function enqueueMutation<T>(task: () => Promise<T>): Promise<T> {
+    const run = mutationChain.current.then(task, task);
+    mutationChain.current = run.catch(() => {});
+    return run;
+  }
 
   const photos = galleries[activeId] ?? [];
   const uploadingCount = uploads.filter((item) => item.status === "uploading").length;
@@ -103,15 +114,17 @@ export function StudioApp({ services, initialGalleries, storageReady }: StudioAp
     setSaveState("saving");
     setSaveError(null);
     try {
-      const response = await fetch("/api/studio/galleries", {
-        method: "PATCH",
-        headers: { "content-type": "application/json" },
-        body: JSON.stringify({ serviceId, order: ordered.map((photo) => photo.src) }),
+      await enqueueMutation(async () => {
+        const response = await fetch("/api/studio/galleries", {
+          method: "PATCH",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify({ serviceId, order: ordered.map((photo) => photo.src) }),
+        });
+        if (!response.ok) {
+          const data = await response.json().catch(() => ({}));
+          throw new Error(data.error ?? "Could not save the new order.");
+        }
       });
-      if (!response.ok) {
-        const data = await response.json().catch(() => ({}));
-        throw new Error(data.error ?? "Could not save the new order.");
-      }
       if (seq === saveSeq.current) flashSaved();
     } catch (error) {
       if (seq === saveSeq.current) {
@@ -198,15 +211,18 @@ export function StudioApp({ services, initialGalleries, storageReady }: StudioAp
           },
         });
 
-        const response = await fetch("/api/studio/photos", {
-          method: "POST",
-          headers: { "content-type": "application/json" },
-          body: JSON.stringify({ serviceId, src: blob.url, width, height, name: file.name }),
-        });
-        const data = await response.json().catch(() => ({}));
-        if (!response.ok) throw new Error(data.error ?? "Could not save the photo.");
+        // Serialized so concurrent uploads can't clobber each other's writes.
+        await enqueueMutation(async () => {
+          const response = await fetch("/api/studio/photos", {
+            method: "POST",
+            headers: { "content-type": "application/json" },
+            body: JSON.stringify({ serviceId, src: blob.url, width, height, name: file.name }),
+          });
+          const data = await response.json().catch(() => ({}));
+          if (!response.ok) throw new Error(data.error ?? "Could not save the photo.");
 
-        setGalleries((current) => ({ ...current, [serviceId]: data.gallery }));
+          setGalleries((current) => ({ ...current, [serviceId]: data.gallery }));
+        });
         setUploads((items) => items.filter((item) => item.id !== id));
       } catch (error) {
         setUploads((items) =>
@@ -233,14 +249,16 @@ export function StudioApp({ services, initialGalleries, storageReady }: StudioAp
       [serviceId]: previous.filter((photo) => photo.src !== src),
     }));
     try {
-      const response = await fetch("/api/studio/photos", {
-        method: "DELETE",
-        headers: { "content-type": "application/json" },
-        body: JSON.stringify({ serviceId, src }),
+      await enqueueMutation(async () => {
+        const response = await fetch("/api/studio/photos", {
+          method: "DELETE",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify({ serviceId, src }),
+        });
+        const data = await response.json().catch(() => ({}));
+        if (!response.ok) throw new Error(data.error ?? "Could not delete the photo.");
+        setGalleries((current) => ({ ...current, [serviceId]: data.gallery }));
       });
-      const data = await response.json().catch(() => ({}));
-      if (!response.ok) throw new Error(data.error ?? "Could not delete the photo.");
-      setGalleries((current) => ({ ...current, [serviceId]: data.gallery }));
       flashSaved();
     } catch (error) {
       setGalleries((current) => ({ ...current, [serviceId]: previous }));
@@ -258,16 +276,18 @@ export function StudioApp({ services, initialGalleries, storageReady }: StudioAp
       ),
     }));
     try {
-      const response = await fetch("/api/studio/photos", {
-        method: "PATCH",
-        headers: { "content-type": "application/json" },
-        body: JSON.stringify({ serviceId, src, caption }),
+      await enqueueMutation(async () => {
+        const response = await fetch("/api/studio/photos", {
+          method: "PATCH",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify({ serviceId, src, caption }),
+        });
+        if (response.ok) {
+          const data = await response.json();
+          setGalleries((current) => ({ ...current, [serviceId]: data.gallery }));
+          flashSaved();
+        }
       });
-      if (response.ok) {
-        const data = await response.json();
-        setGalleries((current) => ({ ...current, [serviceId]: data.gallery }));
-        flashSaved();
-      }
     } catch {
       // A caption failing to save is non-critical; leave the local edit in place.
     }
