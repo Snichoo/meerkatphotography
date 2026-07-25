@@ -57,7 +57,9 @@ export async function PATCH(request: Request) {
 
     galleries[serviceId] = next;
     await writeGalleries(galleries);
-    revalidateTag(GALLERIES_TAG, "max");
+    // Expire immediately (not `"max"`, which is stale-while-revalidate) so the
+    // reorder shows on the next request instead of one visit later.
+    revalidateTag(GALLERIES_TAG, { expire: 0 });
     revalidatePath(`/services/${serviceId}`);
     return NextResponse.json({ gallery: next });
   } catch (error) {

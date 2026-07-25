@@ -23,7 +23,12 @@ function configError(error: StudioConfigError) {
 }
 
 function revalidateGallery(serviceId: string) {
-  revalidateTag(GALLERIES_TAG, "max");
+  // `{ expire: 0 }` expires the tagged cache entry immediately so the very next
+  // request reads fresh gallery data. The `"max"` profile uses
+  // stale-while-revalidate instead, which serves the OLD photos on the next
+  // visit and only refreshes in the background — making just-saved uploads look
+  // like they didn't save. See node_modules/next/dist/docs .../revalidateTag.md.
+  revalidateTag(GALLERIES_TAG, { expire: 0 });
   revalidatePath(`/services/${serviceId}`);
 }
 
