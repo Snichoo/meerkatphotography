@@ -143,6 +143,9 @@ export function Footer() {
         <p className="kp-reveal pt-[60px] text-center text-base font-light text-cream max-md:pt-10 max-md:text-sm" data-reveal="fade">
           {site.copyright}
         </p>
+        <p className="kp-reveal pt-2 text-center text-base font-light text-cream/70 max-md:text-sm" data-reveal="fade">
+          ABN 30 414 717 562
+        </p>
       </div>
     </footer>
   );
