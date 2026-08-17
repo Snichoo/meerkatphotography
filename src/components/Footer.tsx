@@ -146,6 +146,16 @@ export function Footer() {
         <p className="kp-reveal pt-2 text-center text-base font-light text-cream/70 max-md:text-sm" data-reveal="fade">
           ABN 30 414 717 562
         </p>
+        <p className="kp-reveal pt-6 text-center" data-reveal="fade">
+          <a
+            href="https://moonlanemedia.com.au/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex rounded-full border border-gold px-5 py-2 text-sm font-semibold uppercase tracking-[0.12em] text-gold transition-colors hover:bg-gold hover:text-navy"
+          >
+            Website built by Moonlane Media
+          </a>
+        </p>
       </div>
     </footer>
   );
