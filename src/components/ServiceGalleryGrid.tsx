@@ -21,10 +21,18 @@ function columnsForWidth(width: number) {
   return 2;
 }
 
-export function ServiceGalleryGrid({ title, images }: ServiceGalleryGridProps) {
+export function ServiceGalleryGrid({ title, images: allImages }: ServiceGalleryGridProps) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const containerRef = useRef<HTMLDivElement | null>(null);
   const [containerWidth, setContainerWidth] = useState(0);
+  // Photos whose file failed to load (e.g. deleted in the Studio moments ago)
+  // are dropped instead of leaving a broken-image tile in the grid.
+  const [failedSrcs, setFailedSrcs] = useState<ReadonlySet<string>>(() => new Set());
+  const images = allImages.filter((image) => !failedSrcs.has(image.src));
+
+  function hideFailed(src: string) {
+    setFailedSrcs((current) => new Set(current).add(src));
+  }
 
   useEffect(() => {
     const node = containerRef.current;
@@ -90,6 +98,7 @@ export function ServiceGalleryGrid({ title, images }: ServiceGalleryGridProps) {
                   fill
                   loading="lazy"
                   quality={70}
+                  onError={() => hideFailed(image.src)}
                   sizes={
                     span === 2
                       ? "(min-width: 1280px) 46vw, (min-width: 768px) 62vw, 96vw"

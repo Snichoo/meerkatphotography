@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 import { GALLERIES_TAG } from "@/lib/galleries-data";
 import type { GalleryImage } from "@/lib/gallery";
 import { isAuthenticated } from "@/lib/studio/auth";
-import { readGalleries, StudioConfigError, writeGalleries } from "@/lib/studio/galleries-store";
+import { readGalleries, StudioConfigError, updateGalleries } from "@/lib/studio/galleries-store";
 import { isValidServiceId } from "@/lib/studio/service-meta";
 
 export const runtime = "nodejs";
@@ -36,32 +36,32 @@ export async function PATCH(request: Request) {
   }
 
   try {
-    const galleries = await readGalleries();
-    const current = galleries[serviceId];
-    const bySrc = new Map(current.map((image) => [image.src, image]));
-    const seen = new Set<string>();
-    const next: GalleryImage[] = [];
+    const galleries = await updateGalleries((draft) => {
+      const current = draft[serviceId];
+      const bySrc = new Map(current.map((image) => [image.src, image]));
+      const seen = new Set<string>();
+      const next: GalleryImage[] = [];
 
-    for (const src of order) {
-      if (typeof src !== "string") continue;
-      const image = bySrc.get(src);
-      if (image && !seen.has(src)) {
-        next.push(image);
-        seen.add(src);
+      for (const src of order) {
+        if (typeof src !== "string") continue;
+        const image = bySrc.get(src);
+        if (image && !seen.has(src)) {
+          next.push(image);
+          seen.add(src);
+        }
       }
-    }
-    // Keep any photos the client didn't mention so nothing is silently lost.
-    for (const image of current) {
-      if (!seen.has(image.src)) next.push(image);
-    }
+      // Keep any photos the client didn't mention so nothing is silently lost.
+      for (const image of current) {
+        if (!seen.has(image.src)) next.push(image);
+      }
 
-    galleries[serviceId] = next;
-    await writeGalleries(galleries);
+      draft[serviceId] = next;
+    });
     // Expire immediately (not `"max"`, which is stale-while-revalidate) so the
     // reorder shows on the next request instead of one visit later.
     revalidateTag(GALLERIES_TAG, { expire: 0 });
     revalidatePath(`/services/${serviceId}`);
-    return NextResponse.json({ gallery: next });
+    return NextResponse.json({ gallery: galleries[serviceId] });
   } catch (error) {
     if (error instanceof StudioConfigError) {
       return NextResponse.json({ error: error.message }, { status: 503 });

@@ -6,9 +6,8 @@ import { isAuthenticated } from "@/lib/studio/auth";
 import {
   deleteUploadedBlob,
   isUploadedBlob,
-  readGalleries,
   StudioConfigError,
-  writeGalleries,
+  updateGalleries,
 } from "@/lib/studio/galleries-store";
 import { buildAlt, captionFromFileName, isValidServiceId } from "@/lib/studio/service-meta";
 
@@ -60,9 +59,11 @@ export async function POST(request: Request) {
   };
 
   try {
-    const galleries = await readGalleries();
-    galleries[serviceId] = [...galleries[serviceId], image];
-    await writeGalleries(galleries);
+    const galleries = await updateGalleries((draft) => {
+      // Skip if already there, so a retried save can't add the photo twice.
+      if (draft[serviceId].some((existing) => existing.src === src)) return;
+      draft[serviceId] = [...draft[serviceId], image];
+    });
     revalidateGallery(serviceId);
     return NextResponse.json({ gallery: galleries[serviceId] });
   } catch (error) {
@@ -89,9 +90,9 @@ export async function DELETE(request: Request) {
   }
 
   try {
-    const galleries = await readGalleries();
-    galleries[serviceId] = galleries[serviceId].filter((image) => image.src !== src);
-    await writeGalleries(galleries);
+    const galleries = await updateGalleries((draft) => {
+      draft[serviceId] = draft[serviceId].filter((image) => image.src !== src);
+    });
     await deleteUploadedBlob(src);
     revalidateGallery(serviceId);
     return NextResponse.json({ gallery: galleries[serviceId] });
@@ -120,13 +121,13 @@ export async function PATCH(request: Request) {
   }
 
   try {
-    const galleries = await readGalleries();
-    galleries[serviceId] = galleries[serviceId].map((image) =>
-      image.src === src
-        ? { ...image, caption, alt: buildAlt(serviceId, caption || "photo") }
-        : image,
-    );
-    await writeGalleries(galleries);
+    const galleries = await updateGalleries((draft) => {
+      draft[serviceId] = draft[serviceId].map((image) =>
+        image.src === src
+          ? { ...image, caption, alt: buildAlt(serviceId, caption || "photo") }
+          : image,
+      );
+    });
     revalidateGallery(serviceId);
     return NextResponse.json({ gallery: galleries[serviceId] });
   } catch (error) {
