@@ -94,7 +94,7 @@ export function localBusinessJsonLd(): JsonLdData {
     telephone: PHONE_INTL,
     email: site.email,
     image: absoluteUrl(DEFAULT_OG_IMAGE.url),
-    logo: absoluteUrl("/images/meerkat-logo.png"),
+    logo: absoluteUrl("/images/meerkat-logo-head.png"),
     priceRange: "$$",
     currenciesAccepted: "AUD",
     address: {

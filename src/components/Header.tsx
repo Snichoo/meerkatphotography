@@ -72,13 +72,16 @@ export function Header({ variant = "transparent", activeLabel }: HeaderProps) {
           aria-label={site.name}
         >
           <Image
-            src="/images/meerkat-logo.png"
+            src="/images/meerkat-logo-head.png"
             alt={site.name}
-            width={1254}
-            height={1254}
+            width={709}
+            height={810}
             quality={80}
-            sizes="(max-width: 1024px) 48px, 62px"
-            className={cn("h-auto", creamVariant ? "w-[48px] lg:w-[58px]" : "w-[48px] lg:w-[62px]")}
+            sizes="(max-width: 1024px) 42px, 55px"
+            className={cn(
+              "h-[48px] w-auto shrink-0 object-contain",
+              creamVariant ? "lg:h-[58px]" : "invert lg:h-[62px]"
+            )}
           />
           <span className="flex flex-col font-heading leading-none">
             <span className="text-[16px] font-semibold uppercase tracking-[0.16em] lg:text-[18px]">

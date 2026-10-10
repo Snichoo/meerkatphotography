@@ -32,14 +32,14 @@ export function Footer() {
           <div className="kp-reveal" data-reveal="up">
             <Link href="/" aria-label={site.name}>
               <Image
-                src="/images/meerkat-logo.png"
+                src="/images/meerkat-logo-head.png"
                 alt={site.name}
-                width={1254}
-                height={1254}
+                width={709}
+                height={810}
                 loading="lazy"
                 quality={80}
-                sizes="116px"
-                className="h-auto w-[116px]"
+                sizes="102px"
+                className="h-[116px] w-auto invert"
               />
             </Link>
             <div className="mt-8 flex gap-3">

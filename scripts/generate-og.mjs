@@ -27,10 +27,11 @@ const FONT = "Segoe UI, Helvetica, Arial, sans-serif";
 const esc = (s) =>
   s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
-/** Meerkat brand mark (the camera-on-tripod illustration), sized for a corner. */
+/** Transparent meerkat head mark, shown in white over the dark photo scrim. */
 async function logoBuffer(width) {
-  return sharp(pub("images", "meerkat-logo.png"))
+  return sharp(pub("images", "meerkat-logo-head.png"))
     .resize({ width })
+    .negate({ alpha: false })
     .png()
     .toBuffer();
 }
