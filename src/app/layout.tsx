@@ -85,14 +85,15 @@ export const metadata: Metadata = {
       "max-video-preview": -1,
     },
   },
-  manifest: "/seo/site.webmanifest",
+  manifest: "/seo/site.webmanifest?v=animal-head",
   icons: {
     icon: [
-      { url: "/favicon.ico" },
-      { url: "/seo/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-      { url: "/seo/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/seo/animal-head-favicon.ico", type: "image/x-icon" },
+      { url: "/seo/animal-head-favicon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/seo/animal-head-favicon-16.png", sizes: "16x16", type: "image/png" },
     ],
-    apple: [{ url: "/seo/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+    shortcut: "/seo/animal-head-favicon.ico",
+    apple: [{ url: "/seo/animal-head-apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
   },
 };
 
