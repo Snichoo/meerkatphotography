@@ -17,6 +17,8 @@ export type Location = {
   region: string;
   /** Short hero subheading under the H1. */
   tagline: string;
+  /** Brief visible copy for the compact area section on the landing page. */
+  shortSummary: string;
   /** Unique intro paragraphs (local context + how I work there). */
   intro: string[];
   /** Local settings to discuss, without implying a venue partnership or booking. */
@@ -57,6 +59,7 @@ export const locations: Location[] = [
     postcode: "6112",
     region: "City of Armadale",
     tagline: "Weddings, families, events and business photography in Armadale, WA.",
+    shortSummary: "Photography for Armadale families, couples and businesses, from weddings and birthdays to headshots and products. Relaxed direction and a session planned around you.",
     intro: [
       "Armadale sits where the Perth plains meet the Darling Scarp, and it's one of my favourite parts of the city to photograph  from the heritage streets and Minnawarra Park through to the lakes and bushland on the edge of the hills.",
       "Being based just up the road in Mount Nasura, I know Armadale inside out. Whether it's a family session at Champion Lakes, a wedding in the Perth Hills or headshots for a local business, I can be on location in minutes with the camera ready.",
@@ -73,6 +76,7 @@ export const locations: Location[] = [
     postcode: "6111",
     region: "City of Armadale",
     tagline: "Relaxed, natural photography across Kelmscott, WA.",
+    shortSummary: "Family portraits, celebrations and business photography in Kelmscott. Choose an at-home or on-location session, with friendly direction and photographs that feel natural.",
     intro: [
       "Kelmscott is one of Perth's oldest districts, with the Canning River, leafy reserves and a strong community feel that lends itself beautifully to relaxed, natural photography.",
       "As a Kelmscott-local photographer, I shoot everything here from milestone birthdays and family portraits to weddings and small-business product shoots  always with the easy, unhurried approach the area is known for.",
@@ -89,6 +93,7 @@ export const locations: Location[] = [
     postcode: "6122",
     region: "Shire of Serpentine-Jarrahdale",
     tagline: "Outdoor family, wedding and lifestyle photography in Byford, WA.",
+    shortSummary: "Photography for Byford families, couples and businesses. From weddings to everyday portraits, each shoot is planned around your people, your occasion and your ideas.",
     intro: [
       "Byford has that semi-rural, edge-of-the-hills character  wide skies, paddocks, wineries and space to breathe  which makes it perfect for outdoor family sessions, engagements and relaxed lifestyle shoots.",
       "I regularly travel the short hop south to Byford for shoots on rural properties, at local venues or wherever suits you, bringing studio-quality lighting and a calm, friendly presence to every session.",
@@ -105,6 +110,7 @@ export const locations: Location[] = [
     postcode: "6110",
     region: "City of Gosnells",
     tagline: "Family, event and portrait photography in Gosnells, WA.",
+    shortSummary: "Capture family milestones, celebrations and business stories in Gosnells. I photograph weddings, portraits, pets and more, with gentle direction and a relaxed approach.",
     intro: [
       "For a family session in Gosnells, the paths and native trees around Mary Carroll Park offer a different feel from a celebration at home or an event in a local hall. We can start with the occasion and choose a setting that suits the people in your photos.",
       "I photograph weddings, family milestones, portraits, pets and business stories across Gosnells from my base in Mount Nasura. Gentle direction helps with the group photos, while space to move and chat lets the candid moments happen naturally.",
@@ -128,6 +134,7 @@ export const locations: Location[] = [
     postcode: "6108",
     region: "City of Gosnells",
     tagline: "Birthday, family and team photography in Thornlie, WA.",
+    shortSummary: "From backyard birthdays to family portraits and business headshots, photography in Thornlie can stay simple. Tell me your plans and we’ll shape your shoot.",
     intro: [
       "A Thornlie shoot can be as simple as meeting in familiar parkland or having the camera come to your backyard celebration. Homestead Park and the Canning River surroundings give us local options to discuss when you want an outdoor setting.",
       "I cover families, couples, weddings, birthdays, headshots and more in Thornlie. You do not need to arrive knowing how to pose: I help with where to stand and what to do, then leave room for the laughs and interactions that make the photos yours.",
@@ -151,6 +158,7 @@ export const locations: Location[] = [
     postcode: "6155",
     region: "City of Gosnells & City of Canning",
     tagline: "Lifestyle, family and brand photography in Canning Vale, WA.",
+    shortSummary: "Photography for Canning Vale families and businesses, including portraits, weddings, products and more. We’ll plan a comfortable session and a useful set of photographs together.",
     intro: [
       "In Canning Vale, a photography session might mean family portraits in a local reserve, headshots at your workplace or a set of product images for your online store. The location should suit what you need the pictures to do.",
       "For outdoor portraits, we can discuss neighbourhood green spaces such as Alexandria Park or Bracadale Park. For business photography, I can work with you on a shot list that brings together the people, products and details behind your brand.",
@@ -174,6 +182,7 @@ export const locations: Location[] = [
     postcode: "6110",
     region: "City of Gosnells",
     tagline: "Family portraits, celebrations and business photography in Huntingdale, WA.",
+    shortSummary: "Mark a family milestone, celebrate with friends or refresh your business photographs in Huntingdale. I keep the photography relaxed, personal and easy to plan.",
     intro: [
       "Huntingdale has room for both an outdoor portrait session and a celebration close to home. Sutherlands Park is a local landmark, with sporting grounds and community spaces that help give the area its gathering-place feel.",
       "I photograph families, couples, birthdays, weddings and business portraits in Huntingdale. We can plan a session at your home, at a suitable outdoor location or at the venue you have booked, with direction that keeps everyone comfortable in front of the camera.",
@@ -196,6 +205,7 @@ export const locations: Location[] = [
     postcode: "6107",
     region: "City of Canning",
     tagline: "Headshots, events, family and wedding photography in Cannington, WA.",
+    shortSummary: "Headshots, events, family portraits and more in Cannington. Whether the photos are personal or for your business, we’ll plan the session around what you need.",
     intro: [
       "Cannington offers a choice between a business setting and a greener portrait backdrop. Civic Gardens and Wharf Street Basin are local outdoor options to discuss, alongside your own office, home or event venue.",
       "I photograph headshots, teams, products, events and personal milestones across Cannington. For a business session, we can combine individual portraits with a few wider images of your people and workspace, giving you a more useful set of photographs for your website and social channels.",
@@ -218,6 +228,7 @@ export const locations: Location[] = [
     postcode: "6109",
     region: "City of Gosnells",
     tagline: "Photography for Maddington families, pets, celebrations and local businesses.",
+    shortSummary: "Photography in Maddington for families, pets, celebrations and businesses. Bring your ideas, and we’ll plan natural portraits and photographs of the moments that matter.",
     intro: [
       "Maddington photography can take you outdoors or keep you right where the story is happening. Harmony Fields is a local reserve to consider for a portrait session, while your home, workplace or booked venue may be the better fit for a celebration or business shoot.",
       "I photograph families, pets, birthdays, weddings, headshots and products in Maddington. My approach is to give clear, gentle direction when it helps, then watch for the natural exchanges between the more planned photographs.",
@@ -240,6 +251,7 @@ export const locations: Location[] = [
     postcode: "6112",
     region: "City of Armadale",
     tagline: "Natural family, couple and milestone photography in Haynes, WA.",
+    shortSummary: "Family moments, couple portraits and celebrations in Haynes, photographed with care. We’ll plan a session that suits your people, with gentle direction when you need it.",
     intro: [
       "For families in Haynes, a portrait session can stay close to home. We can discuss a neighbourhood outdoor setting, including the Sienna Wood Shipwreck Park area, or photograph the familiar spaces where your family spends time together.",
       "I am based in nearby Mount Nasura and cover Haynes for family and lifestyle portraits, couples, birthdays, weddings, pets and business photography. The aim is a session that feels manageable, with help for the posed photographs and time for the little interactions in between.",
@@ -262,6 +274,7 @@ export const locations: Location[] = [
     postcode: "6147",
     region: "City of Gosnells",
     tagline: "Family, portrait, celebration and business photography in Langford, WA.",
+    shortSummary: "Photography for Langford families, couples and businesses. From birthday celebrations to updated headshots, I’ll help you feel comfortable and capture the people and details that matter.",
     intro: [
       "Langford's Hester Park follows the Canning River, giving local families an outdoor option to discuss for their portraits. An at-home session or your own event venue can work just as well when the people and occasion are the focus.",
       "I cover Langford for family and lifestyle sessions, birthdays, weddings, pets, headshots and more. We will talk through the feel you want, the people joining you and any must-have photographs before deciding how the session should flow.",
@@ -284,6 +297,7 @@ export const locations: Location[] = [
     postcode: "6107",
     region: "City of Gosnells",
     tagline: "Portraits, family milestones and business photography in Kenwick, WA.",
+    shortSummary: "Family portraits, weddings, events and business photography in Kenwick. Tell me what you’re planning, and we’ll create a relaxed session with photographs you’ll enjoy sharing.",
     intro: [
       "Kenwick brings together homes, local businesses and green spaces, so your shoot does not need to follow one formula. Brixton Street Reserve is a neighbourhood option to discuss for outdoor photographs, while a home or workplace can give the images a more personal setting.",
       "I photograph families, couples, weddings, birthdays, pets, headshots and products across Kenwick. For portraits, I help with the small things such as where to stand and how to settle into the frame. For a business, we can plan the people, details and working images you need.",
@@ -306,6 +320,7 @@ export const locations: Location[] = [
     postcode: "6000",
     region: "Greater Perth",
     tagline: "Weddings, families, events and business photography right across Perth, WA.",
+    shortSummary: "Photography across Perth for weddings, families, events, headshots, products and more. One photographer, a relaxed approach and a shoot shaped around what you want to capture.",
     intro: [
       "While I'm based in the south-east of the city, I photograph right across greater Perth  from the coast at Cottesloe and Scarborough through the CBD, Fremantle and the Swan Valley to the Perth Hills and everywhere in between.",
       "Wherever you are in the metro area, I bring the same relaxed approach, studio-quality lighting and quick, polished turnaround. Just tell me the location and I'll come to you.",
@@ -330,6 +345,7 @@ export const locations: Location[] = [
     postcode: "",
     region: "Australia-wide",
     tagline: "Available to travel Australia-wide for weddings, events and destination shoots.",
+    shortSummary: "Available to travel Australia-wide for weddings, events and destination shoots. We’ll discuss your plans, location and coverage, with travel arranged as part of your quote.",
     intro: [
       "Not in Perth? No problem. I regularly travel interstate and to regional Australia for weddings, milestone events, brand shoots and destination sessions  from coastal elopements to multi-day event coverage.",
       "Travel is arranged simply as part of your quote, so you get the same photographer, the same style and the same polished galleries wherever in Australia you're planning to shoot.",

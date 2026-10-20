@@ -40,10 +40,6 @@ export default async function LocationRoute({ params }: LocationRouteProps) {
     notFound();
   }
 
-  const nearby = location.nearby
-    .map((slug) => getLocationBySlug(slug))
-    .filter((place): place is NonNullable<typeof place> => place !== undefined);
-
   return (
     <>
       <JsonLd
@@ -56,7 +52,7 @@ export default async function LocationRoute({ params }: LocationRouteProps) {
           locationServiceJsonLd(location),
         ]}
       />
-      <LocationPage location={location} nearby={nearby} />
+      <LocationPage location={location} />
     </>
   );
 }
