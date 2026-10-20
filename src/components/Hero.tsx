@@ -16,7 +16,15 @@ const slides = [
   { src: "/images/hero/product.webp", alt: "Product photography" },
 ];
 
-export function Hero() {
+type HeroProps = {
+  title?: string;
+  description?: string;
+};
+
+export function Hero({
+  title = "Perth photography for your biggest moments & your brand",
+  description = "From weddings, families and birthdays to headshots, products and events relaxed shoots, beautiful galleries, and one photographer with you from first hello to final delivery.",
+}: HeroProps) {
   const [active, setActive] = useState(0);
   const [renderedSlides, setRenderedSlides] = useState<Set<number>>(() => new Set([0]));
 
@@ -93,12 +101,10 @@ export function Hero() {
       {/* Content */}
       <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center text-cream">
         <h1 className="kp-reveal max-w-[20ch] font-heading text-[clamp(1.9rem,4.8vw,4.25rem)] font-semibold leading-[1.08] drop-shadow-[0_2px_18px_rgba(0,0,0,0.45)]" data-reveal="soft">
-          Perth photography for your biggest moments &amp; your brand
+          {title}
         </h1>
         <p className="kp-reveal mt-5 max-w-[54ch] text-[clamp(1rem,1.7vw,1.4rem)] font-light text-cream/90 drop-shadow-[0_1px_10px_rgba(0,0,0,0.5)]" data-reveal="soft" data-reveal-delay="1">
-          From weddings, families and birthdays to headshots, products and events relaxed
-          shoots, beautiful galleries, and one photographer with you from first hello to final
-          delivery.
+          {description}
         </p>
         <QuoteTrigger className="kp-btn-heart kp-reveal mt-8" data-reveal="zoom" data-reveal-delay="2">
           Get a quote

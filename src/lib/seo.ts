@@ -6,10 +6,10 @@ import { servicesPageItems, type ServicesPageItem } from "@/lib/services-page";
 
 /**
  * Canonical origin for the site. Override in Vercel with NEXT_PUBLIC_SITE_URL
- * (e.g. a preview/staging host) — defaults to the production apex.
+ * (e.g. a preview/staging host) — defaults to the final production www host.
  */
 export const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://meerkatphotography.au"
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.meerkatphotography.au"
 ).replace(/\/+$/, "");
 
 export const SITE_NAME = site.name;

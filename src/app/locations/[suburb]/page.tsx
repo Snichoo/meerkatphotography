@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { Footer } from "@/components/Footer";
-import { Header } from "@/components/Header";
 import { JsonLd } from "@/components/JsonLd";
 import { LocationPage } from "@/components/LocationPage";
-import { ServicesEnquiry } from "@/components/ServicesEnquiry";
 import { getLocationBySlug, locations } from "@/lib/locations";
 import { breadcrumbJsonLd, locationServiceJsonLd, pageMetadata } from "@/lib/seo";
 
@@ -59,10 +56,7 @@ export default async function LocationRoute({ params }: LocationRouteProps) {
           locationServiceJsonLd(location),
         ]}
       />
-      <Header variant="cream" />
       <LocationPage location={location} nearby={nearby} />
-      <ServicesEnquiry />
-      <Footer />
     </>
   );
 }

@@ -55,9 +55,9 @@ export function Circles() {
           <h2 className="kp-h2 max-w-[13ch] text-[clamp(1.5rem,4.4vw,3.6rem)] font-semibold leading-tight">
             Photography you&rsquo;ll be proud to share
           </h2>
-          <h1 className="mt-3 max-w-[24ch] text-[clamp(0.72rem,3.54cqw,1.7rem)] font-light leading-snug text-cream/85 sm:mt-5">
+          <p className="mt-3 max-w-[24ch] text-[clamp(0.72rem,3.54cqw,1.7rem)] font-light leading-snug text-cream/85 sm:mt-5">
             Weddings, portraits, events &amp; everything in between across Perth
-          </h1>
+          </p>
           <QuoteTrigger className="kp-btn-heart mt-5 text-[clamp(0.95rem,1.7vw,1.5rem)] sm:mt-7">
             Get a quote
           </QuoteTrigger>
