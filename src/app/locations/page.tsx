@@ -11,7 +11,7 @@ import { breadcrumbJsonLd, locationListJsonLd, pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   title: "Areas We Serve Across Perth & Australia",
   description:
-    "Meerkat Photography covers Armadale, Kelmscott, Byford, Gosnells, Thornlie, Canning Vale, the wider Perth metro area and Australia-wide for weddings, families, events, headshots and more.",
+    "Find photography in Thornlie, Huntingdale, Gosnells, Cannington, Canning Vale, Maddington, Haynes, Langford, Kenwick and more. Explore Meerkat Photography's areas.",
   path: "/locations",
 });
 

@@ -21,7 +21,7 @@ export function LocationPage({
       <section className="relative flex min-h-[560px] items-center overflow-hidden bg-navy pt-[110px] pb-16 text-cream lg:min-h-[640px] lg:pt-[130px]">
         <Image
           src={HERO_IMAGE}
-          alt={`Photography in ${location.suburb}, Perth`}
+          alt="Family and lifestyle photography by Meerkat Photography"
           fill
           preload
           quality={70}
@@ -105,17 +105,50 @@ export function LocationPage({
                 </li>
               ))}
             </ul>
+            {location.localGuide && (
+              <a
+                href={location.localGuide.url}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-5 inline-block text-sm font-light text-gold underline underline-offset-4 hover:text-cream"
+              >
+                {location.localGuide.label} &rarr;
+              </a>
+            )}
             <p className="mt-6 border-t border-cream/15 pt-5 text-sm font-light leading-relaxed text-cream/80">
               {location.asideNote ?? (
                 <>
-                  Based nearby in Mount Nasura, so there&rsquo;s less travel, easier planning and a
-                  photographer who genuinely knows {location.region}.
+                  Based in Mount Nasura and available for on-location photography in {location.suburb}.
+                  We&rsquo;ll confirm the setting, timing and any relevant venue arrangements when planning your shoot.
                 </>
               )}
             </p>
           </aside>
         </div>
       </section>
+
+      {location.planningTips && (
+        <section className="border-t border-navy/10 pb-16 pt-12 sm:pb-20 lg:pb-24">
+          <div className="kp-container">
+            <h2 className="kp-reveal text-[clamp(1.7rem,3.4vw,2.6rem)] font-semibold leading-tight" data-reveal="soft">
+              Planning your {location.suburb} shoot
+            </h2>
+            <div className="mt-8 grid gap-6 md:grid-cols-2">
+              {location.planningTips.map((tip, index) => (
+                <div
+                  key={tip.title}
+                  className="kp-reveal rounded-[16px] border border-navy/15 bg-white/40 p-7 sm:p-8"
+                  data-reveal="up"
+                  data-reveal-delay={index + 1}
+                >
+                  <h3 className="text-xl font-semibold leading-snug">{tip.title}</h3>
+                  <p className="mt-4 font-light leading-relaxed text-navy/80">{tip.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Services offered in this suburb */}
       <section className="bg-navy py-16 text-cream sm:py-20 lg:py-24">
