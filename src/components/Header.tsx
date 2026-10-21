@@ -25,7 +25,7 @@ function QuoteButton({ variant }: { variant: "desktop" | "mobile" }) {
         "inline-flex shrink-0 items-center justify-center rounded-[12px] bg-orange text-center font-semibold uppercase leading-none tracking-[0.04em] text-cream shadow-[0_8px_20px_rgba(56,47,39,0.22)] transition-all hover:-translate-y-0.5 hover:bg-gold hover:shadow-[0_12px_26px_rgba(56,47,39,0.26)] active:translate-y-0",
         variant === "desktop"
           ? "hidden h-[46px] px-6 text-[13px] lg:inline-flex xl:h-[50px] xl:px-7 xl:text-[14px]"
-          : "h-[40px] px-4 text-[11px] lg:hidden"
+          : "h-[40px] px-3 text-[10px] sm:px-4 sm:text-[11px] lg:hidden"
       )}
     >
       Get a Quote
@@ -59,14 +59,16 @@ export function Header({ variant = "transparent", activeLabel }: HeaderProps) {
     >
       <div
         className={cn(
-          "flex items-center justify-between gap-6",
-          creamVariant ? "h-full px-6 sm:px-[60px]" : "kp-container"
+          "flex min-w-0 items-center justify-between gap-2 sm:gap-6",
+          creamVariant
+            ? "h-full px-4 sm:px-[60px]"
+            : "mx-auto w-full max-w-[1200px] px-4 sm:px-[clamp(1.75rem,3vw,3rem)]"
         )}
       >
         <Link
           href="/"
           className={cn(
-            "flex items-center gap-2 transition-transform duration-300 hover:scale-[1.03]",
+            "flex min-w-0 shrink-0 items-center gap-1.5 transition-transform duration-300 hover:scale-[1.03] sm:gap-2",
             creamVariant ? "text-gold" : "text-cream"
           )}
           aria-label={site.name}
@@ -77,17 +79,17 @@ export function Header({ variant = "transparent", activeLabel }: HeaderProps) {
             width={709}
             height={810}
             quality={80}
-            sizes="(max-width: 1024px) 42px, 55px"
+            sizes="(max-width: 639px) 35px, (max-width: 1023px) 42px, 55px"
             className={cn(
-              "h-[48px] w-auto shrink-0 object-contain",
+              "h-[40px] w-auto shrink-0 object-contain sm:h-[48px]",
               creamVariant ? "lg:h-[58px]" : "invert lg:h-[62px]"
             )}
           />
-          <span className="flex flex-col font-heading leading-none">
-            <span className="text-[16px] font-semibold uppercase tracking-[0.16em] lg:text-[18px]">
+          <span className="flex flex-col whitespace-nowrap font-heading leading-none">
+            <span className="text-[14px] font-semibold uppercase tracking-[0.12em] sm:text-[16px] sm:tracking-[0.16em] lg:text-[18px]">
               Meerkat
             </span>
-            <span className="mt-1 text-[10px] font-light uppercase tracking-[0.4em] lg:text-[11px]">
+            <span className="mt-1 text-[8px] font-light uppercase tracking-[0.24em] sm:text-[10px] sm:tracking-[0.4em] lg:text-[11px]">
               Photography
             </span>
           </span>
@@ -141,13 +143,13 @@ export function Header({ variant = "transparent", activeLabel }: HeaderProps) {
         </div>
 
         {/* Mobile cluster: compact CTA + toggle */}
-        <div className="flex items-center gap-3 lg:hidden">
+        <div className="flex shrink-0 items-center gap-2 sm:gap-3 lg:hidden">
           <QuoteButton variant="mobile" />
           <button
             type="button"
             aria-label="Toggle menu"
             onClick={() => setOpen((v) => !v)}
-            className="flex h-10 w-10 flex-col items-center justify-center gap-1.5 transition-transform active:scale-95"
+            className="flex h-10 w-10 shrink-0 flex-col items-center justify-center gap-1.5 transition-transform active:scale-95"
           >
           <span
             className={cn(

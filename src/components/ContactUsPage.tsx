@@ -63,7 +63,7 @@ export function ContactUsPage() {
             </div>
           </div>
 
-          <div className="grid gap-4">
+          <div className="grid min-w-0 gap-4">
             {contactDetails.map((detail, index) => {
               const Icon = detail.icon;
 
@@ -81,7 +81,7 @@ export function ContactUsPage() {
                     <Icon className="h-5 w-5" aria-hidden="true" />
                     {detail.label}
                   </span>
-                  <span className="text-[clamp(1rem,1.25vw,1.2rem)] font-light leading-relaxed text-navy/80 transition-colors group-hover:text-navy">
+                  <span className="min-w-0 text-[clamp(1rem,1.25vw,1.2rem)] font-light leading-relaxed text-navy/80 transition-colors [overflow-wrap:anywhere] group-hover:text-navy">
                     {detail.value}
                   </span>
                 </a>

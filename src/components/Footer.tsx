@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { ArrowUpRight, MapPin } from "lucide-react";
 import { services, site } from "@/lib/content";
 import { locations } from "@/lib/locations";
 import { FacebookIcon, InstagramIcon } from "@/components/icons";
@@ -12,8 +13,7 @@ const usefulLinks = [
   { label: "Contact Us", href: "/contact-us" },
 ];
 
-const mapEmbedUrl =
-  "https://www.google.com/maps?q=9%2F8%20Dale%20Street%2C%20Mount%20Nasura%20WA%206112%2C%20Australia&output=embed";
+const mapDirectionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(site.location)}`;
 
 function FooterHeading({ children }: { children: ReactNode }) {
   return (
@@ -28,7 +28,7 @@ export function Footer() {
   return (
     <footer className="bg-navy px-0 py-[90px] text-[22px] text-cream max-md:py-[50px] max-md:text-lg">
       <div className="kp-container">
-        <div className="grid gap-x-10 gap-y-12 md:grid-cols-[0.9fr_1.35fr_1fr_1fr]">
+        <div className="grid grid-cols-[minmax(0,1fr)] gap-x-10 gap-y-12 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.35fr)_minmax(0,1fr)_minmax(0,1fr)]">
           <div className="kp-reveal" data-reveal="up">
             <Link href="/" aria-label={site.name}>
               <Image
@@ -64,7 +64,7 @@ export function Footer() {
             </div>
           </div>
 
-          <div className="kp-reveal inline-flex flex-col items-start leading-[2]" data-reveal="up" data-reveal-delay="1">
+          <div className="kp-reveal inline-flex min-w-0 flex-col items-start leading-[2]" data-reveal="up" data-reveal-delay="1">
             <FooterHeading>Contact</FooterHeading>
             <address className="mt-3 not-italic">{site.location}</address>
             <div>
@@ -73,7 +73,7 @@ export function Footer() {
                 {site.phone}
               </a>
             </div>
-            <div>
+            <div className="w-full [overflow-wrap:anywhere]">
               <span>Email: </span>
               <a href={`mailto:${site.email}`} className="hover:text-gold">
                 {site.email}
@@ -82,15 +82,19 @@ export function Footer() {
             <QuoteTrigger className="my-[15px] inline-flex h-[45px] min-w-0 items-center justify-center rounded-[10px] border-4 border-orange bg-orange px-5 pb-0.5 pt-1 text-base font-light uppercase leading-none text-cream transition-colors hover:border-gold hover:bg-gold">
               Book a Shoot
             </QuoteTrigger>
-            <div className="mt-4 w-full overflow-hidden rounded-[8px] border border-cream/25 bg-cream/10">
-              <iframe
-                title={site.location}
-                src={mapEmbedUrl}
-                className="block h-[210px] w-full"
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
-            </div>
+            <a
+              href={mapDirectionsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 flex w-full items-center gap-3 rounded-[8px] border border-cream/25 bg-cream/10 px-4 py-4 text-base leading-relaxed transition-colors hover:border-gold hover:bg-cream/15 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold"
+            >
+              <MapPin className="h-6 w-6 shrink-0 text-gold" aria-hidden="true" />
+              <span className="min-w-0 flex-1">
+                <span className="block font-semibold">Get directions</span>
+                <span className="block text-sm text-cream/75">Open in Google Maps</span>
+              </span>
+              <ArrowUpRight className="h-5 w-5 shrink-0" aria-hidden="true" />
+            </a>
           </div>
 
           <nav className="kp-reveal inline-flex flex-col items-start leading-[2]" data-reveal="up" data-reveal-delay="2">
